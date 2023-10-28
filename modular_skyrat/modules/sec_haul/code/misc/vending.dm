@@ -28,7 +28,7 @@
 /obj/item/vending_refill/security_peacekeeper
 	icon_state = "refill_sec"
 
-/obj/machinery/vending/wardrobe/sec_wardrobe/blue // ARK STATION EDIT || REDSEC
+/obj/machinery/vending/wardrobe/sec_wardrobe //(RED) // ARK STATION EDIT || REDSEC
 	name = "\improper Peacekeeper Outfitting Station"
 	desc = "A vending machine stocked with Lopland's \"Peacekeeper\" security package, including standardized uniforms and general equipment."
 	icon = 'modular_skyrat/modules/sec_haul/icons/vending/vending.dmi'
@@ -50,8 +50,6 @@
 					/obj/item/clothing/under/rank/security/peacekeeper = 10,
 					/obj/item/clothing/under/rank/security/skyrat/utility = 3,
 					/obj/item/clothing/shoes/jackboots/sec = 10,
-					/obj/item/clothing/head/security_garrison = 10,
-					/obj/item/clothing/head/security_cap = 10,
 					/obj/item/clothing/head/beret/sec/peacekeeper = 5,
 					/obj/item/clothing/head/helmet/sec/sol = 5,
 					/obj/item/clothing/head/hats/warden/police/patrol = 5,
@@ -65,11 +63,13 @@
 	payment_department = ACCOUNT_SEC
 	light_color = COLOR_MODERATE_BLUE
 
+// /obj/item/clothing/head/security_cap = 10, /obj/item/clothing/head/security_garrison = 10,
+
 /obj/item/vending_refill/wardrobe/peacekeeper_wardrobe
 	machine_name = "Peacekeeper outfitting station"
 
 //List for the old one, for when its mapped in; curates it nicely, adds /redsec to the items, and also prevents some conflicts with the above vendor
-/obj/machinery/vending/wardrobe/sec_wardrobe // ARK STATION EDIT || REDSEC
+/obj/machinery/vending/wardrobe/sec_wardrobe/red
 	name = "\improper SecDrobe"
 	desc = "A vending machine for security and security-related clothing!"
 	product_ads = "Beat perps in style!;It's red so you can't see the blood!;You have the right to be fashionable!;Now you can be the fashion police you always wanted to be!"
