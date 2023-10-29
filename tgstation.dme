@@ -5971,6 +5971,7 @@
 #include "interface\fonts\spess_font.dm"
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
+#include "modular_arkstation\modules\mecha-size\code.dm"
 #include "modular_skyrat\master_files\code\_globalvars\configuration.dm"
 #include "modular_skyrat\master_files\code\_globalvars\religion.dm"
 #include "modular_skyrat\master_files\code\_globalvars\lists\ambience.dm"
