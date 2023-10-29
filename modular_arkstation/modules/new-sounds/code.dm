@@ -16,7 +16,7 @@
 	pickup_sound = 'modular_arkstation/modules/new-sounds/sound/coin_pickup.ogg'
 	drop_sound = 'modular_arkstation/modules/new-sounds/sound/coin_drop.ogg'
 
-/obj/item/kitchen/knife
+/obj/item/knife
 	pickup_sound = 'modular_arkstation/modules/new-sounds/sound/knife_pickup.ogg'
 	drop_sound = 'modular_arkstation/modules/new-sounds/sound/knife_drop.ogg'
 
