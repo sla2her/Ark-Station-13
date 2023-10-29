@@ -377,10 +377,10 @@
 		holder = "[uniform]"
 	uniform = text2path(holder)
 
-	var/client/client = GLOB.directory[ckey(H.mind?.key)]
+	//var/client/client = GLOB.directory[ckey(H.mind?.key)]
 
-	if(client?.is_veteran() && client?.prefs.read_preference(/datum/preference/toggle/playtime_reward_cloak))
-		neck = /obj/item/clothing/neck/cloak/skill_reward/playing
+	//if(client?.is_veteran() && client?.prefs.read_preference(/datum/preference/toggle/playtime_reward_cloak))
+		//neck = /obj/item/clothing/neck/cloak/skill_reward/playing // Arc Station 13 Edit - Fuck Vet's system
 
 /datum/outfit/job/post_equip(mob/living/carbon/human/equipped, visualsOnly = FALSE)
 	if(visualsOnly)

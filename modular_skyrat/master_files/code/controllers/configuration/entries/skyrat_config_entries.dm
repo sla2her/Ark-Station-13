@@ -62,5 +62,5 @@
 	protection = CONFIG_ENTRY_LOCKED
 
 /// Defines whether the server uses the legacy veteran system with veteran_players.txt or the SQL system.
-/datum/config_entry/flag/veteran_legacy_system
-	protection = CONFIG_ENTRY_LOCKED
+///datum/config_entry/flag/veteran_legacy_system
+//	protection = CONFIG_ENTRY_LOCKED // Arc Station 13 Edit - Fuck Vet's system
