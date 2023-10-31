@@ -17,7 +17,7 @@
 	var/list/required_languages = list(/datum/language/common = LANGUAGE_SPOKEN)
 
 	///Is this job veteran only? If so, then this job requires the player to be in the veteran_players.txt
-	//var/veteran_only = FALSE // Arc Station 13 Edit - Fuck Vet's system
+	//var/veteran_only = FALSE // Ark Station 13 Edit - Fuck Vet's system
 
 
 /datum/job/proc/has_banned_quirk(datum/preferences/pref)
