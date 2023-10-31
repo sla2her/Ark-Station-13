@@ -114,13 +114,13 @@
 	icon_state = "inteqcookies_trash"
 	grind_results = list(/datum/reagent/aluminium = 1)
 
-/obj/item/storage/fancy/cigarettes/cigpack_inteq
-	name = "cigarette packet"
-	desc = "Пачка сигарет от известной ЧВК."
-	icon = 'modular_arkstation/krashly_modulars/icons/obj/inteq_cigarettes.dmi'
-	icon_state = "inteq"
-	spawn_type = /obj/item/clothing/mask/cigarette/inteq
+// /obj/item/storage/fancy/cigarettes/cigpack_inteq
+// 	name = "cigarette packet"
+// 	desc = "Пачка сигарет от известной ЧВК."
+// 	icon = 'modular_arkstation/krashly_modulars/icons/obj/inteq_cigarettes.dmi'
+// 	icon_state = "inteq"
+// 	spawn_type = /obj/item/clothing/mask/cigarette/inteq
 
-/obj/item/clothing/mask/cigarette/inteq
-	desc = "Сигарета от известной ЧВК."
-	list_reagents = list(/datum/reagent/drug/nicotine = 15, /datum/reagent/medicine/omnizine = 15)
+// /obj/item/clothing/mask/cigarette/inteq
+// 	desc = "Сигарета от известной ЧВК."
+// 	list_reagents = list(/datum/reagent/drug/nicotine = 15, /datum/reagent/medicine/omnizine = 15)

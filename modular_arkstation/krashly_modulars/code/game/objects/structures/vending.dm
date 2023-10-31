@@ -24,7 +24,6 @@
 		/obj/item/clothing/suit/armor/inteq/labcoat = 3,
 		/obj/item/clothing/head/soft/inteq = 3,
 		/obj/item/clothing/head/soft/inteq_med = 3,
-		/obj/item/storage/fancy/cigarettes/cigpack_inteq = 3,
 		/obj/item/food/chips/intecookies = 5,
 	)
 	contraband = list(
