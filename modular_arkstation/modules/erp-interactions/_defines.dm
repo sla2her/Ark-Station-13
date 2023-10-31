@@ -1,0 +1,2 @@
+#define INTERACTION_REQUIRE_SELF_MOUTH "self_mouth"
+#define INTERACTION_REQUIRE_TARGET_MOUTH "target_mouth"
