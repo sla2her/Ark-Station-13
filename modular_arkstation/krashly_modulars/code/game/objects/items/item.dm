@@ -169,6 +169,20 @@
 	gender = MALE
 	icon = 'modular_arkstation/krashly_modulars/icons/animals.dmi'
 
+/mob/living/simple_animal/pet/fox/fennec
+	name = "Red"
+	desc = "It's a fennec!"
+	icon_state = "fennec"
+	icon_living = "fennec"
+	icon_dead = "fennec_dead"
+	held_state = "fennec"
+	see_in_dark = 10
+	speak_chance = 15
+	maxHealth = 50
+	health = 50
+	gender = MALE
+	icon = 'modular_arkstation/krashly_modulars/icons/animals.dmi'
+
 /mob/living/simple_animal/pet/cat/alta
 	name = "Alta"
 	desc = "A cute white cat."
