@@ -61438,6 +61438,10 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/blueshield,
+/obj/item/clothing/gloves/tackler/combat/insulated/blueshield,
+/obj/item/storage/backpack/satchel/blueshield,
+/obj/item/storage/backpack/duffelbag/blueshield,
+/obj/item/storage/backpack/blueshield,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "tMW" = (
