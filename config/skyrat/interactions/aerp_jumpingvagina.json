@@ -1,22 +1,22 @@
 {
-	"name": "Вагина. Секс",
-	"description": "Ванильный секс / Трахнуть партнера в вагину.",
+	"name": "Вагина. Секс (Сверху)",
+	"description": "Дай партнеру отдохнуть и попрыгай на его члене.",
 	"usage": "other",
 	"category": "Erp",
 	"distance_allowed": 0,
 	"message": [
-		"%USER% вставляет пенис в %TARGET%'s вагину.",
-		"%USER% трахает в быстром ритме %TARGET%'s вагину.",
-		"%USER% проникает пенисом в дырочку %TARGET%.",
-		"%USER% нежно поёбывает %TARGET% в киску."
+		"%USER% вставляет пенис %TARGET% себе в вагину.",
+		"%USER% трахает в быстром ритме %TARGET%'s член своей вагиной.",
+		"%USER% проникает пенисом %TARGET% в свою дырочку.",
+		"%USER% нежно поёбывает член %TARGET% своей киской."
 	],
 	"sound_use": 1,
 	"sound_range": 3,
 	"target_required_parts": [
-		"vagina"
+		"penis"
 	],
 	"user_required_parts": [
-		"penis"
+		"vagina"
 	],
 	"color": "purple",
 	"user_arousal": 10,
