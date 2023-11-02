@@ -69,3 +69,10 @@ map blueshift
 	minplayers 70
 	votable
 endmap
+
+##ARK STATION MAPS##
+
+map kilostation
+	maxplayers 100
+	votable
+endmap

@@ -1,5 +1,5 @@
 {
-	"name": "Рот. Пососать соски.", /// дописать
+	"name": "Рот. Пососать соски.",
 	"description": "Побудь взрослым ребёнком.",
 	"usage": "other",
 	"category": "Erp",
@@ -10,7 +10,7 @@
 		"%USER% настойчиво целует %TARGET% заводя руку за шею и прижимая к себе.",
 		"%USER% прижимается к губкам %TARGET%."
 	],
-	"sound_use": 0,
+	"sound_use": 1,
 	"sound_range": 7,
 	"target_required_parts": [
 		"breast"
@@ -23,5 +23,9 @@
 	"target_arousal": 3,
 	"user_pleasure": 3,
 	"target_pleasure": 3,
-	"lewd": 1
+	"lewd": 1,
+	"sound_possible": [
+		"modular_skyrat/modules/modular_items/lewd_items/sounds/oral1.ogg",
+		"modular_skyrat/modules/modular_items/lewd_items/sounds/oral2.ogg"
+	]
 }
