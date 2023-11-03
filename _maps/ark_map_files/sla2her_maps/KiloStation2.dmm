@@ -125,14 +125,13 @@
 	},
 /area/station/ai_monitored/turret_protected/ai)
 "abj" = (
-/obj/structure/table,
-/obj/item/storage/medkit/regular,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/security_medic,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/office)
 "abq" = (
@@ -15810,14 +15809,15 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/exit/departure_lounge)
 "flt" = (
-/obj/structure/bed,
-/obj/machinery/iv_drip,
-/obj/item/bedsheet/medical,
 /obj/effect/decal/cleanable/blood/old,
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
+	},
+/obj/structure/table/optable,
+/obj/item/storage/backpack/duffelbag/sec/surgery{
+	pixel_y = 5
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/medical)
@@ -17988,6 +17988,7 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
 	},
+/obj/item/storage/box/bodybags,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/medical)
 "fQb" = (
@@ -21087,7 +21088,7 @@
 "gPo" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/red/half/contrasted,
-/obj/effect/landmark/start/corrections_officer,
+/obj/effect/landmark/start/security_medic,
 /turf/open/floor/iron,
 /area/station/security/office)
 "gPy" = (
@@ -22897,12 +22898,12 @@
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
 "hsB" = (
-/obj/structure/bodycontainer/morgue,
-/obj/effect/turf_decal/delivery,
 /obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 4
 	},
+/obj/structure/closet/crate/freezer/blood,
+/obj/effect/turf_decal/delivery/red,
 /turf/open/floor/iron/dark,
 /area/station/security/medical)
 "hsC" = (
@@ -30135,7 +30136,6 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 4
 	},
-/obj/effect/landmark/start/customs_agent,
 /turf/open/floor/iron/dark,
 /area/station/security/checkpoint/supply)
 "jEC" = (
@@ -32783,6 +32783,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
+/obj/machinery/jukebox,
 /turf/open/floor/wood/large,
 /area/station/service/bar/atrium)
 "kzK" = (
@@ -35023,7 +35024,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/effect/landmark/start/engineering_guard,
 /turf/open/floor/iron,
 /area/station/security/checkpoint/engineering)
 "ljy" = (
@@ -37261,18 +37261,6 @@
 /obj/effect/turf_decal/tile/blue,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
-"lVi" = (
-/obj/structure/table,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/turf/open/floor/iron/showroomfloor,
-/area/station/security/office)
 "lVj" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
@@ -44853,7 +44841,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red/anticorner/contrasted,
-/obj/effect/landmark/start/orderly,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/checkpoint/medical)
 "ozw" = (
@@ -51057,6 +51044,7 @@
 "qAg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/cable,
+/obj/machinery/jukebox,
 /turf/open/floor/plating,
 /area/station/security/prison)
 "qAn" = (
@@ -54452,13 +54440,14 @@
 /turf/open/floor/iron/dark,
 /area/station/maintenance/fore)
 "rEi" = (
-/obj/structure/table/glass,
-/obj/machinery/computer/records/medical/laptop,
-/obj/machinery/vending/wallmed/directional/east,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 4
 	},
+/obj/machinery/computer/operating{
+	dir = 8
+	},
+/obj/machinery/defibrillator_mount/directional/east,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/medical)
 "rEk" = (
@@ -57623,13 +57612,12 @@
 /turf/open/floor/plating,
 /area/station/service/chapel/funeral)
 "sEs" = (
-/obj/item/storage/box/bodybags,
-/obj/item/pen,
-/obj/structure/table,
 /obj/item/radio/intercom/directional/west,
 /obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
 	dir = 4
 	},
+/obj/structure/bed/medical/emergency,
+/obj/machinery/iv_drip,
 /turf/open/floor/iron/dark,
 /area/station/security/medical)
 "sEx" = (
@@ -60684,7 +60672,6 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
 	},
-/obj/effect/landmark/start/corrections_officer,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/execution/transfer)
 "tzF" = (
@@ -70561,7 +70548,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/siding/red,
-/obj/effect/landmark/start/science_guard,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/checkpoint/science/research)
 "wAG" = (
@@ -71387,6 +71373,7 @@
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 1
 	},
+/obj/effect/landmark/start/security_medic,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/medical)
 "wOk" = (
@@ -74363,11 +74350,14 @@
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/captain)
 "xMM" = (
-/obj/structure/bodycontainer/morgue,
 /obj/effect/turf_decal/delivery,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
+	dir = 4
+	},
+/obj/structure/table/glass,
+/obj/machinery/computer/records/medical/laptop{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -96427,7 +96417,7 @@ jJs
 dGp
 spw
 ijl
-lVi
+abj
 lzg
 fNw
 aka

@@ -7315,6 +7315,7 @@
 	network = list("ss13","prison")
 	},
 /obj/machinery/airalarm/directional/east,
+/obj/machinery/jukebox,
 /turf/open/floor/iron,
 /area/station/security/prison)
 "bLR" = (
@@ -7889,11 +7890,13 @@
 /obj/effect/turf_decal/trimline/neutral/mid_joiner{
 	dir = 4
 	},
-/obj/structure/bed/medical/anchored{
-	dir = 4
-	},
-/obj/item/bedsheet/medical,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/structure/table/optable,
+/obj/machinery/defibrillator_mount/directional/north,
+/obj/machinery/light/cold/directional/north,
+/obj/item/storage/backpack/duffelbag/sec/surgery{
+	pixel_y = 5
+	},
 /turf/open/floor/iron/dark,
 /area/station/security/medical)
 "bSZ" = (
@@ -20616,15 +20619,8 @@
 /turf/open/floor/iron/dark,
 /area/station/service/library/printer)
 "fcE" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Infirmary"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/security/general,
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/machinery/door/firedoor,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/security/medical)
 "fcH" = (
@@ -49091,6 +49087,7 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
 	},
+/obj/effect/landmark/start/security_medic,
 /turf/open/floor/iron/white/side,
 /area/station/security/medical)
 "mjz" = (
@@ -50898,6 +50895,11 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/research)
+"mHs" = (
+/obj/effect/turf_decal/trimline/dark_red/filled/warning,
+/obj/structure/chair/office,
+/turf/open/floor/iron/dark,
+/area/station/ai_monitored/security/armory)
 "mHw" = (
 /obj/machinery/navbeacon{
 	codes_txt = "patrol;next_patrol=hall5";
@@ -59332,7 +59334,6 @@
 /turf/open/floor/iron,
 /area/station/maintenance/department/chapel)
 "oTg" = (
-/obj/structure/sink/directional/west,
 /obj/machinery/light_switch/directional/east,
 /obj/machinery/firealarm/directional/east{
 	pixel_x = 38
@@ -59340,6 +59341,8 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
 	},
+/obj/machinery/light/cold/directional/east,
+/obj/structure/closet/secure_closet/security_medic,
 /turf/open/floor/iron/white/side{
 	dir = 8
 	},
@@ -59583,8 +59586,8 @@
 /obj/effect/turf_decal/trimline/neutral/mid_joiner{
 	dir = 8
 	},
-/obj/structure/bed/medical/emergency,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/machinery/computer/operating,
 /turf/open/floor/iron/dark,
 /area/station/security/medical)
 "oWA" = (
@@ -66214,18 +66217,18 @@
 /area/station/security/checkpoint/escape)
 "qBw" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
-/obj/machinery/door/window/brigdoor/right/directional/north{
-	name = "Armoury Desk";
-	req_access = list("armory")
-	},
 /obj/machinery/door/window/right/directional/south{
 	name = "Armoury Desk";
 	req_access = list("security")
 	},
-/obj/item/restraints/handcuffs,
+/obj/machinery/door/window/brigdoor/right/directional/north{
+	name = "Armoury Desk";
+	req_access = list("armory")
+	},
 /obj/item/assembly/flash/handheld,
-/turf/open/floor/iron/dark,
+/obj/item/restraints/handcuffs,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron,
 /area/station/ai_monitored/security/armory)
 "qBF" = (
 /obj/machinery/status_display/ai/directional/east,
@@ -70819,6 +70822,7 @@
 /area/station/medical/virology)
 "rJR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/closet/secure_closet/security_medic,
 /turf/open/floor/iron/white,
 /area/station/security/medical)
 "rKb" = (
@@ -88210,6 +88214,8 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 5
 	},
+/obj/structure/closet/crate/freezer/blood,
+/obj/effect/turf_decal/delivery/red,
 /turf/open/floor/iron,
 /area/station/security/lockers)
 "vYG" = (
@@ -89926,7 +89932,6 @@
 /area/station/medical/medbay)
 "wtB" = (
 /obj/effect/turf_decal/trimline/dark_red/filled/line,
-/obj/structure/chair/office,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "wtH" = (
@@ -93719,10 +93724,11 @@
 /area/station/security/evidence)
 "xtf" = (
 /obj/machinery/airalarm/directional/east,
-/obj/machinery/light/cold/directional/east,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 4
 	},
+/obj/effect/landmark/start/security_medic,
+/obj/structure/sink/directional/west,
 /turf/open/floor/iron/white/corner{
 	dir = 8
 	},
@@ -150937,8 +150943,8 @@ vyj
 snW
 auW
 gFF
-pIX
-cdr
+mHs
+qBw
 mdz
 qpz
 adM
@@ -151195,7 +151201,7 @@ tVw
 nmT
 dwU
 wtB
-qBw
+bLs
 vYw
 lPH
 vCQ
