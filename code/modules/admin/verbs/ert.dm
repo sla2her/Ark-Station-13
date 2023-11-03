@@ -22,7 +22,7 @@
 	.["mainsettings"]["random_names"]["value"] = newtemplate.random_names ? "Yes" : "No"
 	.["mainsettings"]["spawn_admin"]["value"] = newtemplate.spawn_admin ? "Yes" : "No"
 	.["mainsettings"]["use_custom_shuttle"]["value"] = newtemplate.use_custom_shuttle ? "Yes" : "No"
-
+	.["mainsettings"]["ert_sound"]["value"] = newtemplate.ert_sound // Ark Station 13 Edit
 
 /datum/admins/proc/equipAntagOnDummy(mob/living/carbon/human/dummy/mannequin, datum/antagonist/antag)
 	for(var/I in mannequin.get_equipped_items(include_pockets = TRUE))
@@ -91,6 +91,7 @@
 		"spawn_admin" = list("desc" = "Spawn yourself as briefing officer", "type" = "boolean", "value" = "[(ertemplate.spawn_admin ? "Yes" : "No")]"),
 		"notify_players" = list("desc" = "Notify players that you have sent an ERT", "type" = "boolean", "value" = "[(ertemplate.notify_players ? "Yes" : "No")]"), //SKYRAT EDIT ADDITION
 		"use_custom_shuttle" = list("desc" = "Use the ERT's custom shuttle (if it has one)", "type" = "boolean", "value" = "[(ertemplate.use_custom_shuttle ? "Yes" : "No")]"),
+		"ert_sound" = list("desc" = "ERT Sending Sound", "type" = "string", "value" = ertemplate.ert_sound), // Ark Station 13 Edit
 		)
 	)
 
@@ -119,6 +120,7 @@
 		ertemplate.spawn_admin = prefs["spawn_admin"]["value"] == "Yes"
 		ertemplate.notify_players = prefs["notify_players"]["value"] == "Yes" //SKYRAT EDIT ADDITION
 		ertemplate.use_custom_shuttle = prefs["use_custom_shuttle"]["value"] == "Yes"
+		ertemplate.ert_sound = prefs["ert_sound"]["value"] // Ark Station 13 Edit
 
 		var/list/spawnpoints = GLOB.emergencyresponseteamspawn
 		var/index = 0
@@ -255,7 +257,7 @@
 			message_admins("[ertemplate.polldesc] has spawned with the mission: [ertemplate.mission]")
 			//SKYRAT EDIT ADDITION BEGIN
 			if(ertemplate.notify_players)
-				priority_announce("Central command has responded to your request for a CODE [uppertext(ertemplate.code)] Emergency Response Team and have confirmed one to be enroute.", "ERT Request", ANNOUNCER_ERTYES)
+				priority_announce("Central command has responded to your request for a CODE [uppertext(ertemplate.code)] Emergency Response Team and have confirmed one to be enroute.", "ERT Request",  ertemplate.ert_sound) // Ark Station 13 Edit
 			//SKYRAT EDIT END
 		//Open the Armory doors
 		if(ertemplate.opendoors)

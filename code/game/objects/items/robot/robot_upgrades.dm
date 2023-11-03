@@ -950,7 +950,7 @@
 
 	if(borgo.mind)
 		borgo.mind.grab_ghost()
-		playsound(loc, 'sound/voice/liveagain.ogg', 75, TRUE)
+		playsound(loc, 'modular_arkstation/modules/sounds-renewal/sound/voice/liveagain.ogg', 75, TRUE) // Ark Station 13 Edit
 	else
 		playsound(loc, 'sound/machines/ping.ogg', 75, TRUE)
 

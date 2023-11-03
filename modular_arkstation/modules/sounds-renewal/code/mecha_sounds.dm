@@ -1,10 +1,20 @@
-/// Добавляем мехам и модсьютам возможность устанавливать кастомные звуки при посадке и активации приближения. Заменяем некоторые звуки на общие - за неимением озвучки.
-
+/// Добавляем мехам возможность устанавливать кастомные звуки при посадке и активации приближения. Заменяем некоторые звуки на общие - за неимением озвучки.
 
 /obj/vehicle/sealed/mecha
 	var/nominal_sound = 'modular_arkstation/modules/sounds-renewal/sound/mecha/nominal.ogg'
 	var/imag_enh_sound = 'modular_arkstation/modules/sounds-renewal/sound/mecha/imag_enh.ogg'
 
+/obj/vehicle/sealed/mecha/marauder/mauler
+	nominal_sound = 'modular_arkstation/modules/sounds-renewal/sound/mecha/nominal_syndicate.ogg'
+	imag_enh_sound = 'modular_arkstation/modules/sounds-renewal/sound/mecha/imag_enh_syndicate.ogg'
+
+/obj/vehicle/sealed/mecha/gygax/dark
+	nominal_sound = 'modular_arkstation/modules/sounds-renewal/sound/mecha/nominal_syndicate.ogg'
+	imag_enh_sound = 'modular_arkstation/modules/sounds-renewal/sound/mecha/imag_enh_syndicate.ogg'
+
+/obj/vehicle/sealed/mecha/savannah_ivanov
+	nominal_sound = 'modular_arkstation/modules/sounds-renewal/sound/mecha/nominal_russian.ogg'
+	imag_enh_sound = 'modular_arkstation/modules/sounds-renewal/sound/mecha/imag_enh_russian.ogg'
 
 /obj/vehicle/sealed/mecha/moved_inside(mob/living/newoccupant)
 	if(!(newoccupant?.client))
@@ -47,6 +57,15 @@
 	user.log_message("has put the MMI/posibrain of [key_name(brain_mob)] into [src]", LOG_GAME)
 	brain_mob.log_message("was put into [src] by [key_name(user)]", LOG_GAME, log_globally = FALSE)
 	return TRUE
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/obj/item/mecha_parts/mecha_equipment
+	destroy_sound = 'sound/machines/engine_alert1.ogg'
+
+/obj/item/mecha_parts/mecha_equipment/weapon
+	destroy_sound = 'sound/machines/engine_alert1.ogg'
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
