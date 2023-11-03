@@ -16,34 +16,26 @@ endmap
 # Production-level maps.
 
 map birdshot
-	#default
-	maxplayers 66
 	votable
 endmap
 
 map deltastation
-	minplayers 50
 	votable
 endmap
 
 map icebox
-	minplayers 25
 	votable
 endmap
 
 map metastation
-	minplayers 25
-	#voteweight 0.5
 	votable
 endmap
 
 map northstar
-	minplayers 50
 	votable
 endmap
 
 map tramstation
-	minplayers 35
 	votable
 endmap
 
@@ -61,18 +53,15 @@ endmap
 ##SKYRAT MAPS##
 
 map voidraptor
-	maxplayers 100
 	votable
 endmap
 
 map blueshift
-	minplayers 70
 	votable
 endmap
 
 ##ARK STATION MAPS##
 
 map kilostation
-	maxplayers 100
 	votable
 endmap
