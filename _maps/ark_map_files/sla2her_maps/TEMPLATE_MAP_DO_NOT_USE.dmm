@@ -602,6 +602,10 @@
 /obj/structure/drain,
 /turf/open/floor/iron/freezer,
 /area/space)
+"qO" = (
+/obj/structure/window/reinforced/tinted/frosted,
+/turf/open/floor/iron/dark/smooth_large,
+/area/space)
 "qP" = (
 /obj/machinery/door/airlock/corporate{
 	id_tag = "BSdoor";
@@ -781,6 +785,10 @@
 /obj/machinery/holopad,
 /turf/open/floor/iron/dark,
 /area/space)
+"vm" = (
+/obj/machinery/duct,
+/turf/open/floor/iron/dark/smooth_large,
+/area/space)
 "vn" = (
 /obj/structure/table,
 /obj/item/radio/intercom/directional/north,
@@ -892,6 +900,12 @@
 /obj/machinery/photocopier,
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/wood,
+/area/space)
+"xL" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "xZ" = (
 /obj/structure/table/reinforced,
@@ -1358,6 +1372,12 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/wood,
 /area/space)
+"Le" = (
+/obj/structure/reagent_dispensers/plumbed{
+	name = "dormitory water reservoir"
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/space)
 "LF" = (
 /obj/structure/table/reinforced,
 /obj/item/gun_maintenance_supplies{
@@ -1386,6 +1406,12 @@
 	},
 /obj/effect/turf_decal/delivery/red,
 /turf/open/floor/iron/dark,
+/area/space)
+"Mi" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "Mq" = (
 /obj/structure/table/wood,
@@ -1743,6 +1769,12 @@
 /area/space)
 "Vy" = (
 /turf/open/floor/carpet/executive,
+/area/space)
+"VG" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "VX" = (
 /obj/machinery/duct,
@@ -5240,11 +5272,11 @@ Nt
 JG
 JG
 Ho
+Le
 Ho
-Ho
-Ho
-Ho
-Ho
+vm
+vm
+vm
 Ho
 Ho
 Ho
@@ -5446,7 +5478,7 @@ JG
 Ho
 Ho
 Ho
-Ho
+qO
 Ho
 Ho
 Ho
@@ -5548,7 +5580,7 @@ JG
 Ho
 Ho
 Ho
-Ho
+Mi
 Ho
 Ho
 Ho
@@ -5650,7 +5682,7 @@ JG
 Ho
 Ho
 Ho
-Ho
+VG
 Ho
 Ho
 Ho
@@ -5752,7 +5784,7 @@ JG
 Ho
 Ho
 Ho
-Ho
+xL
 Ho
 Ho
 Ho
