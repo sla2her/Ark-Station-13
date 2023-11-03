@@ -96,7 +96,7 @@
 		title = "Classified [command_name()] Update"
 
 	if(announce)
-		priority_announce("A report has been downloaded and printed out at all communications consoles.", "Incoming Classified Message", SSstation.announcer.get_rand_report_sound(), has_important_message = TRUE)
+		priority_announce("A report has been downloaded and printed out at all communications consoles.", "Incoming Classified Message", 'modular_skyrat/modules/encounters/sounds/morse.ogg', has_important_message = TRUE) // Ark Station 13 Edit
 
 	var/datum/comm_message/message = new
 	message.title = title

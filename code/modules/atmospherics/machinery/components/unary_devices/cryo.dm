@@ -289,7 +289,7 @@
 			open_machine()
 		// Only need to tell them once
 		if(!patient_dead)
-			playsound(src, 'sound/machines/cryo_warning.ogg', volume)
+			playsound(src, 'modular_arkstation/modules/sounds-renewal/sound/machines/cryo_warning.ogg', volume) // Ark Station 13 Edit
 			patient_dead = TRUE
 			radio.talk_into(src, msg, radio_channel)
 		return
@@ -302,7 +302,7 @@
 			if(C.all_wounds)
 				if(!treating_wounds) // if we have wounds and haven't already alerted the doctors we're only dealing with the wounds, let them know
 					treating_wounds = TRUE
-					playsound(src, 'sound/machines/cryo_warning.ogg', volume) // Bug the doctors.
+					playsound(src, 'modular_arkstation/modules/sounds-renewal/sound/machines/cryo_warning.ogg', volume) // Ark Station 13 Edit
 					var/msg = "Patient vitals fully recovered, continuing automated wound treatment."
 					radio.talk_into(src, msg, radio_channel)
 			else // otherwise if we were only treating wounds and now we don't have any, turn off treating_wounds so we can boot 'em out
@@ -310,7 +310,7 @@
 
 		if(!treating_wounds)
 			set_on(FALSE)
-			playsound(src, 'sound/machines/cryo_warning.ogg', volume) // Bug the doctors.
+			playsound(src, 'modular_arkstation/modules/sounds-renewal/sound/machines/cryo_warning.ogg', volume) // Ark Station 13 Edit
 			var/msg = "Patient fully restored."
 			if(autoeject) // Eject if configured.
 				msg += " Auto ejecting patient now."

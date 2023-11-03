@@ -108,7 +108,7 @@
 
 	owner.teach_crafting_recipe(/datum/crafting_recipe/syndicate_uplink_beacon)
 
-	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/antag/tatoralert.ogg', 100, FALSE, pressure_affected = FALSE, use_reverb = FALSE)
+	owner.current.playsound_local(get_turf(owner.current), 'modular_arkstation/modules/sounds-renewal/sound/antag/tatoralert.ogg', 100, FALSE, pressure_affected = FALSE, use_reverb = FALSE) // Ark Station 13 Edit
 
 	return ..()
 
