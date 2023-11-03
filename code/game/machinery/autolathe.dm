@@ -211,7 +211,7 @@
 		//print item
 		icon_state = "autolathe_n"
 		var/time_per_item = is_stack ? 32 : ((32 * coeff * multiplier) ** 0.8) / multiplier
-		playsound(src, 'modular_arkstation/modules/sounds-renewal/sound/machines/prod.ogg', 50) // ArkStation 13 Edit
+		playsound(src, 'zov_modular_arkstation/modules/sounds-renewal/sound/machines/prod.ogg', 50) // ArkStation 13 Edit
 		make_items(custom_materials, multiplier, is_stack, usr, time_per_item)
 
 		return TRUE
@@ -346,7 +346,7 @@
 
 	icon_state = "autolathe"
 	busy = FALSE
-	playsound(src, 'modular_arkstation/modules/sounds-renewal/sound/machines/prod_done.ogg', 50) // ArkStation 13 Edit
+	playsound(src, 'zov_modular_arkstation/modules/sounds-renewal/sound/machines/prod_done.ogg', 50) // ArkStation 13 Edit
 
 /obj/machinery/autolathe/RefreshParts()
 	. = ..()

@@ -202,7 +202,7 @@
 /obj/machinery/rnd/production/proc/do_print(path, amount)
 	for(var/i in 1 to amount)
 		new path(get_turf(src))
-	playsound(src, 'modular_arkstation/modules/sounds-renewal/sound/machines/prod_done.ogg', 50) // ArkStation 13 Edit
+	playsound(src, 'zov_modular_arkstation/modules/sounds-renewal/sound/machines/prod_done.ogg', 50) // ArkStation 13 Edit
 	SSblackbox.record_feedback("nested tally", "item_printed", amount, list("[type]", "[path]"))
 
 /obj/machinery/rnd/production/proc/build_efficiency(path)
@@ -294,7 +294,7 @@
 	var/time_coefficient = design.lathe_time_factor * efficiency_coeff
 	addtimer(CALLBACK(src, PROC_REF(reset_busy)), (30 * time_coefficient * print_quantity) ** 0.5)
 	addtimer(CALLBACK(src, PROC_REF(do_print), design.build_path, print_quantity), (32 * time_coefficient * print_quantity) ** 0.8)
-	playsound(src, 'modular_arkstation/modules/sounds-renewal/sound/machines/prod.ogg', 50) // ArkStation 13 Edit
+	playsound(src, 'zov_modular_arkstation/modules/sounds-renewal/sound/machines/prod.ogg', 50) // ArkStation 13 Edit
 	update_static_data_for_all_viewers()
 
 	return TRUE
