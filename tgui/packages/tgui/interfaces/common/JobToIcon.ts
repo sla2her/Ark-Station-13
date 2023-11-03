@@ -62,6 +62,7 @@ const BASEICONS = {
   // Ark Station 13 Edits
   'Security Medic': 'heart-pulse',
   'Bridge Officer': 'book',
+  'Stowaway': 'toolbox',
 } as const;
 
 // SKYRAT EDIT START - ALT TITLES
@@ -277,6 +278,7 @@ const ALTTITLES = {
   'Ensign': BASEICONS['Bridge Officer'],
   'Bridge Advisor': BASEICONS['Bridge Officer'],
   'Bridge Intern': BASEICONS['Bridge Officer'],
+  'Interloper': BASEICONS['Stowaway'],
 } as const;
 
 // Combine the Base icons and ALt titles

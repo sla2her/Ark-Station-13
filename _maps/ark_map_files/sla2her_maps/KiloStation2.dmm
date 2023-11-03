@@ -7778,6 +7778,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/landmark/start/bridge_officer,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "cCe" = (
@@ -7817,6 +7818,12 @@
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron/dark/corner,
 /area/station/hallway/primary/central/fore)
+"cDs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/station/maintenance/aft)
 "cDH" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
@@ -8086,6 +8093,7 @@
 "cIg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/contraband/random/directional/east,
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "cIk" = (
@@ -29238,6 +29246,13 @@
 "jlw" = (
 /turf/closed/wall,
 /area/station/service/bar)
+"jlP" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/station/maintenance/port/greater)
 "jlY" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -40380,6 +40395,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/grimy,
 /area/station/security/prison)
+"mTV" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/station/maintenance/port/greater)
 "mUp" = (
 /obj/item/radio/intercom/directional/north,
 /obj/effect/turf_decal/stripes/line{
@@ -46365,6 +46388,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/landmark/start/bridge_officer,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "pac" = (
@@ -88405,7 +88429,7 @@ gLH
 gLH
 gLH
 tsf
-yhU
+mTV
 gLH
 mtV
 hBJ
@@ -90711,7 +90735,7 @@ aeu
 aeu
 ycx
 sfw
-gLH
+jlP
 mtV
 xhY
 lzF
@@ -105413,7 +105437,7 @@ cfL
 gmG
 biP
 gmG
-pRP
+cDs
 vpX
 mjh
 hDV

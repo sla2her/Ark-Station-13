@@ -13269,6 +13269,12 @@
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/iron/white,
 /area/station/medical/cryo)
+"eRj" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/landmark/start/bridge_officer,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "eRn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/closed/wall/r_wall,
@@ -14933,6 +14939,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"fwV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/station/maintenance/port/fore)
 "fwZ" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/computer/piratepad_control/civilian{
@@ -33227,6 +33238,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/lesser)
 "lYL" = (
@@ -37418,6 +37430,13 @@
 /obj/effect/mapping_helpers/airlock/access/all/engineering/external,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"ntK" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/fore)
 "ntM" = (
 /obj/machinery/power/solar_control{
 	id = "foreport";
@@ -40653,6 +40672,14 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
+"oCT" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/landmark/start/bridge_officer,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "oCX" = (
 /obj/structure/sign/warning/biohazard,
 /turf/closed/wall/r_wall,
@@ -43460,6 +43487,12 @@
 	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
+"pDn" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/station/maintenance/port)
 "pDs" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -87232,7 +87265,7 @@ usi
 sNM
 uOH
 uOH
-uOH
+pDn
 rpE
 ayH
 vZE
@@ -87756,7 +87789,7 @@ sdC
 jnA
 rcF
 pOa
-uOH
+pDn
 ubp
 tTF
 jUb
@@ -90012,7 +90045,7 @@ aaa
 nmg
 hwo
 hcx
-knQ
+fwV
 mkd
 udC
 mZy
@@ -95187,7 +95220,7 @@ dsQ
 hfa
 dUj
 gGy
-hmq
+eRj
 fUj
 mES
 duI
@@ -96729,7 +96762,7 @@ dsQ
 qkA
 dUj
 qVc
-wNh
+oCT
 veO
 iAj
 duI
@@ -106988,7 +107021,7 @@ psZ
 psZ
 bSY
 kbo
-kbo
+ntK
 eqt
 psZ
 psZ

@@ -88,4 +88,5 @@ Cyborg=3,3
 # Misc.
 
 Assistant=-1,-1
-Prisoner=12,12
+Prisoner=5,5
+Stowaway=2,2

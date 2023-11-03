@@ -9326,6 +9326,7 @@
 "clG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/iron,
 /area/station/maintenance/department/security)
 "clH" = (
@@ -24419,7 +24420,7 @@
 /obj/effect/spawner/random/structure/table_fancy,
 /obj/item/reagent_containers/cup/glass/bottle/beer{
 	desc = "Whatever it is, it reeks of foul, putrid froth.";
-	list_reagents = list(/datum/reagent/consumable/ethanol/bacchus_blessing = 15);
+	list_reagents = list(/datum/reagent/consumable/ethanol/bacchus_blessing=15);
 	name = "Delta-Down";
 	pixel_x = 5;
 	pixel_y = 5
@@ -37713,6 +37714,12 @@
 /obj/item/clothing/suit/toggle/labcoat,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+"joL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/iron,
+/area/station/maintenance/fore)
 "joP" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -37918,6 +37925,11 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/security/execution/transfer)
+"jrD" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/landmark/start/bridge_officer,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "jrE" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/bot,
@@ -54000,6 +54012,12 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
+"nyx" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/landmark/start/bridge_officer,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "nyC" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Library Access"
@@ -55812,6 +55830,7 @@
 "nXj" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "nXn" = (
@@ -58221,6 +58240,17 @@
 "oDE" = (
 /turf/closed/wall,
 /area/station/medical/cryo)
+"oDQ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/iron,
+/area/station/maintenance/port)
 "oDR" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -125268,7 +125298,7 @@ vcB
 vcB
 vcB
 vcB
-jto
+oDQ
 rrU
 vcB
 uNQ
@@ -137054,8 +137084,8 @@ aaa
 wyH
 wkT
 qkm
-cQv
-drj
+jrD
+nyx
 oEf
 ccq
 dXN
@@ -137793,7 +137823,7 @@ peb
 bHj
 nma
 kBN
-bvj
+joL
 nzx
 jdL
 pMT

@@ -2998,7 +2998,7 @@
 	layer = 3.1;
 	linked_elevator_id = "tram_xeno_lift";
 	pixel_y = 2;
-	preset_destination_names = list("2" = "Lower                                                                Deck", "3" = "Upper                                                                Deck")
+	preset_destination_names = list("2"="Lower                                                                Deck","3"="Upper                                                                Deck")
 	},
 /turf/closed/wall,
 /area/station/science/xenobiology)
@@ -6496,6 +6496,9 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/station/security/checkpoint/science)
+"bdz" = (
+/turf/open/space/basic,
+/area/station/hallway/secondary/service)
 "bdT" = (
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 1
@@ -7763,7 +7766,7 @@
 /obj/effect/turf_decal/trimline/dark_red/warning,
 /obj/machinery/elevator_control_panel/directional/south{
 	linked_elevator_id = "tram_dorm_lift";
-	preset_destination_names = list("2" = "Lower                                                                Deck", "3" = "Upper                                                                Deck")
+	preset_destination_names = list("2"="Lower                                                                Deck","3"="Upper                                                                Deck")
 	},
 /turf/open/floor/plating/elevatorshaft,
 /area/station/maintenance/tram/left)
@@ -10636,7 +10639,7 @@
 	},
 /obj/item/reagent_containers/cup/bottle{
 	desc = "A small bottle of Barber's Aid.";
-	list_reagents = list(/datum/reagent/barbers_aid = 30);
+	list_reagents = list(/datum/reagent/barbers_aid=30);
 	name = "Barber's Aid bottle";
 	pixel_x = 10;
 	pixel_y = 3
@@ -20663,6 +20666,10 @@
 "gkD" = (
 /turf/closed/wall/r_wall,
 /area/station/science/ordnance/burnchamber)
+"gkE" = (
+/obj/effect/landmark/start/bridge_officer,
+/turf/open/floor/iron,
+/area/station/commons/dorms)
 "gkF" = (
 /obj/machinery/door/window/left/directional/north{
 	name = "The Monkey Pit";
@@ -23719,7 +23726,7 @@
 	},
 /obj/item/reagent_containers/cup/bottle{
 	desc = "A small bottle of Barber's Aid.";
-	list_reagents = list(/datum/reagent/barbers_aid = 30);
+	list_reagents = list(/datum/reagent/barbers_aid=30);
 	name = "Barber's Aid bottle";
 	pixel_x = -2;
 	pixel_y = 10
@@ -25360,7 +25367,7 @@
 	},
 /obj/machinery/elevator_control_panel/directional/north{
 	linked_elevator_id = "tram_upper_center_lift";
-	preset_destination_names = list("2" = "Lower                                Deck", "3" = "Upper                                Deck")
+	preset_destination_names = list("2"="Lower                                Deck","3"="Upper                                Deck")
 	},
 /obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 1
@@ -26269,7 +26276,7 @@
 /obj/structure/transport/linear/public,
 /obj/machinery/elevator_control_panel/directional/west{
 	linked_elevator_id = "tram_cargo_lift";
-	preset_destination_names = list("2" = "Lower                                Deck", "3" = "Upper                                Deck");
+	preset_destination_names = list("2"="Lower                                Deck","3"="Upper                                Deck");
 	req_access = list("mining")
 	},
 /obj/effect/abstract/elevator_music_zone{
@@ -29523,7 +29530,7 @@
 /obj/structure/transport/linear/public,
 /obj/machinery/elevator_control_panel/directional/west{
 	linked_elevator_id = "tram_perma_lift";
-	preset_destination_names = list("2" = "Lower                                Deck", "3" = "Upper                                Deck")
+	preset_destination_names = list("2"="Lower                                Deck","3"="Upper                                Deck")
 	},
 /obj/effect/turf_decal/caution/stand_clear/red{
 	dir = 1
@@ -31431,7 +31438,7 @@
 /obj/structure/transport/linear/public,
 /obj/machinery/elevator_control_panel/directional/east{
 	linked_elevator_id = "tram_lower_center_lift";
-	preset_destination_names = list("2" = "Lower                                Deck", "3" = "Upper                                Deck")
+	preset_destination_names = list("2"="Lower                                Deck","3"="Upper                                Deck")
 	},
 /turf/open/floor/plating/elevatorshaft,
 /area/station/maintenance/tram/mid)
@@ -34293,6 +34300,13 @@
 "kZh" = (
 /turf/open/floor/eighties/red,
 /area/station/commons/fitness/recreation/entertainment)
+"kZk" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/iron,
+/area/station/commons/dorms)
 "kZt" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -35206,7 +35220,7 @@
 "lpo" = (
 /obj/effect/turf_decal/tile/neutral/tram,
 /obj/effect/spawner/random{
-	loot = list(/obj/effect/decal/cleanable/oil/slippery = 10, /obj/effect/decal/cleanable/oil = 90);
+	loot = list(/obj/effect/decal/cleanable/oil/slippery=10,/obj/effect/decal/cleanable/oil=90);
 	name = "funny slipper :)"
 	},
 /turf/open/floor/tram/plate,
@@ -42119,6 +42133,13 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/office)
+"nJS" = (
+/obj/effect/turf_decal/trimline/neutral/filled/line{
+	dir = 4
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/service)
 "nKb" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 10
@@ -43890,6 +43911,10 @@
 	},
 /turf/open/space/openspace,
 /area/station/solars/port)
+"opn" = (
+/obj/effect/landmark/start/bridge_officer,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/service)
 "opT" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 4
@@ -56615,6 +56640,16 @@
 	},
 /turf/open/floor/carpet,
 /area/station/command/heads_quarters/captain)
+"sSA" = (
+/obj/effect/turf_decal/trimline/neutral/filled/corner{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/service)
 "sSF" = (
 /obj/structure/dresser,
 /obj/machinery/light/directional/south,
@@ -60019,7 +60054,7 @@
 "tZM" = (
 /obj/effect/turf_decal/tile/neutral/tram,
 /obj/effect/spawner/random{
-	loot = list(/obj/effect/decal/cleanable/oil/slippery = 10, /obj/effect/decal/cleanable/oil = 90);
+	loot = list(/obj/effect/decal/cleanable/oil/slippery=10,/obj/effect/decal/cleanable/oil=90);
 	name = "funny slipper :)"
 	},
 /turf/open/floor/tram/plate,
@@ -62225,7 +62260,7 @@
 	desc = "A small control panel used to move the kitchen dumbwaiter up and down.";
 	linked_elevator_id = "dumbwaiter_lift";
 	name = "Dumbwaiter control Panel";
-	preset_destination_names = list("2" = "Hydroponics", "3" = "Kitchen")
+	preset_destination_names = list("2"="Hydroponics","3"="Kitchen")
 	},
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal/bin,
@@ -63371,7 +63406,7 @@
 /area/station/security/checkpoint/medical)
 "vbt" = (
 /obj/machinery/computer/atmos_control/oxygen_tank{
-	atmos_chambers = list("o2ordance" = "Oxygen                                                                Supply")
+	atmos_chambers = list("o2ordance"="Oxygen                                                                Supply")
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/airalarm/directional/north,
@@ -63459,7 +63494,7 @@
 	desc = "A small control panel used to move the kitchen dumbwaiter up and down.";
 	linked_elevator_id = "dumbwaiter_lift";
 	name = "Dumbwaiter control Panel";
-	preset_destination_names = list("2" = "Hydroponics", "3" = "Kitchen")
+	preset_destination_names = list("2"="Hydroponics","3"="Kitchen")
 	},
 /obj/effect/turf_decal/tile/green/fourcorners,
 /turf/open/floor/iron/dark,
@@ -66940,6 +66975,13 @@
 "wpK" = (
 /turf/closed/wall,
 /area/station/science/lobby)
+"wpL" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/landmark/start/bridge_officer,
+/turf/open/floor/iron,
+/area/station/commons/dorms)
 "wpM" = (
 /obj/machinery/disposal/bin,
 /obj/machinery/airalarm/directional/east,
@@ -70080,7 +70122,7 @@
 	layer = 3.1;
 	linked_elevator_id = "tram_xeno_lift";
 	pixel_y = 2;
-	preset_destination_names = list("2" = "Lower                                                                Deck", "3" = "Upper                                                                Deck")
+	preset_destination_names = list("2"="Lower                                                                Deck","3"="Upper                                                                Deck")
 	},
 /turf/closed/wall/r_wall,
 /area/station/science/xenobiology)
@@ -70123,7 +70165,7 @@
 /obj/structure/transport/linear/public,
 /obj/machinery/elevator_control_panel/directional/west{
 	linked_elevator_id = "tram_sci_lift";
-	preset_destination_names = list("2" = "Lower                                Deck", "3" = "Upper                                Deck")
+	preset_destination_names = list("2"="Lower                                Deck","3"="Upper                                Deck")
 	},
 /obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 9
@@ -88627,7 +88669,7 @@ ncF
 yaf
 qMQ
 wbb
-wbb
+gkE
 mZt
 gHx
 mZt
@@ -88638,7 +88680,7 @@ vtb
 gaY
 mZt
 mZt
-mZt
+wpL
 mZt
 mZt
 gUO
@@ -92236,7 +92278,7 @@ djG
 vmB
 vmB
 vmB
-vmB
+kZk
 vmB
 pwe
 uLO
@@ -102226,7 +102268,7 @@ heI
 sbx
 sbx
 jra
-ovL
+opn
 hoB
 ovL
 qjT
@@ -102738,7 +102780,7 @@ axe
 xpb
 hNe
 xpb
-xpb
+nJS
 xpb
 xpb
 sKN
@@ -104275,7 +104317,7 @@ aeN
 snQ
 iRL
 dNp
-ptn
+sSA
 xyu
 cWZ
 hCA
@@ -105568,7 +105610,7 @@ siZ
 siZ
 siZ
 nlD
-nDX
+bdz
 nDX
 sxn
 tyZ
@@ -105823,7 +105865,7 @@ afU
 lWj
 xpb
 xpb
-xpb
+nJS
 kVP
 xpb
 jer

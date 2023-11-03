@@ -41,6 +41,7 @@
 //No department
 #define JOB_ASSISTANT "Assistant"
 #define JOB_PRISONER "Prisoner"
+#define JOB_STOWAWAY "Stowaway" // Ark Station 13 Edit
 //Command
 #define JOB_CAPTAIN "Captain"
 #define JOB_HEAD_OF_PERSONNEL "Head of Personnel"
@@ -195,6 +196,7 @@
 //#define JOB_DISPLAY_ORDER_ENGINEER_GUARD 45
 //#define JOB_DISPLAY_ORDER_CUSTOMS_AGENT 46
 #define JOB_DISPLAY_ORDER_EXP_CORPS 45 //SKYRAT EDIT ADDITON
+#define JOB_DISPLAY_ORDER_STOWAWAY 46 // Ark Station 13 Edit
 
 #define DEPARTMENT_UNASSIGNED "No Department"
 
