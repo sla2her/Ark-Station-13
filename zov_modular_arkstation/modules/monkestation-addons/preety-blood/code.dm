@@ -59,7 +59,7 @@
 	if(temp_blood_DNA)
 		B.add_blood_DNA(temp_blood_DNA)
 
-	if(B.count > 5)
+	if(B.count > 2)
 		qdel(B)
 		var/list/blood_large = list(get_blood_id() = 20)
 		T.add_liquid_list(blood_large, FALSE, 300)
