@@ -32,7 +32,7 @@ $scrollbar-color-multiplier: 1;
     '../components/Button.scss',
     $with: (
       'color-default': #e8e4c9,
-      'color-disabled': #707070,
+      'color-disabled': #363636,
       'color-selected': #007c11,
       'color-caution': #be6209,
       'color-danger': #9d0808
@@ -87,7 +87,6 @@ $scrollbar-color-multiplier: 1;
       color: black;
     }
   }
-
   .TextArea {
     background-color: white;
     outline: base.em(2px) inset #c3c3c3;
