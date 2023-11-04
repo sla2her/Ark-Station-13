@@ -3,7 +3,7 @@
 	"description": "Напомни о своём существовании или подбодри кого-то.",
 	"usage": "other",
 	"category": "Miscellaneous",
-	"distance_allowed": 1,
+	"distance_allowed": 0,
 	"message": [
 		"%USER% хлопает %TARGET% по плечу."
 

@@ -3,7 +3,7 @@
 	"description": "Давай, покажи какой ты крутой.",
 	"usage": "other",
 	"category": "Miscellaneous",
-	"distance_allowed": 0,
+	"distance_allowed": 1,
 	"message": [
 		"%USER% жестко вытягивает руку перед собой и показывает средний палец %TARGET%!"
 	],
