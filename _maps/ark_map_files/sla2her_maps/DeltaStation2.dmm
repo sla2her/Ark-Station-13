@@ -5426,9 +5426,6 @@
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "bqC" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
 	},
@@ -30878,6 +30875,9 @@
 	light_color = "#FF1493"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 9
+	},
 /turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/station/commons/lounge)
 "hGz" = (
@@ -31185,9 +31185,6 @@
 /turf/open/floor/grass,
 /area/station/service/hydroponics/garden)
 "hKE" = (
-/obj/structure/railing{
-	dir = 5
-	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 5
 	},
@@ -39838,9 +39835,6 @@
 /turf/open/floor/iron/dark/telecomms,
 /area/station/science/xenobiology)
 "jQd" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
 	},
@@ -42476,6 +42470,12 @@
 "kyR" = (
 /obj/machinery/light/floor{
 	light_color = "#FF1493"
+	},
+/obj/structure/railing{
+	dir = 9
+	},
+/obj/structure/railing{
+	dir = 8
 	},
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/station/commons/lounge)
@@ -54526,9 +54526,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/morgue)
 "nFc" = (
-/obj/structure/railing{
-	dir = 9
-	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 9
 	},
@@ -77346,6 +77343,12 @@
 	light_color = "#FF1493"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 9
+	},
+/obj/structure/railing{
+	dir = 4
+	},
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/station/commons/lounge)
 "tqn" = (
@@ -88283,9 +88286,6 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "vZo" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
 	},
@@ -89330,6 +89330,15 @@
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron,
 /area/station/commons/dorms/laundry)
+"wmI" = (
+/obj/machinery/light/floor{
+	light_color = "#FF1493"
+	},
+/obj/structure/railing{
+	dir = 9
+	},
+/turf/open/floor/light/colour_cycle/dancefloor_b,
+/area/station/commons/lounge)
 "wmM" = (
 /obj/machinery/door/airlock{
 	name = "Jury"
@@ -128309,7 +128318,7 @@ llW
 oYs
 fJx
 rut
-kyR
+wmI
 vZo
 kDY
 uGf
