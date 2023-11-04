@@ -291,7 +291,7 @@ GLOBAL_LIST_INIT(loadout_pocket_items, generate_loadout_items(/datum/loadout_ite
 */
 
 /datum/loadout_item/pocket_items/donator
-	donator_only = TRUE
+	donator_only = FALSE
 
 /datum/loadout_item/pocket_items/donator/coin
 	name = "Iron Coin"

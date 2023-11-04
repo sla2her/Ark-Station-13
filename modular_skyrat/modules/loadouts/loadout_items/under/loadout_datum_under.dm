@@ -943,7 +943,7 @@ GLOBAL_LIST_INIT(loadout_miscunders, generate_loadout_items(/datum/loadout_item/
 
 /// DONATOR
 /datum/loadout_item/under/donator
-	donator_only = TRUE
+	donator_only = FALSE
 
 /datum/loadout_item/under/donator/captain_black
 	name  = "Captains Black Uniform"

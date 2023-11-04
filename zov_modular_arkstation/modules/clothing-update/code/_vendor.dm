@@ -7,7 +7,7 @@
 	// light_mask = "sec-light-mask"
 	// icon_state = "peace"
 	product_ads = "Beat perps in style!;The stains wash right out!;You have the right to be fashionable!;Now you can be the fashion police you always wanted to be!"
-	vend_reply = "Good luck, Peacekeeper!"
+	vend_reply = "Good luck, Officer!"
 	products = list(/obj/item/clothing/suit/hooded/wintercoat/security = 5,
 					/obj/item/clothing/suit/toggle/jacket/sec = 5,
 					/obj/item/clothing/suit/armor/vest/peacekeeper/brit = 5,
@@ -21,6 +21,8 @@
 					/obj/item/clothing/under/rank/security/officer/skirt = 10,
 					/obj/item/clothing/under/rank/security/peacekeeper = 10,
 					/obj/item/clothing/under/rank/security/skyrat/utility = 3,
+					/obj/item/clothing/under/rank/security/officer/metropolice = 3,
+					/obj/item/clothing/head/helmet/sec/metropolice = 3,
 					/obj/item/clothing/shoes/jackboots/sec = 10,
 					/obj/item/clothing/head/beret/sec = 5,
 					/obj/item/clothing/head/beret/sec/peacekeeper = 5,
@@ -28,9 +30,19 @@
 					/obj/item/clothing/head/hats/warden/police/patrol = 5,
 					/obj/item/clothing/head/costume/ushanka/sec = 10,
 					/obj/item/clothing/gloves/color/black = 10,
+					/obj/item/clothing/shoes/jackboots/black = 3,
+					/obj/item/clothing/shoes/jackboots/tall = 3,
+					/obj/item/clothing/mask/balaclava/breath/redscarf = 2,
 					)
 	premium = list( /obj/item/clothing/under/rank/security/officer/formal = 3,
 					/obj/item/clothing/suit/jacket/officer/blue = 3,
+					/obj/item/clothing/mask/gas/sechailer/syndicate = 2,
+					/obj/item/clothing/mask/balaclava = 2,
+					/obj/item/clothing/mask/gas/syndicate/ds = 2,
+					/obj/item/clothing/mask/gas/syndicate/ds/wide = 2,
+					/obj/item/clothing/mask/gas/syndicate/ds/mouth = 2,
+					/obj/item/clothing/mask/gas/syndicate/ds/coif = 2,
+					/obj/item/clothing/under/rank/security/officer/hecu = 3,
 					/obj/item/clothing/head/beret/sec/navyofficer = 3)
 	refill_canister = /obj/item/vending_refill/wardrobe/peacekeeper_wardrobe
 	payment_department = ACCOUNT_SEC
@@ -63,6 +75,84 @@
 		/obj/item/clothing/suit/armor/vest/alt/sec/metropolice = 3,
 	)
 	refill_canister = /obj/item/vending_refill/security_peacekeeper
+
+
+/// EngiDrobe
+
+/obj/machinery/vending/wardrobe/engi_wardrobe
+	name = "EngiDrobe"
+	desc = "A vending machine renowned for vending industrial grade clothing."
+	icon_state = "engidrobe"
+	product_ads = "Guaranteed to protect your feet from industrial accidents!;Afraid of radiation? Then wear yellow!"
+	vend_reply = "Thank you for using the EngiDrobe!"
+	products = list(
+		/obj/item/clothing/accessory/pocketprotector = 3,
+		/obj/item/clothing/head/utility/hardhat = 3,
+		/obj/item/clothing/head/utility/hardhat/welding = 3,
+		/obj/item/clothing/head/beret/engi = 3,
+		/obj/item/clothing/mask/bandana/striped/engineering = 3,
+		/obj/item/clothing/under/rank/engineering/engineer = 3,
+		/obj/item/clothing/under/rank/engineering/engineer/skirt = 3,
+		/obj/item/clothing/under/rank/engineering/engineer/hazard = 3,
+		/obj/item/clothing/suit/hazardvest = 3,
+		/obj/item/clothing/suit/hooded/wintercoat/engineering = 3,
+		/obj/item/clothing/shoes/workboots = 3,
+		/obj/item/storage/backpack/industrial = 3,
+		/obj/item/storage/backpack/satchel/eng = 3,
+		/obj/item/storage/backpack/duffelbag/engineering = 3,
+		/obj/item/storage/backpack/messenger/eng = 3,
+		/obj/item/clothing/shoes/workboots/toeless = 5,
+	)
+	refill_canister = /obj/item/vending_refill/wardrobe/engi_wardrobe
+	payment_department = ACCOUNT_ENG
+	light_color = COLOR_VIVID_YELLOW
+
+/// DeusVend
+
+/obj/machinery/vending/wardrobe/chap_wardrobe
+	name = "DeusVend"
+	desc = "God wills your purchase."
+	icon_state = "chapdrobe"
+	product_ads = "Are you being bothered by cultists or pesky revenants? Then come and dress like the holy man!;Clothes for men of the cloth!"
+	vend_reply = "Thank you for using the DeusVend!"
+	products = list(
+		/obj/item/choice_beacon/holy = 1,
+		/obj/item/clothing/accessory/pocketprotector/cosmetology = 1,
+		/obj/item/clothing/under/rank/civilian/chaplain = 1,
+		/obj/item/clothing/under/rank/civilian/chaplain/skirt = 2,
+		/obj/item/clothing/shoes/sneakers/black = 1,
+		/obj/item/clothing/suit/chaplainsuit/nun = 1,
+		/obj/item/clothing/head/chaplain/nun_hood = 1,
+		/obj/item/clothing/suit/chaplainsuit/holidaypriest = 1,
+		/obj/item/clothing/suit/hooded/chaplainsuit/monkhabit = 1,
+		/obj/item/clothing/head/chaplain/kippah = 3,
+		/obj/item/clothing/suit/chaplainsuit/whiterobe = 1,
+		/obj/item/clothing/head/chaplain/taqiyah/white = 1,
+		/obj/item/clothing/head/chaplain/taqiyah/red = 3,
+		/obj/item/clothing/suit/chaplainsuit/monkrobeeast = 1,
+		/obj/item/clothing/head/rasta = 1,
+		/obj/item/clothing/suit/chaplainsuit/shrinehand = 1,
+		/obj/item/storage/backpack/cultpack = 1,
+		/obj/item/storage/fancy/candle_box = 2,
+		/obj/item/radio/headset/headset_srv = 2,
+		/obj/item/clothing/suit/chaplainsuit/habit = 1,
+		/obj/item/clothing/head/chaplain/habit_veil = 1,
+		/obj/item/clothing/neck/cross = 8,
+		/obj/item/clothing/neck/bandagewraps = 3,
+	)
+	contraband = list(
+		/obj/item/toy/plush/ratplush = 1,
+		/obj/item/toy/plush/narplush = 1,
+	)
+	premium = list(
+		/obj/item/clothing/head/chaplain/bishopmitre = 1,
+		/obj/item/clothing/suit/chaplainsuit/bishoprobe = 1,
+		/obj/item/clothing/head/chaplain/medievaljewhat = 3,
+		/obj/item/clothing/head/chaplain/clownmitre = 1,
+		/obj/item/clothing/suit/chaplainsuit/clownpriest = 1,
+	)
+	refill_canister = /obj/item/vending_refill/wardrobe/chap_wardrobe
+	payment_department = ACCOUNT_SRV
 
 
 // Generic Clothes mate
@@ -255,18 +345,67 @@
 		),
 
 		list(
+			"name" = "Sky Clothes",
+			"icon" = "cloud-rain",
+			"products" = list(
+				/obj/item/clothing/under/syndicate/tacticool = 2,
+				/obj/item/clothing/under/syndicate/tacticool/skirt = 2,
+				/obj/item/clothing/under/syndicate/tacticool/black = 2,
+				/obj/item/clothing/suit/furcoat = 2,
+				/obj/item/clothing/mask/gas/nightlight = 2,
+				/obj/item/clothing/mask/gas/nightlight/fir22 = 1,
+				/obj/item/clothing/head/caligram_cap_tan = 3,
+				/obj/item/clothing/under/jumpsuit/caligram_fatigues_tan = 3,
+				/obj/item/clothing/suit/jacket/caligram_parka_tan = 3,
+				/obj/item/clothing/shoes/clown_shoes/britches = 1,
+				/obj/item/clothing/under/rank/civilian/clown/britches = 1,
+				/obj/item/clothing/mask/gas/britches = 1,
+				/obj/item/clothing/suit/jacket/brasspriest = 2,
+				/obj/item/clothing/suit/jacket/hydrogenrobes = 2,
+				/obj/item/clothing/under/wetsuit_norm = 2,
+				/obj/item/clothing/mask/animal/kindle = 2,
+				/obj/item/clothing/head/drake_skull = 1,
+				/obj/item/clothing/gloves/fingerless/blutigen_wraps = 2,
+				/obj/item/clothing/suit/blutigen_kimono = 2,
+				/obj/item/clothing/under/custom/blutigen_undergarment = 1,
+				/obj/item/clothing/head/avipilot = 2,
+				/obj/item/clothing/gloves/netra = 3,
+				/obj/item/clothing/shoes/jackboots/netra = 2,
+				/obj/item/clothing/suit/warm_sweater = 2,
+				/obj/item/clothing/suit/heart_sweater = 2,
+				/obj/item/clothing/suit/warm_coat = 2,
+			),
+		),
+
+		list(
 			"name" = "Ark Clothes",
 			"icon" = "cloud-moon",
 			"products" = list(
 				/obj/item/clothing/under/syndicate/tacticool = 2,
 				/obj/item/clothing/under/syndicate/tacticool/skirt = 2,
-				/obj/item/clothing/mask/balaclava = 1,
-				/obj/item/clothing/head/costume/ushanka = 1,
+				/obj/item/clothing/under/syndicate/tacticool/black = 2,
+				/obj/item/clothing/mask/balaclava = 3,
+				/obj/item/clothing/head/costume/ushanka = 5,
 				/obj/item/clothing/suit/jacket/letterman_syndie = 1,
-				/obj/item/clothing/under/costume/jabroni = 1,
-				/obj/item/clothing/under/costume/geisha = 1,
+				/obj/item/clothing/under/costume/jabroni = 3,
+				/obj/item/clothing/under/costume/geisha = 3,
+				/obj/item/clothing/suit/hooded/wintercoat/colourable = 1,
 				/obj/item/clothing/under/dress/baroness = 1,
 				/obj/item/clothing/under/dress/baroness/alt = 1,
+				/obj/item/clothing/shoes/jackboots/tall = 3,
+				/obj/item/clothing/shoes/jackboots/toeless = 3,
+				/obj/item/clothing/neck/bandagewraps = 5,
+				/obj/item/clothing/mask/gas/syndicate/ds = 1,
+				/obj/item/clothing/mask/gas/syndicate/ds/wide = 1,
+				/obj/item/clothing/mask/gas/syndicate/ds/mouth = 1,
+				/obj/item/clothing/mask/gas/syndicate/ds/coif = 1,
+				/obj/item/clothing/mask/balaclava/breath/redscarf = 2,
+				/obj/item/clothing/mask/balaclava/breath/redscarf/bluescarf	= 2,
+				/obj/item/clothing/mask/balaclava/breath/redscarf/greenscarf = 2,
+				/obj/item/clothing/mask/balaclava/breath/redscarf/purplescarf = 2,
+				/obj/item/clothing/mask/balaclava/breath/redscarf/yellowscarf = 2,
+				/obj/item/clothing/mask/gas/sechailer/syndicate	= 2,
+				/obj/item/clothing/mask/durak = 1,
 			),
 		),
 	)

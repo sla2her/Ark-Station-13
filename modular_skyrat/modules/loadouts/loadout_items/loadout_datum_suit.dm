@@ -685,7 +685,7 @@ GLOBAL_LIST_INIT(loadout_exosuits, generate_loadout_items(/datum/loadout_item/su
 */
 
 /datum/loadout_item/suit/donator
-	donator_only = TRUE
+	donator_only = FALSE
 
 /datum/loadout_item/suit/donator/furredjacket
 	name = "Furred Jacket"

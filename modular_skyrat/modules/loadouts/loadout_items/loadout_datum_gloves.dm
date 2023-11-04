@@ -111,7 +111,7 @@ GLOBAL_LIST_INIT(loadout_gloves, generate_loadout_items(/datum/loadout_item/glov
 */
 
 /datum/loadout_item/gloves/donator
-	donator_only = TRUE
+	donator_only = FALSE
 
 /datum/loadout_item/gloves/donator/military
 	name = "Military Gloves"

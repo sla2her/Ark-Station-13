@@ -248,7 +248,7 @@ GLOBAL_LIST_INIT(loadout_shoes, generate_loadout_items(/datum/loadout_item/shoes
 */
 
 /datum/loadout_item/shoes/donator
-	donator_only = TRUE
+	donator_only = FALSE
 
 /datum/loadout_item/shoes/donator/blackjackboots
 	name = "Black Jackboots"

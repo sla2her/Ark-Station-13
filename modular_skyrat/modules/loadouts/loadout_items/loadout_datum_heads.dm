@@ -636,7 +636,7 @@ GLOBAL_LIST_INIT(loadout_helmets, generate_loadout_items(/datum/loadout_item/hea
 */
 
 /datum/loadout_item/head/donator
-	donator_only = TRUE
+	donator_only = FALSE
 
 /*
 *	FLOWERS

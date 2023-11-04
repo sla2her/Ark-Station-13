@@ -7855,6 +7855,7 @@
 #include "zov_modular_arkstation\modules\blooper\bark_list.dm"
 #include "zov_modular_arkstation\modules\clothing-update\code\_loadout.dm"
 #include "zov_modular_arkstation\modules\clothing-update\code\_vendor.dm"
+#include "zov_modular_arkstation\modules\clothing-update\code\acs.dm"
 #include "zov_modular_arkstation\modules\clothing-update\code\head.dm"
 #include "zov_modular_arkstation\modules\clothing-update\code\mask.dm"
 #include "zov_modular_arkstation\modules\clothing-update\code\shoes.dm"
