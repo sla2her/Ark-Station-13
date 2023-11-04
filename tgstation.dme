@@ -7861,6 +7861,7 @@
 #include "zov_modular_arkstation\modules\clothing-update\code\shoes.dm"
 #include "zov_modular_arkstation\modules\clothing-update\code\suit.dm"
 #include "zov_modular_arkstation\modules\clothing-update\code\under.dm"
+#include "zov_modular_arkstation\modules\colormate\code\colormate.dm"
 #include "zov_modular_arkstation\modules\faction-inteq\code\inteq-911-replacement.dm"
 #include "zov_modular_arkstation\modules\faction-inteq\code\inteq-additional-items.dm"
 #include "zov_modular_arkstation\modules\faction-inteq\code\inteq-outfits.dm"

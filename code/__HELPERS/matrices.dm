@@ -234,6 +234,48 @@ round(cos_inv_third+sqrt3_sin, 0.001), round(cos_inv_third-sqrt3_sin, 0.001), ro
 				return color_matrix_identity()
 			CRASH(message)
 
+/proc/color_matrix_hsv(hue, saturation, value)
+	hue = clamp(360 - hue, 0, 360)
+
+	// This is very much a rough approximation of hueshifting. This carries some artifacting, such as negative values that simply shouldn't exist, but it does get the job done, and that's what matters.
+	var/cos_a = cos(hue) // These have to be inverted from 360, otherwise the hue's inverted
+	var/sin_a = sin(hue)
+	var/rot_x = cos_a + (1 - cos_a) / 3
+	var/rot_y = (1 - cos_a) / 3 - 0.5774 * sin_a // 0.5774 is sqrt(1/3)
+	var/rot_z = (1 - cos_a) / 3 + 0.5774 * sin_a
+
+	return list(
+		round((((1-saturation) * LUMA_R) + (rot_x * saturation)) * value, 0.01), round((((1-saturation) * LUMA_R) + (rot_y * saturation)) * value, 0.01), round((((1-saturation) * LUMA_R) + (rot_z * saturation)) * value, 0.01),
+		round((((1-saturation) * LUMA_G) + (rot_z * saturation)) * value, 0.01), round((((1-saturation) * LUMA_G) + (rot_x * saturation)) * value, 0.01), round((((1-saturation) * LUMA_G) + (rot_y * saturation)) * value, 0.01),
+		round((((1-saturation) * LUMA_B) + (rot_y * saturation)) * value, 0.01), round((((1-saturation) * LUMA_B) + (rot_z * saturation)) * value, 0.01), round((((1-saturation) * LUMA_B) + (rot_x * saturation)) * value, 0.01),
+		0, 0, 0
+	)
+
+/proc/RGBMatrixTransform(list/color, list/cm)
+	ASSERT(cm.len >= 9)
+	if(cm.len < 12)		// fill in the rest
+		for(var/i in 1 to (12 - cm.len))
+			cm += 0
+	if(!islist(color))
+		color = ReadRGB(color)
+	color[1] = color[1] * cm[1] + color[2] * cm[2] + color[3] * cm[3] + cm[10] * 255
+	color[2] = color[1] * cm[4] + color[2] * cm[5] + color[3] * cm[6] + cm[11] * 255
+	color[3] = color[1] * cm[7] + color[2] * cm[8] + color[3] * cm[9] + cm[12] * 255
+	return rgb(color[1], color[2], color[3])
+
+/**
+ * Assembles a color matrix, defaulting to identity
+ */
+/proc/rgb_construct_color_matrix(rr = 1, rg, rb, gr, gg = 1, gb, br, bg, bb = 1, cr, cg, cb)
+	return list(rr, rg, rb, gr, gg, gb, br, bg, bb, cr, cg, cb)
+
+/**
+ * Assembles a color matrix, defaulting to identity
+ */
+/proc/rgba_construct_color_matrix(rr = 1, rg, rb, ra, gr, gg = 1, gb, ga, br, bg, bb = 1, ba, ar, ag, ab, aa = 1, cr, cg, cb, ca)
+	return list(rr, rg, rb, ra, gr, gg, gb, ga, br, bg, bb, ba, ar, ag, ab, aa, cr, cg, cb, ca)
+
+
 #undef LUMA_R
 #undef LUMA_G
 #undef LUMA_B
