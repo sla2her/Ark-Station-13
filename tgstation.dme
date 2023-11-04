@@ -7904,4 +7904,5 @@
 #include "zov_modular_arkstation\modules\sounds-renewal\code\generic_sounds.dm"
 #include "zov_modular_arkstation\modules\sounds-renewal\code\mecha_sounds.dm"
 #include "zov_modular_arkstation\modules\sounds-renewal\code\mod_sounds.dm"
+#include "zov_modular_arkstation\penis_modulars\code\vehicles.dm"
 // END_INCLUDE
