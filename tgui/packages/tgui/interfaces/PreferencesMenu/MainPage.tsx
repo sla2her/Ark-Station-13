@@ -1,6 +1,6 @@
 import { classes } from 'common/react';
 import { sendAct, useBackend, useLocalState } from '../../backend';
-import { Box, Button, Flex, LabeledList, Popper, Stack, TrackOutsideClicks, FitText, Input, Icon } from '../../components';
+import { Box, Button, Flex, LabeledList, Popper, Stack, TrackOutsideClicks, FitText, Input, Icon, Dropdown } from '../../components';
 import { createSetPreference, PreferencesMenuData, RandomSetting } from './data';
 import { CharacterPreview } from '../common/CharacterPreview';
 import { RandomizationButton } from './RandomizationButton';
@@ -626,6 +626,9 @@ export const MainPage = (
                       handleRotate={() => {
                         act('rotate');
                       }}
+                      handleLoadout={() => {
+                        act('open_loadout');
+                      }}
                       setGender={createSetPreference(act, 'gender')}
                       showGender={
                         currentSpeciesData ? !!currentSpeciesData.sexes : true
@@ -637,6 +640,21 @@ export const MainPage = (
                     <CharacterPreview
                       height="100%"
                       id={data.character_preview_view}
+                    />
+                  </Stack.Item>
+
+                  <Stack.Item
+                    // SKYRAT EDIT ADDITION
+                    position="relative">
+                    <Dropdown
+                      width="100%"
+                      selected={data.preview_selection}
+                      options={data.preview_options}
+                      onSelected={(value) =>
+                        act('update_preview', {
+                          updated_preview: value,
+                        })
+                      }
                     />
                   </Stack.Item>
 
