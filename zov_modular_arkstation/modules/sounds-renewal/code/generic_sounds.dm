@@ -3,9 +3,11 @@
 /obj/item/gun/ballistic/shotgun
 	fire_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/gunshotshotgunshot.ogg'
 	load_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/shotguninsert.ogg'
+	rack_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/shotgun_pump.ogg'
 
 /obj/item/gun/ballistic/shotgun/riot/sol
 	fire_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/gunshotshotgunshot.ogg'
+	rack_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/shotgun_pump.ogg'
 
 /obj/item/gun/ballistic/revolver
 	fire_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/revolvershot.ogg'
@@ -18,6 +20,9 @@
 
 /obj/item/gun/ballistic/automatic/l6_saw
 	fire_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/lmgshot.ogg'
+
+/obj/item/ammo_casing/energy
+	fire_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/laser.ogg'
 
 /obj/item/ammo_casing/laser
 	fire_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/weapons/laser.ogg'
@@ -117,23 +122,23 @@
 /area/station/maintenance
 	forced_ambience = TRUE
 	ambient_buzz = 'sound/ambience/maintambience.ogg'
-	ambient_buzz_vol = 35
+	ambient_buzz_vol = 20
 
 /area/station/command/heads_quarters/rd
 	forced_ambience = TRUE
 	ambient_buzz = 'zov_modular_arkstation/modules/sounds-renewal/sound/ambience/sci.ogg'
-	ambient_buzz_vol = 35
+	ambient_buzz_vol = 20
 
 
 /area/station/science
 	forced_ambience = TRUE
 	ambient_buzz = 'zov_modular_arkstation/modules/sounds-renewal/sound/ambience/sci.ogg'
-	ambient_buzz_vol = 35
+	ambient_buzz_vol = 20
 
 /area/shuttle
 	forced_ambience = TRUE
 	ambient_buzz = 'modular_skyrat/modules/encounters/sounds/amb_ship_01.ogg'
-	ambient_buzz_vol = 25
+	ambient_buzz_vol = 15
 	ambientsounds = list('modular_skyrat/modules/encounters/sounds/alarm_radio.ogg',
 						'modular_skyrat/modules/encounters/sounds/alarm_small_09.ogg',
 						'modular_skyrat/modules/encounters/sounds/gear_loop.ogg',
@@ -146,7 +151,7 @@
 /area/shuttle/pirate/nri
 	name = "NRI Starship"
 	ambient_buzz = 'modular_skyrat/modules/encounters/sounds/amb_ship_01.ogg'
-	ambient_buzz_vol = 25
+	ambient_buzz_vol = 15
 	min_ambience_cooldown = 15 SECONDS
 	max_ambience_cooldown = 25 SECONDS
 	ambientsounds = list('modular_skyrat/modules/encounters/sounds/alarm_radio.ogg',
@@ -168,11 +173,11 @@
 /area/awaymission/beach
 	forced_ambience = TRUE
 	ambient_buzz = 'zov_modular_arkstation/modules/sounds-renewal/sound/ambience/beach.ogg'
-	ambient_buzz_vol = 35
+	ambient_buzz_vol = 25
 
 /area/centcom/syndicate_mothership
 	ambient_buzz = 'zov_modular_arkstation/modules/sounds-renewal/sound/ambience/stadium.ogg'
-	ambient_buzz_vol = 25
+	ambient_buzz_vol = 15
 	min_ambience_cooldown = 15 SECONDS
 	max_ambience_cooldown = 25 SECONDS
 	ambientsounds = list('modular_skyrat/modules/encounters/sounds/alarm_radio.ogg',

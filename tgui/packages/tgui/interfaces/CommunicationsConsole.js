@@ -457,26 +457,29 @@ const PageMain = (props, context) => {
             />
           )}
           {
-            // SKYRAT EDIT BEGIN
+            // Ark Station 13 Edit
           }
           {!!canMakeAnnouncement && (
             <Button
               icon="bullhorn"
-              content="Call Sol Federation 911: Marshals Response"
+              color="orange"
+              content="Call PMC InteQ: Mercenaries"
               onClick={() => act('callThePolice')}
             />
           )}
           {!!canMakeAnnouncement && (
             <Button
               icon="bullhorn"
-              content="Call Sol Federation 811: Advanced Atmospherics Response"
+              color="orange"
+              content="Call PMC InteQ: Engineers"
               onClick={() => act('callTheCatmos')}
             />
           )}
           {!!canMakeAnnouncement && (
             <Button
               icon="bullhorn"
-              content="Call Sol Federation 911: Medical Response"
+              color="orange"
+              content="Call PMC InteQ: Medical"
               onClick={() => act('callTheParameds')}
             />
           )}
@@ -488,7 +491,7 @@ const PageMain = (props, context) => {
             />
           )}
           {
-            // SKYRAT EDIT END
+            // Ark Station 13 Edit End
           }
         </Flex>
       </Section>

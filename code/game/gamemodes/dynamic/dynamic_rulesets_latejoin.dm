@@ -71,6 +71,7 @@
 		JOB_SECURITY_OFFICER,
 		JOB_WARDEN,
 		JOB_LAWYER,
+		JOB_STOWAWAY,
 	)
 	restricted_roles = list(
 		JOB_AI,

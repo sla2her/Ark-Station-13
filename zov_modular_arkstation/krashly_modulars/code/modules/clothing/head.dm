@@ -37,7 +37,7 @@
 	icon_state = "inteq_honorable_beret"
 
 /obj/item/clothing/head/HoS/inteq_vanguard
-	name = "vanguard beret"
+	name = "brown beret"
 	desc = "The pinacle of fashion for any aspiring mercenary leader. Designed to protect the head from light impacts."
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/clothing/head.dmi'
 	worn_icon = 'zov_modular_arkstation/krashly_modulars/icons/mob/clothing/head.dmi'

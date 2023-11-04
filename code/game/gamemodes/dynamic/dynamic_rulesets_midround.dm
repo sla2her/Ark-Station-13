@@ -889,6 +889,7 @@
 		JOB_SECURITY_OFFICER,
 		JOB_WARDEN,
 		JOB_LAWYER,
+		JOB_STOWAWAY,
 	)
 	required_enemies = list(2, 2, 1, 1, 1, 1, 1, 0, 0, 0)
 	required_candidates = 1

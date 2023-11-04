@@ -486,11 +486,11 @@ GLOBAL_VAR_INIT(cops_arrived, FALSE)
 		if ("callThePolice")
 			if(!pre_911_check(usr))
 				return
-			calling_911(usr, "Marshals", EMERGENCY_RESPONSE_POLICE)
+			calling_911(usr, "Mercenaries", EMERGENCY_RESPONSE_POLICE)
 		if ("callTheCatmos")
 			if(!pre_911_check(usr))
 				return
-			calling_911(usr, "Advanced Atmospherics", EMERGENCY_RESPONSE_ATMOS)
+			calling_911(usr, "Engineers", EMERGENCY_RESPONSE_ATMOS)
 		if ("callTheParameds")
 			if(!pre_911_check(usr))
 				return

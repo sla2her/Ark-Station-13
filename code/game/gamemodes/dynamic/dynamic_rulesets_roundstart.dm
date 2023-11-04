@@ -524,6 +524,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_SECURITY_OFFICER,
 		JOB_WARDEN,
 		JOB_LAWYER,
+		JOB_STOWAWAY,
 	)
 	required_candidates = 3
 	weight = 3

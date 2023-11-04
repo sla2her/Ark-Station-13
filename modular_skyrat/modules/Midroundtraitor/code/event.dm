@@ -14,6 +14,7 @@
 							JOB_BLUESHIELD,
 							JOB_BOUNCER,
 							JOB_LAWYER,
+							JOB_STOWAWAY,
 							)
 	required_candidates = 1
 	weight = 4 //Slightly less common than normal midround traitors.

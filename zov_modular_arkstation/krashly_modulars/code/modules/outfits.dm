@@ -1,5 +1,5 @@
 /datum/outfit/inteq_raider
-	name = "InteQ Raider"
+	name = "InteQ Mercenary"
 
 	uniform = /obj/item/clothing/under/syndicate/inteq
 	mask = /obj/item/clothing/mask/balaclava/breath/inteq

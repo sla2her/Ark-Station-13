@@ -318,7 +318,5 @@
 	atom_storage.set_holdable(list(/obj/item/clothing/suit/space/syndicate/inteq, /obj/item/clothing/head/helmet/space/syndicate/inteq))
 
 /obj/item/storage/box/syndie_kit/space/inteq/PopulateContents()
-	var/obj/item/clothing/suit/space/syndicate/inteq/spess_suit = pick(GLOB.syndicate_space_suits_to_helmets)
-	new spess_suit(src) // Above allows me to get the helmet from a variable on the object
-	var/obj/item/clothing/head/helmet/space/syndicate/inteq/spess_helmet = GLOB.syndicate_space_suits_to_helmets[spess_suit]
-	new spess_helmet(src) // 4 TC for the space gear
+	new /obj/item/clothing/suit/space/syndicate/inteq(src)
+	new /obj/item/clothing/head/helmet/space/syndicate/inteq(src)
