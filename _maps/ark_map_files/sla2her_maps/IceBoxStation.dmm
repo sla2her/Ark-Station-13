@@ -10112,6 +10112,7 @@
 /obj/effect/turf_decal/tile/green/half/contrasted{
 	dir = 4
 	},
+/obj/machinery/gear_painter,
 /turf/open/floor/iron,
 /area/station/commons/fitness)
 "cXV" = (
@@ -30424,6 +30425,7 @@
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
 	dir = 1
 	},
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "jqJ" = (
@@ -40633,6 +40635,7 @@
 /obj/item/stack/ducts/fifty,
 /obj/item/stack/ducts/fifty,
 /obj/item/stack/ducts/fifty,
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/dark,
 /area/station/medical/chemistry)
 "msN" = (
@@ -58096,6 +58099,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
 	},
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "rEx" = (

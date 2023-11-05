@@ -12481,10 +12481,9 @@
 /turf/open/floor/plating,
 /area/station/service/bar)
 "eAq" = (
-/obj/structure/closet/wardrobe/white,
-/obj/effect/landmark/start/hangover/closet,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/structure/extinguisher_cabinet/directional/south,
+/obj/machinery/gear_painter,
 /turf/open/floor/iron/dark,
 /area/station/commons/locker)
 "eAr" = (
@@ -14939,11 +14938,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
-"fwV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/landmark/start/stowaway,
-/turf/open/floor/plating,
-/area/station/maintenance/port/fore)
 "fwZ" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/computer/piratepad_control/civilian{
@@ -16152,6 +16146,7 @@
 /area/station/commons/fitness/recreation)
 "fVY" = (
 /obj/structure/closet/secure_closet/chemical,
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "fWc" = (
@@ -33238,7 +33233,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/effect/landmark/start/stowaway,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/lesser)
 "lYL" = (
@@ -37430,13 +37424,6 @@
 /obj/effect/mapping_helpers/airlock/access/all/engineering/external,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
-"ntK" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/mapping_helpers/broken_floor,
-/obj/effect/landmark/start/stowaway,
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
 "ntM" = (
 /obj/machinery/power/solar_control{
 	id = "foreport";
@@ -43487,12 +43474,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
-"pDn" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/landmark/start/stowaway,
-/turf/open/floor/plating,
-/area/station/maintenance/port)
 "pDs" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -50393,6 +50374,7 @@
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
 	dir = 8
 	},
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "rXX" = (
@@ -87265,7 +87247,7 @@ usi
 sNM
 uOH
 uOH
-pDn
+uOH
 rpE
 ayH
 vZE
@@ -87789,7 +87771,7 @@ sdC
 jnA
 rcF
 pOa
-pDn
+uOH
 ubp
 tTF
 jUb
@@ -90045,7 +90027,7 @@ aaa
 nmg
 hwo
 hcx
-fwV
+knQ
 mkd
 udC
 mZy
@@ -107021,7 +107003,7 @@ psZ
 psZ
 bSY
 kbo
-ntK
+kbo
 eqt
 psZ
 psZ

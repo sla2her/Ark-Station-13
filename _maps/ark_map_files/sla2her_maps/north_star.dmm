@@ -74281,6 +74281,7 @@
 	dir = 1
 	},
 /obj/machinery/newscaster/directional/south,
+/obj/machinery/gear_painter,
 /turf/open/floor/iron/white/small,
 /area/station/commons/fitness/recreation)
 "twq" = (
@@ -92210,6 +92211,7 @@
 /obj/effect/turf_decal/trimline/green/filled/end{
 	dir = 8
 	},
+/obj/machinery/gear_painter,
 /turf/open/floor/iron,
 /area/station/commons/vacant_room/commissary)
 "yaX" = (

@@ -13962,6 +13962,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
 	},
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "bgG" = (
@@ -15222,6 +15223,7 @@
 	},
 /obj/item/clothing/glasses/science,
 /obj/item/radio/intercom/directional/west,
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "blg" = (
@@ -28236,6 +28238,15 @@
 	},
 /turf/open/floor/engine,
 /area/station/science/cytology)
+"clb" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/machinery/gear_painter,
+/turf/open/floor/iron/dark/side{
+	dir = 1
+	},
+/area/station/commons/fitness)
 "clq" = (
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron,
@@ -58649,6 +58660,7 @@
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/item/plunger,
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "xfm" = (
@@ -97626,7 +97638,7 @@ xzh
 xzh
 xzh
 arq
-aCv
+clb
 axm
 azd
 azd

@@ -2820,8 +2820,8 @@
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/maintenance/aft/greater)
 "aPy" = (
-/obj/item/kirbyplants/random,
 /obj/machinery/status_display/evac/directional/west,
+/obj/machinery/gear_painter,
 /turf/open/floor/iron/grimy,
 /area/station/commons/dorms)
 "aPz" = (

@@ -5928,6 +5928,7 @@
 /obj/item/plunger,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "aQO" = (
@@ -10613,6 +10614,7 @@
 /turf/open/floor/iron/dark,
 /area/station/security/interrogation)
 "cAw" = (
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble,
 /area/station/command/heads_quarters/captain/private)
 "cAz" = (
@@ -14707,6 +14709,7 @@
 /obj/machinery/reagentgrinder,
 /obj/structure/sign/clock/directional/west,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "dVo" = (
@@ -20052,14 +20055,6 @@
 /obj/machinery/status_display/ai/directional/east,
 /turf/open/floor/circuit/green,
 /area/station/ai_monitored/turret_protected/ai_upload)
-"fYK" = (
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/item/kirbyplants/random,
-/obj/machinery/duct,
-/turf/open/floor/wood,
-/area/station/command/heads_quarters/captain/private)
 "fYW" = (
 /obj/structure/grille,
 /obj/structure/lattice,
@@ -26059,7 +26054,7 @@
 	dir = 4
 	},
 /obj/machinery/airalarm/directional/north,
-/obj/structure/sink/directional/south,
+/obj/item/kirbyplants/random,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain/private)
 "iko" = (
@@ -30446,6 +30441,7 @@
 "jKg" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line,
 /obj/machinery/light/directional/south,
+/obj/machinery/gear_painter,
 /turf/open/floor/iron,
 /area/station/commons/fitness)
 "jKi" = (
@@ -30876,6 +30872,7 @@
 /area/station/command/heads_quarters/blueshield)
 "jSY" = (
 /obj/structure/sign/flag/nanotrasen/directional/north,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble/side{
 	dir = 1
 	},
@@ -34300,13 +34297,6 @@
 "kZh" = (
 /turf/open/floor/eighties/red,
 /area/station/commons/fitness/recreation/entertainment)
-"kZk" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/landmark/start/stowaway,
-/turf/open/floor/iron,
-/area/station/commons/dorms)
 "kZt" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -40357,6 +40347,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/aft)
 "nfo" = (
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble/side{
 	dir = 4
 	},
@@ -42134,12 +42125,12 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/office)
 "nJS" = (
-/obj/effect/turf_decal/trimline/neutral/filled/line{
+/obj/structure/railing{
 	dir = 4
 	},
-/obj/effect/landmark/start/stowaway,
-/turf/open/floor/iron,
-/area/station/hallway/secondary/service)
+/obj/structure/sink/directional/north,
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/captain/private)
 "nKb" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 10
@@ -52421,6 +52412,7 @@
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/cmo)
 "rso" = (
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble/corner{
 	dir = 4
 	},
@@ -52728,6 +52720,7 @@
 /turf/open/floor/tram,
 /area/station/hallway/primary/tram/right)
 "rzm" = (
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble/corner,
 /area/station/command/heads_quarters/captain/private)
 "rzt" = (
@@ -54506,6 +54499,7 @@
 /turf/open/floor/iron,
 /area/station/security/office)
 "sgM" = (
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble/corner{
 	dir = 8
 	},
@@ -56640,16 +56634,6 @@
 	},
 /turf/open/floor/carpet,
 /area/station/command/heads_quarters/captain)
-"sSA" = (
-/obj/effect/turf_decal/trimline/neutral/filled/corner{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/effect/landmark/start/stowaway,
-/turf/open/floor/iron,
-/area/station/hallway/secondary/service)
 "sSF" = (
 /obj/structure/dresser,
 /obj/machinery/light/directional/south,
@@ -56785,6 +56769,7 @@
 /obj/item/toy/plush/shark{
 	name = "Ashley Night"
 	},
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble,
 /area/station/command/heads_quarters/captain/private)
 "sTZ" = (
@@ -61519,6 +61504,7 @@
 /area/station/engineering/atmos)
 "uxp" = (
 /obj/structure/window/reinforced/tinted,
+/obj/machinery/duct,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain/private)
 "uxq" = (
@@ -67092,6 +67078,7 @@
 /obj/item/book/manual/wiki/grenades,
 /obj/item/radio/intercom/directional/west,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/item/storage/box/beakers,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
 "wsb" = (
@@ -68202,6 +68189,7 @@
 /area/station/cargo/miningdock)
 "wMw" = (
 /obj/machinery/light/warm/directional/east,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble/side{
 	dir = 4
 	},
@@ -68489,6 +68477,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
 "wTu" = (
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble/corner{
 	dir = 1
 	},
@@ -70794,6 +70783,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/tram/mid)
 "xOQ" = (
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool/cobble/side{
 	dir = 8
 	},
@@ -92278,7 +92268,7 @@ djG
 vmB
 vmB
 vmB
-kZk
+vmB
 vmB
 pwe
 uLO
@@ -102780,7 +102770,7 @@ axe
 xpb
 hNe
 xpb
-nJS
+xpb
 xpb
 xpb
 sKN
@@ -104317,7 +104307,7 @@ aeN
 snQ
 iRL
 dNp
-sSA
+ptn
 xyu
 cWZ
 hCA
@@ -105865,7 +105855,7 @@ afU
 lWj
 xpb
 xpb
-nJS
+xpb
 kVP
 xpb
 jer
@@ -161887,8 +161877,8 @@ eia
 sSF
 ltw
 ike
-fYK
-tOu
+sEs
+sEs
 tOu
 uxp
 cYT
@@ -162147,7 +162137,7 @@ wTu
 xOQ
 sgM
 ore
-sEs
+nJS
 ltw
 ltw
 qlQ

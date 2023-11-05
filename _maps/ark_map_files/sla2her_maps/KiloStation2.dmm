@@ -22626,11 +22626,11 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/commons/locker)
 "hoI" = (
@@ -68020,6 +68020,15 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
+"vNJ" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral/half/contrasted{
+	dir = 1
+	},
+/obj/machinery/gear_painter,
+/turf/open/floor/iron/dark,
+/area/station/commons/locker)
 "vNL" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/computer/security/qm,
@@ -97702,7 +97711,7 @@ rhN
 bkT
 jTc
 hoE
-rhN
+vNJ
 esq
 rhN
 cee
