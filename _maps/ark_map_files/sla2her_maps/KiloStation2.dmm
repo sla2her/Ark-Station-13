@@ -9562,9 +9562,9 @@
 /area/station/service/bar/atrium)
 "dhY" = (
 /obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+/obj/machinery/atmospherics/pipe/smart/manifold/cyan/visible,
 /turf/open/floor/iron,
 /area/station/medical/medbay/central)
 "dif" = (
@@ -16092,12 +16092,14 @@
 /area/station/service/lawoffice)
 "fph" = (
 /obj/effect/spawner/random/engineering/tracking_beacon,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+	dir = 9
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/medbay/central)
@@ -24424,12 +24426,14 @@
 /turf/open/floor/iron/dark,
 /area/station/security/courtroom)
 "hPV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold/cyan/visible{
+	dir = 4
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/medbay/central)
@@ -42846,9 +42850,11 @@
 /turf/open/floor/iron/dark,
 /area/station/science/xenobiology)
 "nKV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/medical/medbay/central)
 "nLm" = (
@@ -64023,7 +64029,6 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/virology)
 "uCa" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer,
 /obj/effect/turf_decal/delivery,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -64031,6 +64036,7 @@
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted{
 	dir = 1
 	},
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/medbay/central)
 "uCd" = (
@@ -65355,9 +65361,9 @@
 /area/station/cargo/warehouse)
 "uZT" = (
 /obj/effect/landmark/start/medical_doctor,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+/obj/machinery/atmospherics/pipe/smart/manifold/cyan/visible,
 /turf/open/floor/iron,
 /area/station/medical/medbay/central)
 "uZX" = (

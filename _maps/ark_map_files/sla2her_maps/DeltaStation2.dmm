@@ -17898,9 +17898,6 @@
 	dir = 4
 	},
 /obj/item/storage/secure/briefcase,
-/obj/item/storage/secure/briefcase,
-/obj/item/storage/secure/briefcase,
-/obj/item/storage/secure/briefcase,
 /turf/open/floor/carpet/executive,
 /area/station/command/heads_quarters/blueshield)
 "etI" = (
@@ -30849,7 +30846,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing{
-	dir = 9
+	dir = 6
 	},
 /turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/station/commons/lounge)
@@ -32890,9 +32887,6 @@
 	},
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 4
-	},
-/obj/structure/railing{
-	dir = 8
 	},
 /turf/open/floor/iron/stairs,
 /area/station/commons/lounge)
@@ -42410,9 +42404,7 @@
 /obj/machinery/light/floor{
 	light_color = "#FF1493"
 	},
-/obj/structure/railing{
-	dir = 9
-	},
+/obj/structure/railing,
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/station/commons/lounge)
 "kyW" = (
@@ -54961,11 +54953,11 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
 	},
-/obj/machinery/button{
-	pixel_x = 24;
-	id = "bar1shutter"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/door{
+	id = "bar1shutter";
+	pixel_x = 23
+	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/service/bar)
 "nMD" = (
@@ -64111,6 +64103,11 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/science/explab)
+"pZR" = (
+/obj/effect/landmark/start/hangover,
+/obj/structure/railing/corner,
+/turf/open/floor/light/colour_cycle/dancefloor_b,
+/area/station/commons/lounge)
 "qaq" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/latex,
@@ -77197,10 +77194,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing{
-	dir = 9
-	},
-/obj/structure/railing{
-	dir = 4
+	dir = 6
 	},
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/station/commons/lounge)
@@ -78767,6 +78761,16 @@
 /obj/effect/mapping_helpers/airlock/access/any/engineering/construction,
 /turf/open/floor/iron,
 /area/station/maintenance/port)
+"tIk" = (
+/obj/machinery/light/floor{
+	light_color = "#FF1493"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/light/colour_cycle/dancefloor_a,
+/area/station/commons/lounge)
 "tIK" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -82831,10 +82835,7 @@
 	light_color = "#FF1493"
 	},
 /obj/structure/railing{
-	dir = 9
-	},
-/obj/structure/railing{
-	dir = 8
+	dir = 10
 	},
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/station/commons/lounge)
@@ -83986,6 +83987,9 @@
 /area/station/hallway/secondary/service)
 "uVe" = (
 /obj/effect/landmark/start/hangover,
+/obj/structure/railing/corner{
+	dir = 8
+	},
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/station/commons/lounge)
 "uVk" = (
@@ -88615,9 +88619,6 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 8
 	},
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/stairs,
 /area/station/commons/lounge)
@@ -92637,13 +92638,13 @@
 /area/station/cargo/storage)
 "xhi" = (
 /obj/structure/table/wood,
-/obj/machinery/button{
-	pixel_y = 21;
-	id = "bar2shutter"
-	},
 /obj/machinery/coffeemaker/impressa{
 	pixel_y = 6;
 	pixel_x = 2
+	},
+/obj/machinery/button/door{
+	id = "bar2shutter";
+	pixel_y = 24
 	},
 /turf/open/floor/wood,
 /area/station/service/cafeteria)
@@ -127616,7 +127617,7 @@ oYs
 nsf
 oYs
 hwk
-hGw
+tIk
 hKE
 hzi
 xMK
@@ -128387,7 +128388,7 @@ shm
 llW
 oYs
 oin
-uVe
+pZR
 tqc
 bqC
 kDY
@@ -130730,7 +130731,7 @@ fRo
 jMQ
 sie
 tNu
-kOj
+sQA
 sQA
 aHW
 rPI
