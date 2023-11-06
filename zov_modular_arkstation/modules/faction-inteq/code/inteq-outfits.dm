@@ -23,9 +23,10 @@
 	uniform = /obj/item/clothing/under/syndicate/inteq
 	suit = /obj/item/clothing/suit/armor/inteq
 	shoes = /obj/item/clothing/shoes/jackboots
-	//glasses =
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
+	mask = /obj/item/clothing/mask/balaclava/breath/inteq
 	ears = /obj/item/radio/headset/inteq/bowman
-	head = /obj/item/clothing/head/HoS/inteq_vanguard
+	head = /obj/item/clothing/head/soft/inteq
 	suit_store = /obj/item/gun/ballistic/automatic/pistol
 	gloves = /obj/item/clothing/gloves/color/black
 	r_pocket = /obj/item/lighter
@@ -90,7 +91,7 @@
 	name = "PMC InteQ: Heavy Mercenary"
 	back = /obj/item/storage/backpack/duffelbag/syndie/inteq
 	uniform = /obj/item/clothing/under/syndicate/inteq
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/combat
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	ears = /obj/item/radio/headset/inteq/bowman
 	head = /obj/item/clothing/head/helmet/swat/inteq

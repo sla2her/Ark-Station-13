@@ -638,7 +638,7 @@ export const MainPage = (
 
                   <Stack.Item grow>
                     <CharacterPreview
-                      height="100%"
+                      height="80%" // 100% Bugged
                       id={data.character_preview_view}
                     />
                   </Stack.Item>

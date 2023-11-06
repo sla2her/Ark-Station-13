@@ -101,20 +101,20 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 		if(EMERGENCY_RESPONSE_POLICE)
 			team_size = 8
 			cops_to_send = /datum/antagonist/ert/request_911/police
-			announcement_message = "Crewmembers of [station_name()]. this is InteQ. We've recieved a request for immediate weaponized support, and we are \
-				sending our best mercenaries to support your station.\n\n\
-				If the first responders request that they need heavier support to do their job, or to report a faulty call, we will send them in at additional cost to your station to the \
-				tune of $20,000.\n\n\
-				The transcript of the call is as follows:\n\
+			announcement_message = "Экипаж станции [station_name()]. На проводе ЧВК 'InteQ'. Мы получили запрос отряда вооруженных наёмников. Мы высылаем \
+				вам лучших бойцов из отряда 'Rose Thorns' для помощи станции.\n\n\
+				Если наши наёмники потребуют более серьезной поддержки для выполнения своей работы или для сообщения о ложном вызове, мы за дополнительную плату отправим ещё один отряд на вашу станцию в \
+				сумма 20 000 кредитов.\n\n\
+				Стенограмма запроса:\n\
 				[GLOB.call_911_msg]"
 			//announcer = "PMC InteQ"
 			poll_question = "The station has called for the InteQ Mercenaries. Will you respond?"
 		if(EMERGENCY_RESPONSE_ATMOS)
-			team_size = tgui_input_number(usr, "How many techs would you like dispatched?", "How badly did you screw up?", 3, 3, 1)
+			team_size = tgui_input_number(usr, "Сколько инженеров требуется для устранения проблемы?", "Каков уровень повреждений?", 3, 3, 1)
 			cops_to_send = /datum/antagonist/ert/request_911/atmos
-			announcement_message = "Crewmembers of [station_name()]. this is InteQ. We've recieved a report of stationwide structural damage, atmospherics loss, fire, or otherwise, and we are \
-				sending an Advanced Engineering team to support your station.\n\n\
-				The transcript of the call is as follows:\n\
+			announcement_message = "Экипаж станции [station_name()]. На проводе ЧВК 'InteQ'. Мы получили уведомление о крупных дырах в обшивке станции, утере воздуха, пожаре, или иной инженерной проблеме. Мы высылаем \
+				Отряд обученных инженеров из отряда 'Gamma-8' для помощи станции.\n\n\
+				Стенограмма запроса:\n\
 				[GLOB.call_911_msg]"
 			//announcer = "PMC InteQ"
 			poll_question = "The station has called for an InteQ Advanced Engineering Team. Will you respond?"
@@ -122,22 +122,22 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 		if(EMERGENCY_RESPONSE_EMT)
 			team_size = 8
 			cops_to_send = /datum/antagonist/ert/request_911/emt
-			announcement_message = "Crewmembers of [station_name()]. this is InteQ. We've recieved a request for immediate medical support, and we are \
-				sending our best emergency medical technicians to support your station.\n\n\
+			announcement_message = "Экипаж станции [station_name()]. На проводе ЧВК 'InteQ'. Мы получили запрос Экстренной Медицинской Помощи. Мы высылаем \
+				Наших лучших Полевых Медиков из отряда 'White Bandages' для помощи станции.\n\n\
 				If the first responders request that they need heavier support to do their job, or to report a faulty call, we will send them in at additional cost to your station to the \
 				tune of $20,000.\n\n\
-				The transcript of the call is as follows:\n\
+				Стенограмма запроса:\n\
 				[GLOB.call_911_msg]"
 			//announcer = "PMC InteQ"
 			poll_question = "The station has called for InteQ Medical Support. Will you respond?"
 		if(EMERGENCY_RESPONSE_EMAG)
 			team_size = 8
 			cops_to_send = /datum/antagonist/ert/pizza/false_call
-			announcement_message = "Thank you for ordering from Dogginos, [GLOB.pizza_order]! We're sending you that extra-large party package pizza delivery \
-				right away!\n\n\
-				Thank you for choosing our premium Fifteen Minutes or Less delivery option! Our pizza will be at your doorstep at [station_name()] as soon as possible thanks \
-				to our lightning-fast warp drives installed on all Dogginos delivery shuttles!\n\
-				Distance from your chosen Dogginos: 70,000 Lightyears"
+			announcement_message = "Спасибо за заказ в 'Dogginos'!, [GLOB.pizza_order]! Мы высылаем вам экстра-супер-пупер большую партию пиццы для вашей вечеринки \
+				прямо сейчас!\n\n\
+				Спасибо за то что выбрали опцию 'получи заказ за 50 минут или пицца бесплатно'! Наша пицца будет у порога вашей станции [station_name()] как можно скоро, благодаря \
+				нашим сверх-скоростным Варп двигателям, установленным на всех шаттла доставки 'Dogginos'!\n\
+				Дистанция до ближайшего 'Dogginos': 70 000 Световых лет."
 			announcer = "Dogginos"
 			poll_question = "The station has ordered $35,000 in pizza. Will you deliver?"
 			cell_phone_number = "Dogginos"
@@ -508,9 +508,9 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	amount_to_summon = 6
 	type_to_summon = /datum/antagonist/ert/request_911/condom_destroyer
 	summoned_type = "swat"
-	announcement_message = "Hello, crewmembers. Our emergency services have requested backup, either for assistance doing their job due to crew \
-		impediment, or due to a fraudulent call. We have billed the station $20,000 for this, to cover the expenses of flying a second emergency response to \
-		your station. Please comply with all requests said by PMC members."
+	announcement_message = "Доброго времени суток, Экипаж. Наш отряд запросил поддержки для выполнения их работы по помощи \
+		станции, или в связи с ложным вызовом. Мы выставим счёт в 20 000 кредитов за это, дабы покрыть расходы отправки второго отряда на \
+		вашу станцию. Пожалуйста, исполняйте все приказы наёмников ЧВК 'InteQ'."
 
 /obj/item/solfed_reporter/swat_caller/questions(mob/user)
 	var/question = "Does the situation require additional backup, involve the station impeding you from doing your job, \
