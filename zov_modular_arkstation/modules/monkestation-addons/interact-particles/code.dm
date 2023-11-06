@@ -110,19 +110,6 @@
 			animate_interact(A, INTERACT_HELP)
 	return
 
-/mob/living/CtrlClick(mob/user)
-	if(!isliving(user) || !user.CanReach(src) || user.incapacitated())
-		return ..()
-
-	if(world.time < user.next_move)
-		return FALSE
-
-	var/mob/living/user_living = user
-	if(user_living.apply_martial_art(src, null, is_grab=TRUE) == MARTIAL_ATTACK_SUCCESS)
-		user_living.changeNext_move(CLICK_CD_MELEE)
-		user_living.animate_interact(src, INTERACT_GRAB)
-		return TRUE
-
 /mob/living/start_pulling(atom/movable/AM, state, force, supress_message)
 	. = ..()
 	animate_interact(AM, INTERACT_PULL)
