@@ -16,7 +16,7 @@ endmap
 # Production-level maps.
 
 map birdshot
-	votable
+	disabled
 endmap
 
 map deltastation
@@ -32,6 +32,7 @@ map metastation
 endmap
 
 map northstar
+	minplayers 40
 	votable
 endmap
 
@@ -53,10 +54,12 @@ endmap
 ##SKYRAT MAPS##
 
 map voidraptor
+	minplayers 40
 	votable
 endmap
 
 map blueshift
+	minplayers 40
 	votable
 endmap
 

@@ -31,7 +31,7 @@
 		features += "~[n] player"
 
 	if (!host && hostedby)
-		features += "hosted by <b>[hostedby]</b>"
+		features += "sponsored by <b>[hostedby]</b>"
 
 	if (features)
 		s += "\[[jointext(features, ", ")]"

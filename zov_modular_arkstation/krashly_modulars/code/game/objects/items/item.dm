@@ -293,3 +293,13 @@
 	name = "\improper InteQ Mercenary action figure"
 	icon_state = "inteq"
 	toysay = "For money!"
+
+/obj/item/toy/figure/brigmedic
+	name = "\improper Brig Medic action figure"
+	icon_state = "brigmedic"
+	toysay = "Rescue heroes!"
+
+/obj/item/toy/figure/blueshield
+	name = "\improper Blueshield action figure"
+	icon_state = "blueshield"
+	toysay = "At the cost of my life!"
