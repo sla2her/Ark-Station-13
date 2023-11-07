@@ -363,7 +363,6 @@
 				/obj/item/clothing/suit/jacket/brasspriest = 2,
 				/obj/item/clothing/suit/jacket/hydrogenrobes = 2,
 				/obj/item/clothing/under/wetsuit_norm = 2,
-				/obj/item/clothing/mask/animal/kindle = 2,
 				/obj/item/clothing/head/drake_skull = 1,
 				/obj/item/clothing/gloves/fingerless/blutigen_wraps = 2,
 				/obj/item/clothing/suit/blutigen_kimono = 2,
