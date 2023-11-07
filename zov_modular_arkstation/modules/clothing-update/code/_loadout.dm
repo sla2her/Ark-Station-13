@@ -21,3 +21,31 @@
 /datum/loadout_item/neck/bandagewraps
 	name = "Bandage Wraps"
 	item_path = /obj/item/clothing/neck/bandagewraps
+
+/datum/loadout_item/neck/windy_scarf
+	name = "Windy Scarf"
+	item_path = /obj/item/clothing/neck/windy_scarf
+
+/datum/loadout_item/suit/flannel_white
+	name = "White Flannel"
+	item_path = /obj/item/clothing/suit/toggle/jacket/flannel/white
+
+/datum/loadout_item/suit/hawaiiblack
+	name = "Black Hawaii Shirt"
+	item_path = /obj/item/clothing/suit/toggle/hawaiiblack
+
+/datum/loadout_item/suit/hawaiifuchs
+	name = "Red Hawaii Shirt"
+	item_path = /obj/item/clothing/suit/toggle/hawaiiblack/hawaiifuchs
+
+/datum/loadout_item/suit/hawaiivine
+	name = "Vine Hawaii Shirt"
+	item_path = /obj/item/clothing/suit/toggle/hawaiiblack/hawaiivine
+
+/datum/loadout_item/suit/hawaiiorange
+	name = "Orange Hawaii Shirt"
+	item_path = /obj/item/clothing/suit/toggle/hawaiiblack/hawaiiorange
+
+/datum/loadout_item/suit/hawaiipurple
+	name = "Purple Hawaii Shirt"
+	item_path = /obj/item/clothing/suit/toggle/hawaiiblack/hawaiimotu

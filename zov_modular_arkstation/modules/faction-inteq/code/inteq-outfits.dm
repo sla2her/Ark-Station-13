@@ -121,13 +121,13 @@
 	name = "PMC InteQ: Vanguard"
 
 	uniform = /obj/item/clothing/under/syndicate/inteq_honorable_vanguard
-	head = /obj/item/clothing/head/HoS/inteq_honorable_vanguard
+	//head = /obj/item/clothing/head/HoS/inteq_honorable_vanguard
 	mask = /obj/item/clothing/mask/balaclava/breath/inteq
-	gloves = /obj/item/clothing/gloves/combat
-	suit = /obj/item/clothing/suit/armor/inteq/honorable_vanguard
-	shoes = /obj/item/clothing/shoes/combat
+	//gloves = /obj/item/clothing/gloves/combat
+	//suit = /obj/item/clothing/suit/armor/inteq/honorable_vanguard
+	//shoes = /obj/item/clothing/shoes/combat
 
-	back = /obj/item/storage/backpack/duffelbag/syndie/inteq
+	back = /obj/item/mod/control/pre_equipped/inteqe
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	ears = /obj/item/radio/headset/inteq/bowman/command
 	l_pocket = /obj/item/restraints/handcuffs

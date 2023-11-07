@@ -627,46 +627,46 @@
 /obj/item/vending_refill/wardrobe/viro_wardrobe
 	machine_name = "ViroDrobe"
 
-/obj/machinery/vending/wardrobe/det_wardrobe
-	name = "\improper DetDrobe"
-	desc = "A machine for all your detective needs, as long as you need clothes."
-	icon_state = "detdrobe"
-	product_ads = "Apply your brilliant deductive methods in style!"
-	vend_reply = "Thank you for using the DetDrobe!"
-	products = list(
-		/obj/item/clothing/head/fedora/det_hat = 2,
-		/obj/item/clothing/under/rank/security/detective = 2,
-		/obj/item/clothing/under/rank/security/detective/skirt = 2,
-		/obj/item/clothing/suit/jacket/det_suit = 2,
-		/obj/item/clothing/shoes/sneakers/brown = 2,
-		/obj/item/clothing/gloves/latex = 2,
-		/obj/item/clothing/gloves/color/black = 2,
-		/obj/item/clothing/accessory/waistcoat = 2,
-		/obj/item/clothing/under/rank/security/detective/noir = 2,
-		/obj/item/clothing/under/rank/security/detective/noir/skirt = 2,
-		/obj/item/clothing/shoes/laceup = 2,
-		/obj/item/clothing/head/fedora = 2,
-		/obj/item/clothing/suit/jacket/det_suit/dark = 1,
-		/obj/item/clothing/suit/jacket/det_suit/noir = 1,
-		/obj/item/clothing/neck/tie/disco = 1,
-		/obj/item/clothing/under/rank/security/detective/disco = 1,
-		/obj/item/clothing/suit/jacket/det_suit/disco = 1,
-		/obj/item/clothing/shoes/discoshoes = 1,
-		/obj/item/clothing/glasses/regular/kim = 1,
-		/obj/item/clothing/under/rank/security/detective/kim = 1,
-		/obj/item/clothing/suit/jacket/det_suit/kim = 1,
-		/obj/item/clothing/gloves/kim = 1,
-		/obj/item/clothing/shoes/kim = 1,
-		/obj/item/reagent_containers/cup/glass/flask/det = 2,
-		/obj/item/storage/fancy/cigarettes = 5,
-		/obj/item/storage/fancy/cigarettes/cigpack_candy = 5,
-	)
-	premium = list(
-		/obj/item/clothing/head/flatcap = 1,
-	)
-	refill_canister = /obj/item/vending_refill/wardrobe/det_wardrobe
-	extra_price = PAYCHECK_COMMAND * 1.75
-	payment_department = ACCOUNT_SEC
+// /obj/machinery/vending/wardrobe/det_wardrobe
+// 	name = "\improper DetDrobe"
+// 	desc = "A machine for all your detective needs, as long as you need clothes."
+// 	icon_state = "detdrobe"
+// 	product_ads = "Apply your brilliant deductive methods in style!"
+// 	vend_reply = "Thank you for using the DetDrobe!"
+// 	products = list(
+// 		/obj/item/clothing/head/fedora/det_hat = 2,
+// 		/obj/item/clothing/under/rank/security/detective = 2,
+// 		/obj/item/clothing/under/rank/security/detective/skirt = 2,
+// 		/obj/item/clothing/suit/jacket/det_suit = 2,
+// 		/obj/item/clothing/shoes/sneakers/brown = 2,
+// 		/obj/item/clothing/gloves/latex = 2,
+// 		/obj/item/clothing/gloves/color/black = 2,
+// 		/obj/item/clothing/accessory/waistcoat = 2,
+// 		/obj/item/clothing/under/rank/security/detective/noir = 2,
+// 		/obj/item/clothing/under/rank/security/detective/noir/skirt = 2,
+// 		/obj/item/clothing/shoes/laceup = 2,
+// 		/obj/item/clothing/head/fedora = 2,
+// 		/obj/item/clothing/suit/jacket/det_suit/dark = 1,
+// 		/obj/item/clothing/suit/jacket/det_suit/noir = 1,
+// 		/obj/item/clothing/neck/tie/disco = 1,
+// 		/obj/item/clothing/under/rank/security/detective/disco = 1,
+// 		/obj/item/clothing/suit/jacket/det_suit/disco = 1,
+// 		/obj/item/clothing/shoes/discoshoes = 1,
+// 		/obj/item/clothing/glasses/regular/kim = 1,
+// 		/obj/item/clothing/under/rank/security/detective/kim = 1,
+// 		/obj/item/clothing/suit/jacket/det_suit/kim = 1,
+// 		/obj/item/clothing/gloves/kim = 1,
+// 		/obj/item/clothing/shoes/kim = 1,
+// 		/obj/item/reagent_containers/cup/glass/flask/det = 2,
+// 		/obj/item/storage/fancy/cigarettes = 5,
+// 		/obj/item/storage/fancy/cigarettes/cigpack_candy = 5,
+// 	)
+// 	premium = list(
+// 		/obj/item/clothing/head/flatcap = 1,
+// 	)
+// 	refill_canister = /obj/item/vending_refill/wardrobe/det_wardrobe
+// 	extra_price = PAYCHECK_COMMAND * 1.75
+// 	payment_department = ACCOUNT_SEC
 
 /obj/item/vending_refill/wardrobe/det_wardrobe
 	machine_name = "DetDrobe"

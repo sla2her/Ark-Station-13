@@ -7,6 +7,7 @@
 	flags_inv = HIDEFACE|HIDEFACIALHAIR
 	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+	alternate_worn_layer = BODY_FRONT_LAYER
 
 /obj/item/clothing/mask/balaclava/breath/redscarf/bluescarf
 	name = "Blue facescarf"
@@ -20,10 +21,12 @@
 	name = "Yellow facescarf"
 	icon_state = "yellow"
 
-
 /obj/item/clothing/mask/balaclava/breath/redscarf/greenscarf
 	name = "Green facescarf"
 	icon_state = "green"
+
+/obj/item/clothing/mask/gas/syndicate
+	flags_inv = HIDEHAIR|HIDEFACE|HIDEEARS|HIDEFACIALHAIR
 
 /obj/item/clothing/mask/gas/syndicate/ds/wide
 	name = "wide shape balaclava"
@@ -62,4 +65,38 @@
 
 /obj/item/clothing/mask/balaclava
 	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mask.dmi'
+	//worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask.dmi'
+
+/obj/item/clothing/mask/gas/sechailer/swat/hos
+	name = "\improper HoS SWAT mask"
+	icon_state = "hosmask"
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mask.dmi'
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask.dmi'
+	worn_icon_muzzled = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask_digi.dmi'
+
+/obj/item/clothing/mask/gas/sechailer/swat/blueshield
+	name = "\improper Blueshield SWAT mask"
+	icon_state = "blue_sechailer"
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mask.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask.dmi'
+	worn_icon_muzzled = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask_digi.dmi'
+
+/obj/item/clothing/mask/gas/german
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mask.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask.dmi'
+
+/obj/item/clothing/mask/gas/soviet
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mask.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask.dmi'
+
+/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn
+	icon_state = "half_mask_flektarn"
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mask.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask.dmi'
+	worn_icon_muzzled = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mask_digi.dmi'
+
+/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn/green
+	icon_state = "half_mask_green"
+
+/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn/tan
+	icon_state = "half_mask_tan"
