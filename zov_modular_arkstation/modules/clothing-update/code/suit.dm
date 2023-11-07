@@ -25,3 +25,155 @@
 	icon_state = "str"
 	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+
+/obj/item/clothing/head/utility/bomb_hood
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/head.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/head.dmi'
+	worn_icon_digi = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/head_digi.dmi'
+/obj/item/clothing/suit/utility/bomb_suit
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+
+/obj/item/clothing/head/utility/bomb_hood/security
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/head.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/head.dmi'
+	worn_icon_digi = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/head_digi.dmi'
+
+/obj/item/clothing/suit/utility/bomb_suit/security
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+
+/obj/item/clothing/head/utility/bomb_hood/white
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/head.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/head.dmi'
+	worn_icon_digi = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/head_digi.dmi'
+
+/obj/item/clothing/suit/utility/bomb_suit/white
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+
+/obj/item/clothing/suit/toggle/jacket/flannel/white
+	name = "white flannel jacket"
+	icon_state = "flannel_white"
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+
+/obj/item/clothing/suit/jacket/det_suit/fore_blue
+	name = "forensics blue coat"
+	icon_state = "forensics_blue"
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/suit/jacket/det_suit/fore_blue/fore_red
+	name = "forensics red coat"
+	icon_state = "forensics_red"
+
+/obj/item/clothing/suit/jacket/det_suit/fore_blue/fore_blue_trench
+	name = "forensics blue trenchcoat"
+	icon_state = "forensics_blue_long"
+
+/obj/item/clothing/suit/jacket/det_suit/fore_blue/fore_red_trench
+	name = "forensics red trenchcoat"
+	icon_state = "forensics_red_long"
+
+/obj/item/clothing/suit/toggle/hawaiiblack
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+	name = "black hawaii shirt"
+	desc = "Tommy Vercetti is an innocent man."
+	icon_state = "hawaiiblack"
+	toggle_noun = "buttons"
+
+/obj/item/clothing/suit/toggle/hawaiiblack/hawaiifuchs
+	name = "red hawaii shirt"
+	icon_state = "hawaiifuchs"
+
+/obj/item/clothing/suit/toggle/hawaiiblack/hawaiivine
+	name = "vine hawaii shirt"
+	icon_state = "hawaiivine"
+
+/obj/item/clothing/suit/toggle/hawaiiblack/hawaiiorange
+	name = "orange hawaii shirt"
+	icon_state = "hawaiiorange"
+
+/obj/item/clothing/suit/toggle/hawaiiblack/hawaiimotu
+	name = "purple hawaii shirt"
+	icon_state = "hawaiimotu"
+
+//////////////////////////
+
+/obj/item/mod/control/pre_equipped/inteqe
+	theme = /datum/mod_theme/inteqe
+	starting_frequency = MODLINK_FREQ_SYNDICATE
+	applied_cell = /obj/item/stock_parts/cell/bluespace
+	applied_modules = list(
+		/obj/item/mod/module/storage/syndicate,
+		/obj/item/mod/module/emp_shield,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/jump_jet,
+		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/dna_lock,
+		/obj/item/mod/module/hat_stabilizer/syndicate,
+	)
+	default_pins = list(
+		/obj/item/mod/module/armor_booster,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/jump_jet,
+	)
+
+/datum/mod_theme/inteqe
+	name = "inteq"
+	desc = "An elite suit developed by PMC InteQ engineers, offering upgraded armor values."
+	extended_desc = "A huge upgrade of the syndicate suit, featuring a bulkier build and a matte dark color scheme, \
+		this suit is only produced for InteQ Vanguards and heavily weaponized strike teams. \
+		It comes built with a secondary layering of ceramic and Kevlar into the plating providing it with \
+		exceptionally better protection along with fire and acid proofing."
+	default_skin = "inteqe"
+	armor_type = /datum/armor/mod_theme_elite
+	resistance_flags = FIRE_PROOF|ACID_PROOF
+	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	complexity_max = DEFAULT_MAX_COMPLEXITY + 3
+	siemens_coefficient = 0
+	slowdown_inactive = 1
+	slowdown_active = 0.5
+	ui_theme = "syndicate"
+	inbuilt_modules = list(/obj/item/mod/module/armor_booster)
+	allowed_suit_storage = list(
+		/obj/item/restraints/handcuffs,
+		/obj/item/assembly/flash,
+		/obj/item/melee/baton,
+		/obj/item/melee/energy/sword,
+		/obj/item/shield/energy,
+	)
+	skins = list(
+		"inteqe" = list(
+		MOD_ICON_OVERRIDE = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mod.dmi', // Ark Station 13 Edit
+		MOD_WORN_ICON_OVERRIDE = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mod.dmi', // Ark Station 13 Edit
+			HELMET_FLAGS = list(
+				UNSEALED_LAYER = null,
+				UNSEALED_CLOTHING = SNUG_FIT,
+				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|BLOCK_GAS_SMOKE_EFFECT|HEADINTERNALS,
+				UNSEALED_INVISIBILITY = HIDEFACIALHAIR,
+				SEALED_INVISIBILITY = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDESNOUT,
+				SEALED_COVER = HEADCOVERSMOUTH|HEADCOVERSEYES|PEPPERPROOF,
+			),
+			CHESTPLATE_FLAGS = list(
+				UNSEALED_CLOTHING = THICKMATERIAL,
+				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+			),
+			GAUNTLETS_FLAGS = list(
+				UNSEALED_CLOTHING = THICKMATERIAL,
+				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
+				CAN_OVERSLOT = TRUE,
+			),
+			BOOTS_FLAGS = list(
+				UNSEALED_CLOTHING = THICKMATERIAL,
+				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
+				CAN_OVERSLOT = TRUE,
+			),
+		),
+	)

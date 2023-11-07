@@ -23,3 +23,6 @@
 
 /obj/item/mod/control/pre_equipped/frontline
 	nominal_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/mecha/nominal_russian.ogg'
+
+/obj/item/mod/control/pre_equipped/frontline/ert
+	nominal_sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/mecha/nominal_russian.ogg'

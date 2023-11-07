@@ -33,6 +33,8 @@
 					/obj/item/clothing/shoes/jackboots/black = 3,
 					/obj/item/clothing/shoes/jackboots/tall = 3,
 					/obj/item/clothing/mask/balaclava/breath/redscarf = 2,
+					/obj/item/clothing/under/rank/security/russobluecamo = 3,
+					/obj/item/clothing/under/rank/security/tacticool = 3,
 					)
 	premium = list( /obj/item/clothing/under/rank/security/officer/formal = 3,
 					/obj/item/clothing/suit/jacket/officer/blue = 3,
@@ -42,8 +44,15 @@
 					/obj/item/clothing/mask/gas/syndicate/ds/wide = 2,
 					/obj/item/clothing/mask/gas/syndicate/ds/mouth = 2,
 					/obj/item/clothing/mask/gas/syndicate/ds/coif = 2,
+					/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn = 2,
+					/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn/green = 2,
+					/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn/tan = 2,
 					/obj/item/clothing/under/rank/security/officer/hecu = 3,
-					/obj/item/clothing/head/beret/sec/navyofficer = 3)
+					/obj/item/storage/backpack/rucksack = 2,
+					/obj/item/storage/backpack/hipbag = 2,
+					/obj/item/clothing/mask/gas/sechailer/swat = 1,
+					/obj/item/clothing/head/beret/sec/navyofficer = 3,
+					)
 	refill_canister = /obj/item/vending_refill/wardrobe/peacekeeper_wardrobe
 	payment_department = ACCOUNT_SEC
 	light_color = COLOR_DARK_RED
@@ -106,6 +115,54 @@
 	refill_canister = /obj/item/vending_refill/wardrobe/engi_wardrobe
 	payment_department = ACCOUNT_ENG
 	light_color = COLOR_VIVID_YELLOW
+
+// DetDrobe
+
+/obj/machinery/vending/wardrobe/det_wardrobe
+	name = "\improper DetDrobe"
+	desc = "A machine for all your detective needs, as long as you need clothes."
+	icon_state = "detdrobe"
+	product_ads = "Apply your brilliant deductive methods in style!"
+	vend_reply = "Thank you for using the DetDrobe!"
+	products = list(
+		/obj/item/clothing/head/fedora/det_hat = 2,
+		/obj/item/clothing/under/rank/security/detective = 2,
+		/obj/item/clothing/under/rank/security/detective/skirt = 2,
+		/obj/item/clothing/suit/jacket/det_suit = 2,
+		/obj/item/clothing/shoes/sneakers/brown = 2,
+		/obj/item/clothing/gloves/latex = 2,
+		/obj/item/clothing/gloves/color/black = 2,
+		/obj/item/clothing/accessory/waistcoat = 2,
+		/obj/item/clothing/under/rank/security/detective/noir = 2,
+		/obj/item/clothing/under/rank/security/detective/noir/skirt = 2,
+		/obj/item/clothing/shoes/laceup = 2,
+		/obj/item/clothing/head/fedora = 2,
+		/obj/item/clothing/suit/jacket/det_suit/dark = 1,
+		/obj/item/clothing/suit/jacket/det_suit/noir = 1,
+		/obj/item/clothing/neck/tie/disco = 1,
+		/obj/item/clothing/under/rank/security/detective/disco = 1,
+		/obj/item/clothing/suit/jacket/det_suit/disco = 1,
+		/obj/item/clothing/shoes/discoshoes = 1,
+		/obj/item/clothing/glasses/regular/kim = 1,
+		/obj/item/clothing/under/rank/security/detective/kim = 1,
+		/obj/item/clothing/suit/jacket/det_suit/kim = 1,
+		/obj/item/clothing/gloves/kim = 1,
+		/obj/item/clothing/shoes/kim = 1,
+		/obj/item/reagent_containers/cup/glass/flask/det = 2,
+		/obj/item/storage/fancy/cigarettes = 5,
+		/obj/item/storage/fancy/cigarettes/cigpack_candy = 5,
+	)
+	premium = list(
+		/obj/item/clothing/head/flatcap = 1,
+		/obj/item/clothing/suit/jacket/det_suit/fore_blue = 2,
+		/obj/item/clothing/suit/jacket/det_suit/fore_blue/fore_red = 2,
+		/obj/item/clothing/suit/jacket/det_suit/fore_blue/fore_blue_trench = 2,
+		/obj/item/clothing/suit/jacket/det_suit/fore_blue/fore_red_trench = 2,
+	)
+	refill_canister = /obj/item/vending_refill/wardrobe/det_wardrobe
+	extra_price = PAYCHECK_COMMAND * 1.75
+	payment_department = ACCOUNT_SEC
+
 
 /// DeusVend
 
@@ -383,6 +440,8 @@
 				/obj/item/clothing/under/syndicate/tacticool = 2,
 				/obj/item/clothing/under/syndicate/tacticool/skirt = 2,
 				/obj/item/clothing/under/syndicate/tacticool/black = 2,
+				/obj/item/clothing/under/syndicate = 3,
+				/obj/item/clothing/under/syndicate/inteq = 2,
 				/obj/item/clothing/mask/balaclava = 3,
 				/obj/item/clothing/head/costume/ushanka = 5,
 				/obj/item/clothing/suit/jacket/letterman_syndie = 1,
@@ -405,6 +464,23 @@
 				/obj/item/clothing/mask/balaclava/breath/redscarf/yellowscarf = 2,
 				/obj/item/clothing/mask/gas/sechailer/syndicate	= 2,
 				/obj/item/clothing/mask/durak = 1,
+				/obj/item/storage/backpack/rucksack = 1,
+				/obj/item/storage/backpack/hipbag = 1,
+				/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn = 1,
+				/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn/green = 1,
+				/obj/item/clothing/mask/gas/sechailer/syndicate/flektarn/tan = 1,
+				/obj/item/clothing/suit/toggle/jacket/flannel/white = 5,
+				/obj/item/clothing/suit/toggle/hawaiiblack = 3,
+				/obj/item/clothing/suit/toggle/hawaiiblack/hawaiifuchs = 3,
+				/obj/item/clothing/suit/toggle/hawaiiblack/hawaiivine = 3,
+				/obj/item/clothing/suit/toggle/hawaiiblack/hawaiiorange = 3,
+				/obj/item/clothing/suit/toggle/hawaiiblack/hawaiimotu = 3,
+				/obj/item/clothing/under/pants/slav = 3,
+				/obj/item/clothing/under/dress/wedding_dress/bride_blue = 1,
+				/obj/item/clothing/under/dress/wedding_dress/bride_blue/bride_orange = 1,
+				/obj/item/clothing/under/dress/wedding_dress/bride_blue/bride_purple = 1,
+				/obj/item/clothing/under/dress/wedding_dress/bride_blue/bride_red = 1,
+				/obj/item/clothing/neck/windy_scarf = 3,
 			),
 		),
 	)
