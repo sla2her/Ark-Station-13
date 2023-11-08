@@ -303,3 +303,11 @@
 	name = "\improper Blueshield action figure"
 	icon_state = "blueshield"
 	toysay = "At the cost of my life!"
+
+/obj/item/toy/toy_xeno
+	icon = 'zov_modular_arkstation/krashly_modulars/icons/toys.dmi'
+	icon_state = "toy_xeno"
+
+/obj/item/toy/cattoy
+	icon = 'zov_modular_arkstation/krashly_modulars/icons/toys.dmi'
+	icon_state = "toy_mouse"
