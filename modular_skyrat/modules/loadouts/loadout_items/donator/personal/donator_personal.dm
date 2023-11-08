@@ -178,9 +178,9 @@
 	item_path = /obj/item/clothing/under/wetsuit_norm
 	//ckeywhitelist = list("ChillyLobster")
 
-/datum/loadout_item/mask/kindle_mask
-	name = "Kindle's mask"
-	item_path = /obj/item/clothing/mask/animal/kindle
+// /datum/loadout_item/mask/kindle_mask
+// 	name = "Kindle's mask"
+// 	item_path = /obj/item/clothing/mask/animal/kindle
 	// ckeywhitelist = list("theooz")
 
 /datum/loadout_item/head/drake_skull
