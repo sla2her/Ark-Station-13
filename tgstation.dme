@@ -7928,6 +7928,7 @@
 #include "zov_modular_arkstation\modules\salvages\code.dm"
 #include "zov_modular_arkstation\modules\security-medic-renewal\code\secmed.dm"
 #include "zov_modular_arkstation\modules\security-medic-renewal\code\secmed_clothes.dm"
+#include "zov_modular_arkstation\modules\singulo-and-tesla\code.dm"
 #include "zov_modular_arkstation\modules\sounds-renewal\code\antagonist_sounds.dm"
 #include "zov_modular_arkstation\modules\sounds-renewal\code\generic_sounds.dm"
 #include "zov_modular_arkstation\modules\sounds-renewal\code\mecha_sounds.dm"
