@@ -17985,6 +17985,7 @@
 /obj/effect/turf_decal/tile/red/opposingcorners{
 	dir = 1
 	},
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/cafeteria)
 "euz" = (

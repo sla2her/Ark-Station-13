@@ -112,7 +112,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance/departmental,
 /obj/structure/cable,
-/turf/closed/wall/r_wall,
+/turf/open/floor/iron,
 /area/station/maintenance/port/fore)
 "t" = (
 /obj/structure/table/wood,
