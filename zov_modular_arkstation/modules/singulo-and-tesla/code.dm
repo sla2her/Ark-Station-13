@@ -805,8 +805,6 @@
 
 /obj/singularity/expand(force_size, seconds_per_tick)
 
-	animate(warp, time = seconds_per_tick*3, transform = matrix().Scale(0.5,0.5))
-	animate(time = seconds_per_tick*7, transform = matrix())
 	var/temp_allowed_size = allowed_size
 
 	if(force_size)
@@ -837,6 +835,8 @@
 			dissipate_delay = 10
 			time_since_last_dissipiation = 0
 			dissipate_strength = 1
+			animate(warp, time = seconds_per_tick*3, transform = matrix().Scale(0.5,0.5))
+			animate(time = seconds_per_tick*7, transform = matrix())
 		if(STAGE_TWO)
 			if(check_cardinals_range(1, TRUE))
 				current_size = STAGE_TWO
@@ -849,6 +849,8 @@
 				dissipate_delay = 5
 				time_since_last_dissipiation = 0
 				dissipate_strength = 5
+				animate(warp, time = seconds_per_tick*3, pixel_x = -32, pixel_y = -32, transform = matrix().Scale(1,1))
+				animate(time = seconds_per_tick*7, transform = matrix())
 		if(STAGE_THREE)
 			if(check_cardinals_range(2, TRUE))
 				current_size = STAGE_THREE
@@ -861,6 +863,8 @@
 				dissipate_delay = 4
 				time_since_last_dissipiation = 0
 				dissipate_strength = 20
+				animate(warp, time = seconds_per_tick*3, pixel_x = -64, pixel_y = -64, transform = matrix().Scale(1.5,1.5))
+				animate(time = seconds_per_tick*7, transform = matrix())
 		if(STAGE_FOUR)
 			if(check_cardinals_range(3, TRUE))
 				current_size = STAGE_FOUR
@@ -873,6 +877,8 @@
 				dissipate_delay = 10
 				time_since_last_dissipiation = 0
 				dissipate_strength = 10
+				animate(warp, time = seconds_per_tick*3, pixel_x = -96, pixel_y = -96, transform = matrix().Scale(2,2))
+				animate(time = seconds_per_tick*7, transform = matrix())
 		if(STAGE_FIVE)//this one also lacks a check for gens because it eats everything
 			current_size = STAGE_FIVE
 			icon = 'zov_modular_arkstation/modules/singulo-and-tesla/singularity_s9.dmi'
@@ -882,6 +888,8 @@
 			new_grav_pull = 10
 			new_consume_range = 4
 			dissipate = FALSE //It cant go smaller due to e loss
+			animate(warp, time = seconds_per_tick*3, pixel_x = -128, pixel_y = -128, transform = matrix().Scale(3,3))
+			animate(time = seconds_per_tick*7, transform = matrix())
 		if(STAGE_SIX) //This only happens if a stage 5 singulo consumes a supermatter shard.
 			current_size = STAGE_SIX
 			icon = 'icons/effects/352x352.dmi'
@@ -891,6 +899,8 @@
 			new_grav_pull = 15
 			new_consume_range = 5
 			dissipate = FALSE
+			animate(warp, time = seconds_per_tick*3, pixel_x = -160, pixel_y = -160, transform = matrix().Scale(4,4))
+			animate(time = seconds_per_tick*7, transform = matrix())
 
 	var/datum/component/singularity/resolved_singularity = singularity_component.resolve()
 	if (!isnull(resolved_singularity))
