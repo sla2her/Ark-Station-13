@@ -789,18 +789,24 @@
 /obj/singularity
 	icon = 'zov_modular_arkstation/modules/singulo-and-tesla/singularity_s1.dmi'
 	invisibility = INVISIBILITY_MAXIMUM
+	var/atom/movable/warp_effect/warp
 
 /obj/singularity/Initialize(mapload, starting_energy = 50)
 	. = ..()
 	//SKYRAT EDIT ADDITION BEGIN
 	new /obj/effect/singularity_creation(loc)
+	warp = new(src)
+	vis_contents += warp
 
 	addtimer(CALLBACK(src, PROC_REF(make_visible)), 62)
 
 	energy = starting_energy
 	//SKYRAT EDIT END
 
-/obj/singularity/expand(force_size)
+/obj/singularity/expand(force_size, seconds_per_tick)
+
+	animate(warp, time = seconds_per_tick*3, transform = matrix().Scale(0.5,0.5))
+	animate(time = seconds_per_tick*7, transform = matrix())
 	var/temp_allowed_size = allowed_size
 
 	if(force_size)
@@ -902,6 +908,18 @@
 	else
 		return FALSE
 
+/obj/singularity/Destroy()
+	. = ..()
+	vis_contents -= warp
+	warp = null
+	return ..()
+
+/obj/singularity/on_changed_z_level(turf/old_turf, turf/new_turf, same_z_layer, notify_contents)
+	. = ..()
+	if(same_z_layer)
+		return
+	if(warp)
+		SET_PLANE(warp, PLANE_TO_TRUE(warp.plane), new_turf)
 
 #undef PA_CONSTRUCTION_UNSECURED
 #undef PA_CONSTRUCTION_UNWIRED
