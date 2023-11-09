@@ -2814,6 +2814,14 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/centcom/central_command_areas/courtroom)
+"lx" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/atmospherics/components/unary/vent_pump{
+	dir = 1
+	},
+/obj/effect/landmark/inteq_spawn,
+/turf/open/indestructible/dark,
+/area/centcom/central_command_areas/briefing)
 "ly" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron/dark,
@@ -5088,6 +5096,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/courtroom)
 "vv" = (
+/obj/effect/landmark/inteq_spawn,
 /turf/open/floor/wood,
 /area/centcom/central_command_areas/briefing)
 "vA" = (
@@ -7780,6 +7789,11 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
+"GF" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/landmark/inteq_spawn,
+/turf/open/indestructible/dark,
+/area/centcom/central_command_areas/briefing)
 "GG" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular,
@@ -10934,6 +10948,10 @@
 "Ux" = (
 /turf/open/indestructible/dark,
 /area/centcom/central_command_areas/admin)
+"Uy" = (
+/obj/effect/landmark/inteq_spawn,
+/turf/open/indestructible/dark,
+/area/centcom/central_command_areas/briefing)
 "Uz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -11062,6 +11080,11 @@
 	dir = 10
 	},
 /area/centcom/central_command_areas/evacuation)
+"Ve" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/landmark/inteq_spawn,
+/turf/open/indestructible/dark,
+/area/centcom/central_command_areas/briefing)
 "Vf" = (
 /obj/item/kirbyplants/organic/plant21{
 	pixel_x = -3;
@@ -49932,9 +49955,9 @@ bO
 EN
 gO
 hX
-Wr
-YK
-EN
+Ve
+lx
+Uy
 EN
 Iu
 rD
@@ -50189,9 +50212,9 @@ bO
 bc
 gO
 VJ
-EN
-bO
-EN
+Uy
+GF
+Uy
 EN
 xm
 wO
