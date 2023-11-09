@@ -149,7 +149,7 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 		//Pick the (un)lucky players
 		var/agents_number = min(team_size, candidates.len)
 
-		var/list/spawnpoints = GLOB.emergencyresponseteamspawn
+		var/list/spawnpoints = GLOB.inteqteamspawn
 		var/index = 0
 		GLOB.solfed_responder_info[list_to_use][SOLFED_AMT] = agents_number
 		while(agents_number && candidates.len)
@@ -461,7 +461,7 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 				var/agents_number = min(amount_to_summon, candidates.len)
 				GLOB.solfed_responder_info[summoned_type][SOLFED_AMT] = agents_number
 
-				var/list/spawnpoints = GLOB.emergencyresponseteamspawn
+				var/list/spawnpoints = GLOB.inteqteamspawn
 				var/index = 0
 				while(agents_number && candidates.len)
 					var/spawn_loc = spawnpoints[index + 1]
@@ -650,6 +650,16 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 			qdel(user)
 	else
 		user.balloon_alert(user, "beam-out cancelled")
+
+/obj/effect/landmark/inteq_spawn
+	name = "InteQteam"
+	icon = 'zov_modular_arkstation/modules/faction-inteq/icons/landmark.dmi'
+	icon_state = "inteq_spawn"
+
+/obj/effect/landmark/inteq_spawn/Initialize(mapload)
+	..()
+	GLOB.inteqteamspawn += loc
+	return INITIALIZE_HINT_QDEL
 
 #undef EMERGENCY_RESPONSE_POLICE
 #undef EMERGENCY_RESPONSE_ATMOS
