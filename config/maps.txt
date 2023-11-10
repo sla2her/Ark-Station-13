@@ -15,10 +15,6 @@ endmap
 
 # Production-level maps.
 
-map birdshot
-	disabled
-endmap
-
 map deltastation
 	votable
 endmap
