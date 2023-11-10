@@ -10,8 +10,8 @@
 		"%USER% поёбывает в своём темпе %TARGET%'s рот.",
 		"%USER% хватает за голову %TARGET% и насаживает ртом на свой член."
 	],
-	"sound_use": 0,
-	"sound_range": 7,
+	"sound_use": 1,
+	"sound_range": 3,
 	"interaction_requires": [
 		"target_mouth"
 	],

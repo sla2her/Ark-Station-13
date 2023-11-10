@@ -10,8 +10,8 @@
 		"%USER% прижимается чуть сильнее к вагине %TARGET% своей киской.",
 		"%USER% нежно трётся об %TARGET% киску своей вагиной."
 	],
-	"sound_use": 0,
-	"sound_range": 7,
+	"sound_use": 1,
+	"sound_range": 3,
 	"target_required_parts": [
 		"vagina"
 	],
