@@ -41,37 +41,36 @@
 
 	job_tone = "objection"
 
-// /datum/outfit/job/nanotrasen_consultant
-// 	name = "Nanotrasen Consultant"
-// 	jobtype = /datum/job/nanotrasen_consultant
+/datum/outfit/job/nanotrasen_consultant
+	name = "Nanotrasen Consultant"
+	jobtype = /datum/job/nanotrasen_consultant
+	belt = /obj/item/modular_computer/pda/nanotrasen_consultant
+	glasses = /obj/item/clothing/glasses/sunglasses
+	ears = /obj/item/radio/headset/heads/nanotrasen_consultant
+	gloves = /obj/item/clothing/gloves/combat
+	uniform =  /obj/item/clothing/under/rank/nanotrasen_consultant
+	suit = /obj/item/clothing/suit/armor/vest/nanotrasen_consultant
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/nanotrasen_consultant
+	backpack_contents = list(
+		/obj/item/melee/baton/telescopic = 1,
+		/obj/item/choice_beacon/ntc = 1,
+		)
 
-// 	belt = /obj/item/modular_computer/pda/nanotrasen_consultant
-// 	glasses = /obj/item/clothing/glasses/sunglasses
-// 	ears = /obj/item/radio/headset/heads/nanotrasen_consultant
-// 	gloves = /obj/item/clothing/gloves/combat
-// 	uniform =  /obj/item/clothing/under/rank/nanotrasen_consultant
-// 	suit = /obj/item/clothing/suit/armor/vest/nanotrasen_consultant
-// 	shoes = /obj/item/clothing/shoes/jackboots
-// 	head = /obj/item/clothing/head/nanotrasen_consultant
-// 	backpack_contents = list(
-// 		/obj/item/melee/baton/telescopic = 1,
-// 		/obj/item/storage/toolbox/guncase/skyrat/pistol/trappiste_small_case/skild = 1,
-// 		)
+	skillchips = list(/obj/item/skillchip/disk_verifier)
 
-// 	skillchips = list(/obj/item/skillchip/disk_verifier)
+	backpack = /obj/item/storage/backpack
+	satchel = /obj/item/storage/backpack/satchel
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	messenger = /obj/item/storage/backpack/messenger
 
-// 	backpack = /obj/item/storage/backpack
-// 	satchel = /obj/item/storage/backpack/satchel
-// 	duffelbag = /obj/item/storage/backpack/duffelbag
-// 	messenger = /obj/item/storage/backpack/messenger
+	implants = list(/obj/item/implant/mindshield)
+	accessory = /obj/item/clothing/accessory/medal/gold/nanotrasen_consultant
 
-// 	implants = list(/obj/item/implant/mindshield)
-// 	accessory = /obj/item/clothing/accessory/medal/gold/nanotrasen_consultant
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/centcom)
 
-// 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/centcom)
-
-// 	id = /obj/item/card/id/advanced/centcom
-// 	id_trim = /datum/id_trim/job/nanotrasen_consultant
+	id = /obj/item/card/id/advanced/centcom
+	id_trim = /datum/id_trim/job/nanotrasen_consultant
 
 /obj/item/radio/headset/heads/nanotrasen_consultant
 	name = "\proper the Nanotrasen consultant's headset"
@@ -153,3 +152,20 @@
 	new /obj/item/storage/photo_album/personal(src)
 	new /obj/item/bedsheet/centcom(src)
 	new /obj/item/storage/bag/garment/nanotrasen_consultant(src)
+
+//Choice Beacon, I hope in the future they're going to be given proper unique gun but this will do.
+
+
+/obj/item/choice_beacon/ntc
+	name = "gunset beacon"
+	desc = "A single use beacon to deliver a gunset of your choice. Please only call this in your office"
+	company_source = "Trappiste Fabriek Company"
+	company_message = span_bold("Supply Pod incoming please stand by")
+
+/obj/item/choice_beacon/ntc/generate_display_names()
+	var/static/list/selectable_gun_types = list(
+		"Takbok" = /obj/item/storage/toolbox/guncase/skyrat/pistol/trappiste_small_case/takbok,
+		"Skild" = /obj/item/storage/toolbox/guncase/skyrat/pistol/trappiste_small_case/skild,
+	)
+
+	return selectable_gun_types

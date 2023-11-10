@@ -20,6 +20,7 @@
 	new /obj/item/gun/energy/e_gun(src)
 	new /obj/item/door_remote/captain(src)
 	new /obj/item/storage/photo_album/captain(src)
+	new /obj/item/card/id/departmental_budget(src) //SKYRAT EDIT ADDITION
 
 /obj/structure/closet/secure_closet/hop
 	name = "head of personnel's locker"
@@ -44,6 +45,7 @@
 	new /obj/item/circuitboard/machine/techfab/department/service(src)
 	new /obj/item/storage/photo_album/hop(src)
 	new /obj/item/storage/lockbox/medal/hop(src)
+	new /obj/item/card/id/departmental_budget/srv(src) //SKYRAT EDIT ADDITION
 
 /obj/structure/closet/secure_closet/hos
 	name = "head of security's locker"
@@ -53,21 +55,21 @@
 // /obj/structure/closet/secure_closet/hos/PopulateContents()
 // 	..()
 
-// 	new /obj/item/computer_disk/command/hos(src)
-// 	new /obj/item/radio/headset/heads/hos(src)
-// 	new /obj/item/storage/bag/garment/hos(src)
-// 	new /obj/item/storage/lockbox/medal/sec(src)
-// 	new /obj/item/megaphone/sec(src)
-// 	new /obj/item/holosign_creator/security(src)
-// 	new /obj/item/storage/lockbox/loyalty(src)
-// 	new /obj/item/storage/box/flashbangs(src)
-// 	new /obj/item/shield/riot/tele(src)
-// 	new /obj/item/storage/belt/security/full(src)
-// 	new /obj/item/circuitboard/machine/techfab/department/security(src)
-// 	new /obj/item/storage/photo_album/hos(src) // Ark Station 13 Edit - Moved to modular
+	new /obj/item/computer_disk/command/hos(src)
+	new /obj/item/radio/headset/heads/hos(src)
+	new /obj/item/storage/bag/garment/hos(src)
+	new /obj/item/storage/lockbox/medal/sec(src)
+	new /obj/item/megaphone/sec(src)
+	new /obj/item/holosign_creator/security(src)
+	new /obj/item/storage/lockbox/loyalty(src)
+	new /obj/item/storage/box/flashbangs(src)
+	new /obj/item/shield/riot/tele(src)
+	new /obj/item/storage/belt/security/full(src)
+	new /obj/item/circuitboard/machine/techfab/department/security(src)
+	new /obj/item/storage/photo_album/hos(src)
 
-// /obj/structure/closet/secure_closet/hos/populate_contents_immediate()
-// 	. = ..()
+/obj/structure/closet/secure_closet/hos/populate_contents_immediate()
+	. = ..()
 
 // 	// Traitor steal objectives
 // 	new /obj/item/gun/energy/e_gun/hos(src)
