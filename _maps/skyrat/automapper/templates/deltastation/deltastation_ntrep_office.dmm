@@ -91,7 +91,7 @@
 	pixel_y = -6
 	},
 /turf/closed/wall/r_wall,
-/area/template_noop)
+/area/station/command/heads_quarters/nt_rep)
 "q" = (
 /obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/decal/cleanable/dirt,
@@ -181,9 +181,6 @@
 	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/nt_rep)
-"A" = (
-/turf/closed/wall/r_wall,
-/area/template_noop)
 "B" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -443,8 +440,8 @@ o
 a
 "}
 (10,1,1) = {"
-A
-A
+a
+a
 p
 c
 L
