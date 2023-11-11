@@ -14,7 +14,7 @@
 		/mob/living/basic/trooper/syndicate/melee/space = 8,
 		/mob/living/basic/trooper/syndicate/ranged/space = 2,
 	)
-
+	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/syndie_storm.ogg' // Ark Station 13 Edit
 /datum/round_event_control/portal_storm_narsie
 	name = "Portal Storm: Constructs"
 	typepath = /datum/round_event/portal_storm/portal_storm_narsie
@@ -32,6 +32,8 @@
 		/mob/living/basic/construct/juggernaut/hostile = 8,
 		/mob/living/basic/construct/wraith/hostile = 6,
 	)
+
+	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/_admin_horror_music.ogg' // Ark Station 13 Edit
 
 /datum/round_event/portal_storm
 	start_when = 7
