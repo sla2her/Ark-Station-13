@@ -20240,7 +20240,7 @@
 /area/station/maintenance/port/fore)
 "gga" = (
 /obj/machinery/light/small/directional/west,
-/obj/effect/spawner/random/trash/hobo_squat,
+/mob/living/simple_animal/hostile/mimic/crate,
 /turf/open/floor/plating,
 /area/station/maintenance/port/lesser)
 "ggn" = (
@@ -28268,7 +28268,7 @@
 /obj/structure/bed/dogbed/mcgriff,
 /obj/item/food/beef_wellington_slice,
 /obj/structure/cable,
-/mob/living/basic/pet/dog/pug/mcgriff,
+/mob/living/basic/pet/dog/corgi/Lisa/ada,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/warden)
 "iFh" = (
@@ -36643,6 +36643,10 @@
 	},
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
+"lfT" = (
+/mob/living/simple_animal/hostile/mimic/crate,
+/turf/open/floor/plating,
+/area/station/maintenance/port/greater)
 "lgk" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 4
@@ -77888,6 +77892,9 @@
 "xMn" = (
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/machinery/holopad,
+/mob/living/basic/pet/fox/emma{
+	dir = 4
+	},
 /turf/open/floor/iron/white/textured,
 /area/station/security/medical)
 "xMq" = (
@@ -78959,8 +78966,8 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/chapel)
 "ydD" = (
-/obj/effect/spawner/random/structure/crate_abandoned,
 /obj/machinery/light/small/directional/south,
+/mob/living/simple_animal/hostile/mimic/crate,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/fore)
 "ydH" = (
@@ -226758,7 +226765,7 @@ tKI
 kii
 cEG
 tKI
-afz
+lfT
 mTc
 tKI
 tKI

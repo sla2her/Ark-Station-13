@@ -1032,6 +1032,7 @@
 /obj/structure/spider/stickyweb,
 /obj/machinery/power/port_gen/pacman,
 /obj/machinery/status_display/evac/directional/west,
+/obj/structure/spider/stickyweb,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/electrical)
 "apD" = (
@@ -2567,10 +2568,10 @@
 /obj/structure/bed/dogbed/mcgriff{
 	anchored = 1
 	},
-/mob/living/basic/pet/dog/pug/mcgriff,
 /obj/item/key/security,
 /obj/structure/cable,
 /obj/structure/reagent_dispensers/wall/peppertank/directional/west,
+/mob/living/basic/pet/dog/corgi/Lisa/ada,
 /turf/open/floor/iron/dark/smooth_edge{
 	dir = 4
 	},
@@ -6736,6 +6737,7 @@
 	dir = 1
 	},
 /obj/structure/sink/directional/south,
+/mob/living/basic/pet/fox/emma,
 /turf/open/floor/iron/white/smooth_edge,
 /area/station/security/medical)
 "caV" = (
@@ -18191,6 +18193,15 @@
 /obj/structure/sign/warning/secure_area,
 /turf/closed/wall/r_wall,
 /area/station/science/xenobiology)
+"fml" = (
+/obj/structure/flora/grass/jungle,
+/obj/structure/flora/bush/grassy,
+/obj/structure/flora/bush/flowers_yw,
+/mob/living/basic/lizard/tegu/gus{
+	name = "Sayonara"
+	},
+/turf/open/floor/grass,
+/area/station/hallway/primary/central)
 "fmo" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
 /obj/machinery/telecomms/server/presets/service,
@@ -36327,6 +36338,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/smooth_large,
 /area/station/hallway/secondary/construction)
+"krp" = (
+/obj/structure/spider/stickyweb,
+/turf/closed/wall/r_wall,
+/area/station/command/heads_quarters/ce)
 "krz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/trimline/brown/filled/corner{
@@ -51070,6 +51085,8 @@
 /obj/structure/closet/secure_closet/medical1,
 /obj/item/blood_filter,
 /obj/effect/turf_decal/bot,
+/obj/item/mop,
+/obj/item/reagent_containers/cup/bucket,
 /turf/open/floor/iron/freezer,
 /area/station/medical/surgery)
 "oqF" = (
@@ -56269,6 +56286,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
 /area/station/ai_monitored/security/armory)
+"pLe" = (
+/obj/effect/turf_decal/trimline/yellow/filled/warning,
+/mob/living/simple_animal/pet/fox/fennec,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/station/engineering/break_room)
 "pLl" = (
 /obj/machinery/button/flasher{
 	id = "hopflash";
@@ -71250,15 +71274,11 @@
 /area/station/engineering/atmos)
 "tLD" = (
 /obj/structure/bed/dogbed/runtime,
-/mob/living/simple_animal/pet/cat/runtime{
-	icon_dead = "original_dead";
-	icon_living = "original";
-	icon_state = "original"
-	},
 /obj/item/toy/cattoy,
 /obj/machinery/digital_clock/directional/north{
 	pixel_y = 37
 	},
+/mob/living/simple_animal/pet/cat/runtime,
 /turf/open/floor/carpet/blue,
 /area/station/command/heads_quarters/cmo)
 "tLN" = (
@@ -120820,7 +120840,7 @@ jYQ
 vMa
 atS
 agn
-atS
+fml
 jiu
 pnD
 cdz
@@ -126032,7 +126052,7 @@ dEx
 dEx
 pha
 pha
-pha
+krp
 pha
 iBF
 xGA
@@ -126539,7 +126559,7 @@ gpe
 tKc
 gxA
 jGM
-jSx
+pLe
 uvL
 qAI
 iFp

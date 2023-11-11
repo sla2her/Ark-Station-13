@@ -8307,7 +8307,7 @@
 	dir = 4
 	},
 /obj/structure/bed/dogbed/mcgriff,
-/mob/living/basic/pet/dog/pug/mcgriff,
+/mob/living/basic/pet/dog/corgi/Lisa/ada,
 /turf/open/floor/glass/reinforced,
 /area/station/security/warden)
 "bMb" = (
@@ -21155,6 +21155,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 8
 	},
+/mob/living/basic/pet/fox/emma,
 /turf/open/floor/iron/white,
 /area/station/security/medical)
 "gtN" = (
