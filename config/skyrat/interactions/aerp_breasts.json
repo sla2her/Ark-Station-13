@@ -1,13 +1,13 @@
 {
 	"name": "Грудь. Сжать.",
-	"description": "Схвати партнера за бубу",
+	"description": "Мммм бубс)",
 	"usage": "other",
 	"category": "Erp",
 	"distance_allowed": 0,
 	"message": [
-		"%USER% грубо хватает %TARGET% за грудь.",
+		"%USER% жмякает грудь %TARGET%.",
 		"%USER% нежно сжимает %TARGET%'s грудь.",
-		"%USER% жмакает грудь %TARGET% в руке.",
+		"%USER% трогает титю %TARGET%.",
 		"%USER% лапает грудь %TARGET%."
 	],
 	"sound_use": 1,

@@ -1,14 +1,14 @@
 {
-	"name": "Вагина. Отлизать",
-	"description": "Ну теперь на зону ни ногой.",
+	"name": "Рот. Вагина",
+	"description": "Повышаем авторитет.",
 	"usage": "other",
 	"category": "Erp",
 	"distance_allowed": 0,
 	"message": [
-		"%USER% прижимается губами к %TARGET%'s киске.",
-		"%USER% проводит язычком по %TARGET%'s клитору.",
-		"%USER% проникает язычком внутрь %TARGET%'s киски.",
-		"%USER% чмокает %TARGET% прямо в клитор."
+		"%USER% лижет грядку %TARGET%.",
+		"%USER% играет языком с вагиной %TARGET%.",
+		"%USER% проникает язычком внутрь %TARGET%.",
+		"%USER% одаривает поцелуем вагину %TARGET%."
 	],
 	"sound_use": 1,
 	"sound_range": 3,

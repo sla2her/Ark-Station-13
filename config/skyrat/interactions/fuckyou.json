@@ -1,11 +1,11 @@
 {
 	"name": "Показать средний палец.",
-	"description": "Давай, покажи какой ты крутой.",
+	"description": "Пошёл нахуй, полупидор ебучий.",
 	"usage": "other",
 	"category": "Miscellaneous",
 	"distance_allowed": 1,
 	"message": [
-		"%USER% жестко вытягивает руку перед собой и показывает средний палец %TARGET%!"
+		"%USER% показывает средний палец %TARGET%!"
 	],
 	"sound_use": 0,
 	"sound_possible": [

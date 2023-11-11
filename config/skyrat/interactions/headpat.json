@@ -1,11 +1,11 @@
 {
 	"name": "Погладить по голове.",
-	"description": "Ты дегенерат?",
+	"description": "Не смей трогать другую",
 	"usage": "other",
 	"category": "Miscellaneous",
 	"distance_allowed": 0,
 	"message": [
-		"%USER% ласкает голову %TARGET%!"
+		"%USER% гладит по голове %TARGET%."
 	],
 	"sound_use": 0,
 	"sound_possible": [

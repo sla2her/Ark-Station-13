@@ -1,11 +1,11 @@
 {
 	"name": "Взяться за руку.",
-	"description": "Не стесняйся, возьми её/его за руку.",
+	"description": "Не стесняйся, возьмись за руку.",
 	"usage": "other",
 	"category": "Miscellaneous",
 	"distance_allowed": 0,
 	"message": [
-		"%USER% нежно берет за руку %TARGET%!"
+		"%USER% нежно берет за руку %TARGET%."
 	],
 	"sound_use": 0,
 	"sound_possible": [
