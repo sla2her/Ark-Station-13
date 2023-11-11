@@ -41780,7 +41780,6 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/security_medic,
 /obj/effect/turf_decal/delivery/blue,
 /turf/open/floor/iron/white,
 /area/station/security/medical)

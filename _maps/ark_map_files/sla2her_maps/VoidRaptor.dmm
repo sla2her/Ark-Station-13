@@ -32397,7 +32397,6 @@
 	dir = 10
 	},
 /obj/effect/turf_decal/delivery/blue,
-/obj/structure/closet/secure_closet/security_medic,
 /turf/open/floor/iron/white,
 /area/station/security/medical)
 "jnP" = (
