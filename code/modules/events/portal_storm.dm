@@ -15,7 +15,7 @@
 		/mob/living/basic/trooper/syndicate/ranged/space = 2,
 	)
 	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/syndie_storm.ogg' // Ark Station 13 Edit
- 
+
 /datum/round_event_control/portal_storm_narsie
 	name = "Portal Storm: Constructs"
 	typepath = /datum/round_event/portal_storm/portal_storm_narsie
@@ -81,7 +81,7 @@
 	set waitfor = 0
 	sound_to_playing_players('sound/magic/lightning_chargeup.ogg')
 	sleep(8 SECONDS)
-	priority_announce("Massive bluespace anomaly detected en route to [station_name()]. Brace for impact.", "Central Command", triggersound) // Ark Station 13 Edit
+	priority_announce("Massive bluespace anomaly detected en route to [station_name()]. Brace for impact.", "Central Command", sound = triggersound) // Ark Station 13 Edit
 	sleep(2 SECONDS)
 	sound_to_playing_players('sound/magic/lightningbolt.ogg')
 
