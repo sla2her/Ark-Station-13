@@ -84,6 +84,7 @@
 	desc = "Tommy Vercetti is an innocent man."
 	icon_state = "hawaiiblack"
 	toggle_noun = "buttons"
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
 /obj/item/clothing/suit/toggle/hawaiiblack/hawaiifuchs
 	name = "red hawaii shirt"
@@ -176,4 +177,36 @@
 				CAN_OVERSLOT = TRUE,
 			),
 		),
+	)
+
+
+/obj/item/clothing/suit/armor/riot
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+	unique_reskin = list(
+		"Default" = list(
+			RESKIN_ICON_STATE = "riot",
+			RESKIN_WORN_ICON_STATE = "riot"
+		),
+		"Black" = list(
+			RESKIN_ICON_STATE = "riot_wm",
+			RESKIN_WORN_ICON_STATE = "riot_wm"
+		)
+	)
+
+/obj/item/clothing/suit/armor/bulletproof
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	unique_reskin = list(
+		"Default" = list(
+			RESKIN_ICON_STATE = "bulletproof",
+			RESKIN_WORN_ICON_STATE = "bulletproof"
+		),
+		"Black" = list(
+			RESKIN_ICON_STATE = "bulletproof_wm",
+			RESKIN_WORN_ICON_STATE = "bulletproof_wm"
+		)
 	)

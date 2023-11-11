@@ -294,8 +294,8 @@ GLOBAL_LIST_INIT(loadout_necks, generate_loadout_items(/datum/loadout_item/neck)
 */
 
 /datum/loadout_item/neck/donator
-	donator_only = FALSE
+//	donator_only = FALSE
 
-/datum/loadout_item/neck/donator/mantle/regal
+/datum/loadout_item/neck/mantle/regal
 	name = "Regal Mantle"
 	item_path = /obj/item/clothing/neck/mantle/regal

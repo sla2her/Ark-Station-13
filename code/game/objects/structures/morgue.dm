@@ -322,7 +322,7 @@ GLOBAL_LIST_EMPTY(crematoriums)
 			if(M.incorporeal_move) //can't cook revenants!
 				continue
 			if (M.stat != DEAD)
-				M.emote("scream")
+				M.emote("agony") // Ark Station 13 Edit
 			if(user)
 				log_combat(user, M, "cremated")
 			else

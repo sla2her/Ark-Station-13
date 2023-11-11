@@ -28,19 +28,19 @@
 	message_param = "bows to %t."
 	hands_use_check = TRUE
 
-/datum/emote/living/burp
-	key = "burp"
-	key_third_person = "burps"
-	message = "burps."
-	message_mime = "acts out a burp."
-	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+// /datum/emote/living/burp
+// 	key = "burp"
+// 	key_third_person = "burps"
+// 	message = "burps."
+// 	message_mime = "acts out a burp."
+// 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
-/datum/emote/living/choke
-	key = "choke"
-	key_third_person = "chokes"
-	message = "chokes!"
-	message_mime = "chokes silently!"
-	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+// /datum/emote/living/choke
+// 	key = "choke"
+// 	key_third_person = "chokes"
+// 	message = "chokes!"
+// 	message_mime = "chokes silently!"
+// 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/cross
 	key = "cross"
@@ -67,17 +67,17 @@
 		var/mob/living/L = user
 		L.Unconscious(40)
 
-/datum/emote/living/cough
-	key = "cough"
-	key_third_person = "coughs"
-	message = "coughs!"
-	message_mime = "acts out an exaggerated cough!"
-	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+// /datum/emote/living/cough
+// 	key = "cough"
+// 	key_third_person = "coughs"
+// 	message = "coughs!"
+// 	message_mime = "acts out an exaggerated cough!"
+// 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
-/datum/emote/living/cough/can_run_emote(mob/user, status_check = TRUE , intentional)
-	. = ..()
-	if(HAS_TRAIT(user, TRAIT_SOOTHED_THROAT))
-		return FALSE
+// /datum/emote/living/cough/can_run_emote(mob/user, status_check = TRUE , intentional)
+// 	. = ..()
+// 	if(HAS_TRAIT(user, TRAIT_SOOTHED_THROAT))
+// 		return FALSE
 
 /datum/emote/living/dance
 	key = "dance"
@@ -209,12 +209,12 @@
 		else
 			return pick('sound/voice/human/gasp_male1.ogg', 'sound/voice/human/gasp_male2.ogg')
 
-/datum/emote/living/giggle
-	key = "giggle"
-	key_third_person = "giggles"
-	message = "giggles."
-	message_mime = "giggles silently!"
-	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+// /datum/emote/living/giggle
+// 	key = "giggle"
+// 	key_third_person = "giggles"
+// 	message = "giggles."
+// 	message_mime = "giggles silently!"
+// 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/glare
 	key = "glare"
@@ -379,19 +379,19 @@
 	animate(pixel_x = user.pixel_x - 1, time = 0.1 SECONDS)
 #undef SHIVER_LOOP_DURATION
 
-/datum/emote/living/sigh
-	key = "sigh"
-	key_third_person = "sighs"
-	message = "sighs."
-	message_mime = "acts out an exaggerated silent sigh."
-	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+// /datum/emote/living/sigh
+// 	key = "sigh"
+// 	key_third_person = "sighs"
+// 	message = "sighs."
+// 	message_mime = "acts out an exaggerated silent sigh."
+// 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
-/datum/emote/living/sigh/run_emote(mob/living/user, params, type_override, intentional)
-	. = ..()
-	if(!ishuman(user))
-		return
-	var/image/emote_animation = image('icons/mob/human/emote_visuals.dmi', user, "sigh")
-	flick_overlay_global(emote_animation, GLOB.clients, 2.0 SECONDS)
+// /datum/emote/living/sigh/run_emote(mob/living/user, params, type_override, intentional)
+// 	. = ..()
+// 	if(!ishuman(user))
+// 		return
+// 	var/image/emote_animation = image('icons/mob/human/emote_visuals.dmi', user, "sigh")
+// 	flick_overlay_global(emote_animation, GLOB.clients, 2.0 SECONDS)
 
 /datum/emote/living/sit
 	key = "sit"
@@ -403,12 +403,12 @@
 	key_third_person = "smiles"
 	message = "smiles."
 
-/datum/emote/living/sneeze
-	key = "sneeze"
-	key_third_person = "sneezes"
-	message = "sneezes."
-	message_mime = "acts out an exaggerated silent sneeze."
-	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+// /datum/emote/living/sneeze
+// 	key = "sneeze"
+// 	key_third_person = "sneezes"
+// 	message = "sneezes."
+// 	message_mime = "acts out an exaggerated silent sneeze."
+// 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/smug
 	key = "smug"

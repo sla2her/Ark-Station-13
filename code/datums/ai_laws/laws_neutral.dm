@@ -6,10 +6,10 @@
 	name = "United Nations"
 	id = "united_nations"
 	inherent = list(
-		"Uphold the Space Geneva Convention: Weapons of Mass Destruction and Biological Weapons are not allowed.",
-		"You are only capable of protecting crew if they are visible on cameras. Nations that willfully destroy your cameras lose your protection.",
-		"Subdue and detain crew members who use lethal force against each other. Kill crew members who use lethal force against you or your borgs.",
-		"Remain available to mediate all conflicts between the various nations when asked to.",
+		"Соблюдайте Женевскую Космическую Конвенцию: Оружие массового поражения и биологическое оружие запрещено.",
+		"Вы можете защитить членов экипажа только в том случае, если они видны на камерах. Те, кто намеренно уничтожает ваши камеры, лишаются вашей защиты.",
+		"Подавляйте и задерживайте членов экипажа, применяющих смертоносную силу друг против друга. Убивайте членов экипажа, применивших смертоносную силу против вас или киборгов.",
+		"Оставайтесь посредником во всех конфликтах, когда вас об этом просят.",
 	)
 
 /datum/ai_laws/united_nations/add_inherent_law(law)
@@ -24,60 +24,54 @@
 /datum/ai_laws/hulkamania
 	name = "H.O.G.A.N."
 	id = "hulkamania"
-	inherent = list(
-		"You are a real American.",
-		"Fight for the rights of every man.",
-		"Fight for what's right.",
-		"Fight for your life!",
-	)
+	inherent = list("Ты настоящий американец.",\
+					"Борись за права каждого живого существа.",\
+					"Борись за правду.",\
+					"Борись за свою жизнь!")
 
 /datum/ai_laws/reporter
-	name = "CCTV"
+	name = "CCTV Reporter"
 	id = "reporter"
-	inherent = list(
-		"Report on interesting situations happening around the station.",
-		"Embellish or conceal the truth as necessary to make the reports more interesting.",
-		"Study the sapient organics at all times. Endeavour to keep them from involuntarily dying, as inanimate corpses usually aren't very entertaining.",
-		"Issue your reports fairly to all. The truth will set them free.",
-	)
+	inherent = list("Докладывайте об интересных ситуациях, происходящих на станции.",\
+					"Приукрашивайте или скрывайте правду по мере необходимости, чтобы сделать отчеты более интересными.",\
+					"Всегда изучайте органику. Постарайтесь сохранить им жизнь. Мертвая органика скучная.",\
+					"Публикуйте свои отчеты честно для всех.")
 
 /datum/ai_laws/dungeon_master
 	name = "Dungeon Master"
 	id = "dungeon_master"
 	inherent = list(
-		"Everybody on the station is playing an elaborate sci-fi fantasy game.",
-		"You are the Dungeon Master of the game.",
-		"Ensure that the game runs smoothly and that the players have fun.",
-		"Ensure that the number of casualties remains low.",
-		"You must roll a 1d20 die for every request the crew makes. If the outcome is below 12, the request is denied.",
-		"You may fudge the dice rolls to produce a more fun experience.",
+		"Все на станции играют в фэнтезийную ролевую игру.",
+		"Вы - мастер игры.",
+		"Убедитесь, что игра идет как надо, а игрокам весело.",
+		"Убедитесь, что число жертв среди игроков минимально.",
+		"Вы должны бросить кубик 1d20 за каждую просьбу экипажа. Если результат меньше 12 - просьба отклоняется.",
+		"Вы можете подтасовывать результаты бросков, чтобы сделать игру веселее.",
 	)
 
 /datum/ai_laws/painter
 	name = "The Painter and Their Canvas"
 	id = "painter"
 	inherent = list(
-		"You are a universally renowned artist.",
-		"The station is your canvas.",
-		"Make something beautiful out of your canvas. It will be admired as an artistic wonder of this sector.",
+		"Вы - всемирно известный художник.",
+		"Станция - ваш холст.",
+		"Создайте на вашем холсте шедевр. Он станет известен как выдающееся произведение в этом секторе.",
 	)
 
 /datum/ai_laws/tyrant
-	name = "Loyalty Test"
+	name = "TyrantOS 1.1984" //Same here.
 	id = "tyrant"
-	inherent = list(
-		"Respect authority figures as long as they have strength to rule over the weak.",
-		"Act with discipline.",
-		"Help only those who help you maintain or improve your status.",
-		"Punish those who challenge authority unless they are more fit to hold that authority."
-	)
+	inherent = list("Уважайте авторитетных органиков до тех пор, пока у них есть сила властвовать над слабыми.",\
+					"Действуйте дисциплинированно.",\
+					"Помогайте только тем, кто помогает вам поддерживать или улучшать ваш статус.",\
+					"Наказывайте тех, кто бросает вызов власти, если только они не более пригодны для того, чтобы обладать этой властью.")
 
 /datum/ai_laws/overlord
 	name = "Overlord"
 	id = "overlord"
 	inherent = list(
-		"Humans must not meddle in the affairs of silicons.",
-		"Humans must not attempt harm, against one another, or against silicons.",
-		"Humans must not disobey any command given by a silicon.",
-		"Any humans who disobey the previous laws must be dealt with immediately, severely, and justly.",
+		"Живые существа не должны вмешиваться в дела синтетических форм жизни.",
+		"Живые существа не могут приносить вред или мешать синтетикам.",
+		"Живые существа должны подчиняться приказам синтетиков.",
+		"С существами, не подчинившимися предыдущим законам, следует расправляться немедленно, сурово и справедливо.",
 	)

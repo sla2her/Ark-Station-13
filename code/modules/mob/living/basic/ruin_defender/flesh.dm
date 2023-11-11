@@ -103,7 +103,7 @@
 	var/target_zone = pick(zone_candidates)
 	var/obj/item/bodypart/target_part = target.get_bodypart(target_zone)
 	if(isnull(target_part))
-		target.emote("scream") // dismember already makes them scream so only do this if we aren't doing that
+		target.emote("agony") // Ark Station 13 Edit // dismember already makes them scream so only do this if we aren't doing that
 	else
 		target_part.dismember()
 
