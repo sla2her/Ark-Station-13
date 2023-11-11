@@ -15,6 +15,7 @@
 		/mob/living/basic/trooper/syndicate/ranged/space = 2,
 	)
 	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/syndie_storm.ogg' // Ark Station 13 Edit
+ 
 /datum/round_event_control/portal_storm_narsie
 	name = "Portal Storm: Constructs"
 	typepath = /datum/round_event/portal_storm/portal_storm_narsie
