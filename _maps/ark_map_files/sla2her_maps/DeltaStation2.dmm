@@ -5741,7 +5741,8 @@
 /obj/structure/railing,
 /obj/structure/flora/bush/sparsegrass/style_random,
 /mob/living/basic/lizard/tegu/gus{
-	name = "Sayonara"
+	name = "Sayonara";
+	desc = "Jewish femboy lizzard."
 	},
 /turf/open/floor/grass,
 /area/station/hallway/primary/central/aft)
@@ -52964,6 +52965,9 @@
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
 	},
+/obj/structure/plaque/static_plaque/golden/commission/delta{
+	desc = "В память о жертвах нашествия медведей 12.11.2563. Вечная память героям."
+	},
 /turf/open/floor/iron/white/side{
 	dir = 8
 	},
@@ -70980,7 +70984,6 @@
 /area/station/medical/virology)
 "rJR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/closet/secure_closet/security_medic,
 /turf/open/floor/iron/white,
 /area/station/security/medical)
 "rKb" = (

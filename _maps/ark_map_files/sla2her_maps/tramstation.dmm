@@ -7502,7 +7502,6 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/security_medic,
 /obj/effect/turf_decal/delivery/blue,
 /turf/open/floor/iron/white,
 /area/station/security/medical)
@@ -11700,10 +11699,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/command)
 "cSh" = (
-/obj/structure/disposalpipe/trunk/multiz/down{
-	dir = 8
-	},
-/turf/open/openspace,
+/turf/open/floor/plating,
 /area/station/hallway/secondary/command)
 "cSj" = (
 /obj/effect/turf_decal/delivery,
@@ -27616,10 +27612,8 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/commons/dorms/laundry)
 "iPb" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/openspace,
+/obj/structure/holosign/barrier/engineering,
+/turf/open/floor/plating,
 /area/station/hallway/secondary/command)
 "iPd" = (
 /obj/structure/disposalpipe/segment{
@@ -38731,9 +38725,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/commons/fitness/recreation)
-"mzP" = (
-/turf/open/openspace,
-/area/station/hallway/secondary/command)
 "mzQ" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -41342,7 +41333,7 @@
 /area/station/commons/dorms)
 "nwv" = (
 /obj/machinery/light/directional/north,
-/turf/open/openspace,
+/turf/open/floor/plating,
 /area/station/hallway/secondary/command)
 "nwz" = (
 /obj/structure/railing/corner{
@@ -158386,7 +158377,7 @@ abM
 abM
 abM
 tFJ
-mzP
+iPb
 iPb
 ltw
 ltw

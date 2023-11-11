@@ -32903,7 +32903,7 @@
 "kdT" = (
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/structure/closet/secure_closet/security_medic,
+/obj/effect/turf_decal/delivery/blue,
 /turf/open/floor/iron/white/textured,
 /area/station/security/medical)
 "kdU" = (
@@ -72397,6 +72397,7 @@
 	pixel_y = 6;
 	pixel_x = -6
 	},
+/obj/effect/turf_decal/delivery/blue,
 /turf/open/floor/iron/white/textured,
 /area/station/security/medical)
 "whf" = (

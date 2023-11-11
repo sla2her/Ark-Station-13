@@ -3353,6 +3353,17 @@
 /obj/effect/mapping_helpers/airlock/access/all/command/general,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"bdv" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/public/glass{
+	name = "Departure Lounge"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "departures-entrance"
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/station/hallway/secondary/exit/departure_lounge)
 "bdF" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Emergency Storage"
@@ -8453,6 +8464,7 @@
 	name = "arrivals navigation beacon"
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "cQt" = (
@@ -11550,7 +11562,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/disposal/incinerator)
 "dNx" = (
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -35765,6 +35776,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/hangover,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "luA" = (
@@ -36422,6 +36434,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "lFC" = (
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "lFN" = (
@@ -70396,6 +70409,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /obj/effect/turf_decal/tile/neutral,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "wyv" = (
@@ -72475,7 +72489,6 @@
 /turf/open/floor/grass,
 /area/station/security/prison/garden)
 "xhJ" = (
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -96460,7 +96473,7 @@ jJs
 dGp
 spw
 ijl
-abj
+aqq
 lzg
 fNw
 aka
@@ -116238,7 +116251,7 @@ wAZ
 cQR
 eMo
 fBh
-pIl
+bdv
 mbE
 iSw
 nXu
