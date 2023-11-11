@@ -362,6 +362,11 @@ var/static/list/female_cry = list(
 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 	sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/salute.ogg'
 
+/datum/emote/living/carbon/human/salute/get_sound(mob/living/user)
+	if(iscarbon(user))
+		return 'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/salute.ogg'
+	return
+
 /datum/emote/living/purr
 	key = "purr"
 	key_third_person = "purrs"
@@ -369,7 +374,7 @@ var/static/list/female_cry = list(
 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 	vary = TRUE
 
-/datum/emote/living/carbon/human/salute/get_sound(mob/living/user)
+/datum/emote/living/purr/get_sound(mob/living/user)
 	if(iscarbon(user))
 		return 'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/roflan_ebalo/purr.ogg'
 	return
