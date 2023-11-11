@@ -416,7 +416,7 @@
 /datum/loadout_item/toys/zappplush
 	name = "Lil' Zapp Plushie"
 	item_path = /obj/item/toy/plush/skyrat/zapp
-	donator_only = FALSE
+//	donator_only = FALSE
 
 /datum/loadout_item/pocket_items/tacticalbrush
 	name = "Tactical Brush"
@@ -504,17 +504,17 @@
 /datum/loadout_item/toys/CFBonnie
 	name = "Chunko Fop: Blue Bunny Plushie"
 	item_path = /obj/item/toy/plush/skyrat/chunko/bonnie
-	donator_only = FALSE
+//	donator_only = FALSE
 
 /datum/loadout_item/toys/CFAndrew
 	name = "Chunko Fop: Green Bunny Plushie"
 	item_path = /obj/item/toy/plush/skyrat/chunko/andrew
-	donator_only = FALSE
+//	donator_only = FALSE
 
 /datum/loadout_item/toys/CFInessa
 	name = "Chunko Fop: Medical Bear Plushie"
 	item_path = /obj/item/toy/plush/skyrat/chunko/inessa
-	donator_only = FALSE
+//	donator_only = FALSE
 
 /datum/loadout_item/toys/plushie_chiara
 	name = "Commanding Fox Plushie"

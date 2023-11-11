@@ -121,7 +121,7 @@
 			owner.Stun(70)
 			owner.set_jitter_if_lower(16 SECONDS)
 		if(2)
-			owner.emote("scream")
+			owner.emote("agony") // Ark Station 13 Edit
 			owner.set_jitter_if_lower(10 SECONDS)
 			owner.say("AAAAH!!", forced = "phobia")
 			if(reason)

@@ -33,9 +33,18 @@
 	id_trim = /datum/id_trim/job/nanotrasen_consultant
 
 
-// No slip laceup shoes
+// Noslip laceup shoes
 
 
 /obj/item/clothing/shoes/laceup/noslip
 	clothing_traits = list(TRAIT_NO_SLIP_WATER)
 	can_be_bloody = FALSE
+
+
+///////////////////////////////////////////////////
+
+// CMO changes
+
+/datum/outfit/job/cmo/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	. = ..()
+	ADD_TRAIT(H, TRAIT_SURGEON, TRAIT_GENERIC)

@@ -60,7 +60,7 @@
 			if(living_mob.on_fire) //check to make sure they actually caught on fire, or if it was prevented cause they were wet.
 				living_mob.visible_message(span_warning("[living_mob] catches fire!"), ignored_mobs = living_mob)
 				to_chat(living_mob, span_userdanger((advanced_stage ? "Your skin erupts into an inferno!" : "Your skin bursts into flames!")))
-				living_mob.emote("scream")
+				living_mob.emote("agony") // Ark Station 13 Edit
 			else if(!suppress_warning)
 				warn_mob(living_mob)
 
@@ -136,7 +136,7 @@ Bonus
 			Alkali_fire_stage_4(M, A)
 			M.ignite_mob()
 			to_chat(M, span_userdanger("Your sweat bursts into flames!"))
-			M.emote("scream")
+			M.emote("agony") // Ark Station 13 Edit
 		if(5)
 			if(M.fire_stacks < 0)
 				M.visible_message(span_warning("[M]'s sweat sizzles and pops on contact with water!"))
@@ -144,7 +144,7 @@ Bonus
 			Alkali_fire_stage_5(M, A)
 			M.ignite_mob()
 			to_chat(M, span_userdanger("Your skin erupts into an inferno!"))
-			M.emote("scream")
+			M.emote("agony") // Ark Station 13 Edit
 
 /datum/symptom/alkali/proc/Alkali_fire_stage_4(mob/living/M, datum/disease/advance/A)
 	var/get_stacks = 6 * power

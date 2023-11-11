@@ -106,10 +106,10 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/human_user = user
 		if(istype(human_user.ears, /obj/item/radio/headset))
-			to_chat(user, span_notice("You hear something crackle in your ears for a moment before a voice speaks. \
-				\"Please stand by for a message from Central Command.  Message as follows: \
-				[span_bold("Request received. Pod inbound, please stand back from the landing site.")] \
-				Message ends.\""))
+			to_chat(user, span_notice("Вы слышите щелчок в ухе. В вашей голове слышится голос. \
+				\"Пожалуйста, прослушайте сообщение от ЦК: \
+				[span_bold("Запрос получен. Капсула отправлена, держитесь подальше от места приземления.")] \
+				Конец сообщения.\"")) // Ark Station 13 Edit
 
 	if(!uses)
 		qdel(src)

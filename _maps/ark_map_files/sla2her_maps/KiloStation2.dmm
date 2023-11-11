@@ -13311,6 +13311,7 @@
 /area/station/maintenance/port/fore)
 "esK" = (
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
+/mob/living/basic/pet/dog/corgi/Lisa/ada,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/warden)
 "esO" = (
@@ -57648,6 +57649,9 @@
 	},
 /obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
+/mob/living/basic/pet/fox/emma{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/security/medical)
 "sEx" = (

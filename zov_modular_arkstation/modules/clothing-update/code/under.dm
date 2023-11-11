@@ -30,6 +30,7 @@
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/under.dmi'
 	worn_icon_digi = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/under_digi.dmi'
 	icon_state = "squatterpants"
+	can_adjust = FALSE
 
 /obj/item/clothing/under/misc/bluetracksuit
 	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/under.dmi'
@@ -44,6 +45,7 @@
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/under.dmi'
 	worn_icon_digi = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/under_digi.dmi'
 	icon_state = "russobluecamo"
+	can_adjust = FALSE
 
 /obj/item/clothing/under/rank/security/tacticool
 	name = "tacticool security uniform"
@@ -51,6 +53,7 @@
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/under.dmi'
 	worn_icon_digi = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/under_digi.dmi'
 	icon_state = "tacticool_sec"
+	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/wedding_dress/bride_blue
 	name = "blue bride dress"
@@ -58,6 +61,7 @@
 	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/under.dmi'
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/under.dmi'
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+	can_adjust = FALSE
 
 /obj/item/clothing/under/dress/wedding_dress/bride_blue/bride_orange
 	name = "orange bride dress"

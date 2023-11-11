@@ -215,7 +215,7 @@
 	priority_announce(
 		text = "[generate_heretic_text()] Fear the blaze, for the Ashlord, [user.real_name] has ascended! The flames shall consume all! [generate_heretic_text()]",
 		title = "[generate_heretic_text()]",
-		sound = ANNOUNCER_SPANOMALIES,
+		sound = 'zov_modular_arkstation/modules/sounds-renewal/sound/eldritch/ash_lore.ogg', // Ark Station 13 Edit
 		color_override = "pink",
 	)
 

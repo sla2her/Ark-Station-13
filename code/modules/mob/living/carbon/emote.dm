@@ -65,12 +65,12 @@
 	if(user.put_in_hands(N))
 		to_chat(user, span_notice("You make a circle with your hand."))
 
-/datum/emote/living/carbon/moan
-	key = "moan"
-	key_third_person = "moans"
-	message = "moans!"
-	message_mime = "appears to moan!"
-	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+// /datum/emote/living/carbon/moan
+// 	key = "moan"
+// 	key_third_person = "moans"
+// 	message = "moans!"
+// 	message_mime = "appears to moan!"
+// 	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
 
 /datum/emote/living/carbon/noogie
 	key = "noogie"

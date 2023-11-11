@@ -21,7 +21,5 @@
 	"user_pleasure": 5,
 	"target_pleasure": 5,
 	"lewd": 1,
-	"sound_possible": [
-		"modular_skyrat/modules/modular_items/lewd_items/sounds/slap.ogg"
-	]
+	"sound_possible": ["sound/weapons/slap.ogg"]
 }

@@ -186,3 +186,4 @@
 						'modular_skyrat/modules/encounters/sounds/gear_start.ogg',
 						'modular_skyrat/modules/encounters/sounds/gear_stop.ogg',
 						'modular_skyrat/modules/encounters/sounds/intercom_loop.ogg')
+
