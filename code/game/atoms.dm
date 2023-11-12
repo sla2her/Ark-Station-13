@@ -171,8 +171,8 @@
 	///any atom that uses integrity and can be damaged must set this to true, otherwise the integrity procs will throw an error
 	var/uses_integrity = FALSE
 
-	VAR_PROTECTED/datum/armor/armor_type = /datum/armor/none
-	VAR_PRIVATE/datum/armor/armor
+	var/datum/armor/armor_type = /datum/armor/none
+	var/datum/armor/armor
 
 	VAR_PRIVATE/atom_integrity //defaults to max_integrity
 	var/max_integrity = 500

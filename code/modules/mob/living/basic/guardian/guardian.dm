@@ -69,6 +69,18 @@
 	/// A string explaining to the guardian what they can do.
 	var/playstyle_string = span_boldholoparasite("You are a Guardian without any type. You shouldn't exist and are an affront to god!")
 
+// ARK STATION ADD START HERE
+	var/used_fluff_string
+	/// Fluff string from tarot cards.
+	var/magic_fluff_string = span_holoparasite("You draw the Coder, symbolizing bugs and errors. This shouldn't happen! Submit a bug report!")
+	/// Fluff string from holoparasite injectors.
+	var/tech_fluff_string = span_holoparasite("BOOT SEQUENCE COMPLETE. ERROR MODULE LOADED. THIS SHOULDN'T HAPPEN. Submit a bug report!")
+	/// Fluff string from holocarp fishsticks.
+	var/carp_fluff_string = span_holoparasite("CARP CARP CARP SOME SORT OF HORRIFIC BUG BLAME THE CODERS CARP CARP CARP")
+	/// Fluff string from the dusty shard.
+	var/miner_fluff_string = span_holoparasite("You encounter... Mythril, it shouldn't exist... Submit a bug report!")
+// ARK STATION ADD ENDS HERE
+
 	/// Are we forced to not be able to manifest/recall?
 	var/locked = FALSE
 	/// Cooldown between manifests/recalls.
