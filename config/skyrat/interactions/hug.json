@@ -1,11 +1,11 @@
 {
 	"name": "Обнять",
-	"description": "Обнимашки!.",
+	"description": "Обьятия не так уж и плохи если задуматься.",
 	"usage": "other",
 	"category": "Miscellaneous",
 	"distance_allowed": 0,
 	"message": [
-		"%USER% обнимает %TARGET%!"
+		"%USER% крепко обнимает %TARGET%!"
 	],
 	"sound_use": 1,
 	"sound_possible": [

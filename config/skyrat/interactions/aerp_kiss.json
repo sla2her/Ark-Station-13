@@ -5,10 +5,10 @@
 	"category": "Erp",
 	"distance_allowed": 0,
 	"message": [
-		"%USER% целует %TARGET%.",
-		"%USER% дарит нежный поцелуй %TARGET%.",
-		"%USER% настойчиво целует %TARGET%.",
-		"%USER% глубоко целуюет %TARGET%."
+		"%USER% с трепетом касается губ %TARGET%.",
+		"%USER% смотрит прямо в глаза %TARGET% одаривая нежными прикосновениями губ.",
+		"%USER% настойчиво целует %TARGET% заводя руку за шею и прижимая к себе.",
+		"%USER% прижимается к губкам %TARGET%."
 	],
 	"sound_use": 1,
 	"sound_range": 3,

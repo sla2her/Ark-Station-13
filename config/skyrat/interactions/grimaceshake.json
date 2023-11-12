@@ -5,7 +5,7 @@
 	"category": "Miscellaneous",
 	"distance_allowed": 1,
 	"message": [
-		"%USER% строит рожицу %TARGET%."
+		"%USER% достаёт язык и строит рожицу %TARGET%."
 	],
 	"sound_use": 0,
 	"sound_possible": [

@@ -1,6 +1,6 @@
 {
 	"name": "Приложить палец к губам",
-	"description" : "Тише, не говори нечего.",
+	"description" : "Ш-ш-ш... Тишину пожалуйста.",
 	"usage": "other",
 	"category": "Miscellaneous",
 	"distance_allowed": 1,

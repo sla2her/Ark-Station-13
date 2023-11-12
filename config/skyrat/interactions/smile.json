@@ -1,11 +1,11 @@
 {
-	"name": "Улыбнуться",
-	"description" : "Улыбнись, а то чо приуныл?.",
+	"name": "Ухмыльнуться",
+	"description" : "Хмыкни и ухмыльнись, будь крутым парнем.",
 	"usage": "other",
 	"category": "Miscellaneous",
 	"distance_allowed": 1,
 	"message": [
-		"%USER% улыбается смотря на %TARGET%."
+		"%USER% хмыкает и ухмыляется смотря на %TARGET%."
 	],
 	"sound_use": 0,
 	"sound_possible": [
