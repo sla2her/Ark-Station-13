@@ -50,6 +50,9 @@
 		"Security Corpsman",
 		"Brig Physician",
 		"Combat Medic",
+		"Brig Doctor",
+		"Security EMT",
+		"Brig EMT",
 	)
 
 	banned_quirks = list(SEC_RESTRICTED_QUIRKS)

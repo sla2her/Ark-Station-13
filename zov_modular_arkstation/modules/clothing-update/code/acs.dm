@@ -4,6 +4,7 @@
 	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/acs.dmi'
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/acs.dmi'
 	icon_state = "head1"
+	uses_advanced_reskins = TRUE
 	unique_reskin = list(
 		"Head 2" = list(
 			RESKIN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/acs.dmi',
@@ -42,6 +43,7 @@
 	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/back.dmi'
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/back.dmi'
 	icon_state = "rucksack"
+	uses_advanced_reskins = TRUE
 	unique_reskin = list(
 		"Default" = list(
 			RESKIN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/back.dmi',
@@ -81,6 +83,7 @@
 	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/back.dmi'
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/back.dmi'
 	icon_state = "hipbag"
+	uses_advanced_reskins = TRUE
 	unique_reskin = list(
 		"Default" = list(
 			RESKIN_ICON_STATE = "hipbag",
