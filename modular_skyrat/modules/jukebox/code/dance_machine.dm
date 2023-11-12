@@ -19,7 +19,7 @@
 	/// Current song selected
 	var/datum/track/selection = null
 	/// Volume of the songs played
-	var/volume = 100
+	var/volume = 150
 
 /obj/machinery/jukebox/disco
 	name = "radiant dance machine mark IV"
