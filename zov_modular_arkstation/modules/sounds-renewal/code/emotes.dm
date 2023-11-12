@@ -142,6 +142,17 @@ var/static/list/female_cry = list(
 			'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/cry_woman03.ogg'
 			)
 
+var/static/list/male_yawn = list(
+			'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/yawn_male_1.ogg',
+			'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/yawn_male_2.ogg'
+			)
+
+var/static/list/female_yawn = list(
+			'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/yawn_female_1.ogg',
+			'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/yawn_female_2.ogg',
+			'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/yawn_female_3.ogg'
+			)
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -323,6 +334,16 @@ var/static/list/female_cry = list(
 		return pick(female_cry)
 	return
 
+/datum/emote/living/yawn
+	vary = TRUE
+
+/datum/emote/living/carbon/human/yawn/get_sound(mob/living/user)
+	if(iscarbon(user))
+		if(user.gender == MALE)
+			return pick(male_yawn)
+		return pick(female_yawn)
+	return
+
 /datum/emote/living/burp
 	key = "burp"
 	key_third_person = "burps"
@@ -403,3 +424,20 @@ var/static/list/female_cry = list(
 		return 'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/roflan_ebalo/woof.ogg'
 	return
 
+
+/datum/emote/living/bonecrack
+	key = "bonecrack"
+	key_third_person = "bonecrack"
+	message = "cracks his bones"
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/bonecrack/get_sound(mob/living/user)
+	if(iscarbon(user))
+		return 'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/bonecrack.ogg'
+	return
+
+/datum/emote/living/carbon/snap/get_sound(mob/living/user)
+	if(ishuman(user))
+		return 'zov_modular_arkstation/modules/sounds-renewal/sound/emotes/snap.ogg'
+	return null

@@ -71,6 +71,9 @@
 		/obj/item/storage/box/evidence = 6,
 		/obj/item/flashlight/seclite = 6,
 		/obj/item/restraints/legcuffs/bola/energy = 10,
+		/obj/item/clothing/mask/gas/sechailer = 5,
+		/obj/item/armorkit/security = 2,
+		/obj/item/armorkit/security/helmet =2,
 	)
 	premium = list(
 		/obj/item/storage/belt/security/webbing = 4,
@@ -211,6 +214,53 @@
 	refill_canister = /obj/item/vending_refill/wardrobe/chap_wardrobe
 	payment_department = ACCOUNT_SRV
 
+/// Medidrobe
+
+/obj/machinery/vending/wardrobe/medi_wardrobe
+	name = "\improper MediDrobe"
+	desc = "A vending machine rumoured to be capable of dispensing clothing for medical personnel."
+	icon_state = "medidrobe"
+	product_ads = "Make those blood stains look fashionable!!"
+	vend_reply = "Thank you for using the MediDrobe!"
+	products = list(
+		/obj/item/clothing/accessory/pocketprotector = 4,
+		/obj/item/clothing/head/costume/nursehat = 4,
+		/obj/item/clothing/head/beret/medical = 4,
+		/obj/item/clothing/head/utility/surgerycap = 4,
+		/obj/item/clothing/head/utility/surgerycap/purple = 4,
+		/obj/item/clothing/head/utility/surgerycap/green = 4,
+		/obj/item/clothing/head/beret/medical/paramedic = 4,
+		/obj/item/clothing/head/soft/paramedic = 4,
+		/obj/item/clothing/head/utility/head_mirror = 4,
+		/obj/item/clothing/mask/bandana/striped/medical = 4,
+		/obj/item/clothing/mask/surgical = 4,
+		/obj/item/clothing/under/rank/medical/doctor = 4,
+		/obj/item/clothing/under/rank/medical/doctor/skirt = 4,
+		/obj/item/clothing/under/rank/medical/scrubs/blue = 4,
+		/obj/item/clothing/under/rank/medical/scrubs/green = 4,
+		/obj/item/clothing/under/rank/medical/scrubs/purple = 4,
+		/obj/item/clothing/under/rank/medical/paramedic = 4,
+		/obj/item/clothing/under/rank/medical/paramedic/skirt = 4,
+		/obj/item/clothing/suit/toggle/labcoat = 4,
+		/obj/item/clothing/suit/toggle/labcoat/paramedic = 4,
+		/obj/item/clothing/suit/apron/surgical = 4,
+		/obj/item/clothing/suit/hooded/wintercoat/medical = 4,
+		/obj/item/clothing/suit/hooded/wintercoat/medical/paramedic = 4,
+		/obj/item/clothing/shoes/sneakers/white = 4,
+		/obj/item/clothing/shoes/sneakers/blue = 4,
+		/obj/item/clothing/gloves/latex/nitrile = 4,
+		/obj/item/clothing/gloves/latex = 4,
+		/obj/item/storage/backpack/duffelbag/med = 4,
+		/obj/item/storage/backpack/medic = 4,
+		/obj/item/storage/backpack/satchel/med = 4,
+		/obj/item/storage/backpack/messenger/med = 4,
+		/obj/item/radio/headset/headset_med = 4,
+		/obj/item/clothing/suit/toggle/labcoat/paramedic/red = 3,
+		/obj/item/clothing/suit/toggle/labcoat/paramedic/red/highvis = 2,
+		/obj/item/clothing/suit/toggle/labcoat/paramedic/red/paramedic_vest = 3,
+	)
+	refill_canister = /obj/item/vending_refill/wardrobe/medi_wardrobe
+	payment_department = ACCOUNT_MED
 
 // Generic Clothes mate
 
@@ -359,6 +409,7 @@
 				/obj/item/clothing/shoes/cowboy = 2,
 				/obj/item/clothing/shoes/cowboy/white = 2,
 				/obj/item/clothing/shoes/cowboy/black = 2,
+				/obj/item/clothing/shoes/jackboots/sec = 4, // Ark Station 13 Edit
 			),
 		),
 

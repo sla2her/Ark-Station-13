@@ -186,10 +186,14 @@
 	unique_reskin = list(
 		"Default" = list(
 			RESKIN_ICON_STATE = "riot",
+			RESKIN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi',
+			RESKIN_WORN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi',
 			RESKIN_WORN_ICON_STATE = "riot"
 		),
 		"Black" = list(
 			RESKIN_ICON_STATE = "riot_wm",
+			RESKIN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi',
+			RESKIN_WORN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi',
 			RESKIN_WORN_ICON_STATE = "riot_wm"
 		)
 	)
@@ -203,10 +207,31 @@
 	unique_reskin = list(
 		"Default" = list(
 			RESKIN_ICON_STATE = "bulletproof",
+			RESKIN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi',
+			RESKIN_WORN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi',
 			RESKIN_WORN_ICON_STATE = "bulletproof"
 		),
 		"Black" = list(
 			RESKIN_ICON_STATE = "bulletproof_wm",
+			RESKIN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi',
+			RESKIN_WORN_ICON = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi',
 			RESKIN_WORN_ICON_STATE = "bulletproof_wm"
 		)
 	)
+
+
+/obj/item/clothing/suit/toggle/labcoat/paramedic/red
+	name = "red EMT coat"
+	desc = "Patch themselves up."
+	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
+	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+	icon_state = "labcoat_emtred"
+
+/obj/item/clothing/suit/toggle/labcoat/paramedic/red/highvis
+	name = "high visibility EMT coat"
+	icon_state = "labcoat_highvis"
+
+/obj/item/clothing/suit/toggle/labcoat/paramedic/red/paramedic_vest
+	name = "paramedic vest"
+	icon_state = "paramedic-vest"
