@@ -40,6 +40,7 @@
 	var/list/datum/event_admin_setup/admin_setup = list()
 	/// Flags dictating whether this event should be run on certain kinds of map
 	var/map_flags = NONE
+	var/triggersound
 
 /datum/round_event_control/New()
 	if(config && !wizardevent) // Magic is unaffected by configs

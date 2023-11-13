@@ -1,23 +1,23 @@
 // MODULAR ID TRIM ACCESS OVERRIDES GO HERE!!
 
 //(Most) of Security has inverted IDs, with custom blue-on-black icons. This is to distinguish them from their head, who has a white-on-blue icon
-/datum/id_trim/job/head_of_security
-	subdepartment_color = COLOR_ASSEMBLY_BLACK
+// /datum/id_trim/job/head_of_security
+// 	subdepartment_color = COLOR_ASSEMBLY_BLACK
 
-/datum/id_trim/job/warden
-	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
-	department_color = COLOR_ASSEMBLY_BLACK
-	subdepartment_color = COLOR_ASSEMBLY_BLACK
+// /datum/id_trim/job/warden // ARK STATION REVERT | REDSEC
+// 	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
+// 	department_color = COLOR_ASSEMBLY_BLACK
+// 	subdepartment_color = COLOR_ASSEMBLY_BLACK
 
-/datum/id_trim/job/security_officer
-	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
-	department_color = COLOR_ASSEMBLY_BLACK
-	subdepartment_color = COLOR_ASSEMBLY_BLACK
+// /datum/id_trim/job/security_officer // ARK STATION REVERT | REDSEC
+// 	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
+// 	department_color = COLOR_ASSEMBLY_BLACK
+// 	subdepartment_color = COLOR_ASSEMBLY_BLACK
 
-/datum/id_trim/job/detective
-	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
-	department_color = COLOR_ASSEMBLY_BLACK
-	subdepartment_color = COLOR_ASSEMBLY_BLACK
+// /datum/id_trim/job/detective // ARK STATION REVERT | REDSEC
+// 	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
+// 	department_color = COLOR_ASSEMBLY_BLACK
+// 	subdepartment_color = COLOR_ASSEMBLY_BLACK
 
 
 /datum/id_trim/job/chief_engineer/New()
@@ -80,6 +80,7 @@
 	minimal_wildcard_access = list(ACCESS_CAPTAIN, ACCESS_CENT_GENERAL)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CHANGE_IDS)
 
+/*
 /datum/id_trim/job/corrections_officer
 	assignment = "Corrections Officer"
 	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
@@ -94,6 +95,7 @@
 				)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CHANGE_IDS, ACCESS_HOS)
 	job = /datum/job/corrections_officer
+*/
 
 /datum/id_trim/job/barber
 	assignment = "Barber"

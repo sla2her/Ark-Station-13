@@ -1,7 +1,7 @@
 import { classes } from 'common/react';
 import { sendAct, useBackend, useLocalState } from '../../backend';
-import { Autofocus, Box, Button, Flex, LabeledList, Popper, Stack, TrackOutsideClicks, Dropdown } from '../../components'; // SKYRAT EDIT CHANGE - Adds Dropdown
-import { createSetPreference, PreferencesMenuData, RandomSetting, ServerData } from './data';
+import { Box, Button, Flex, LabeledList, Popper, Stack, TrackOutsideClicks, FitText, Input, Icon, Dropdown } from '../../components';
+import { createSetPreference, PreferencesMenuData, RandomSetting } from './data';
 import { CharacterPreview } from '../common/CharacterPreview';
 import { RandomizationButton } from './RandomizationButton';
 import { ServerPreferencesFetcher } from './ServerPreferencesFetcher';
@@ -11,12 +11,13 @@ import features from './preferences/features';
 import { FeatureChoicedServerData, FeatureValueInput } from './preferences/features/base';
 import { filterMap, sortBy } from 'common/collections';
 import { useRandomToggleState } from './useRandomToggleState';
+import { createSearch } from 'common/string';
 
-const CLOTHING_CELL_SIZE = 48;
-const CLOTHING_SIDEBAR_ROWS = 13.4; // SKYRAT EDIT CHANGE - ORIGINAL:  9
+const CLOTHING_CELL_SIZE = 64;
+const CLOTHING_SIDEBAR_ROWS = 10;
 
-const CLOTHING_SELECTION_CELL_SIZE = 48;
-const CLOTHING_SELECTION_WIDTH = 5.4;
+const CLOTHING_SELECTION_CELL_SIZE = 64;
+const CLOTHING_SELECTION_WIDTH = 6.3;
 const CLOTHING_SELECTION_MULTIPLIER = 5.2;
 
 const CharacterControls = (props: {
@@ -82,33 +83,163 @@ const ChoicedSelection = (
     supplementalValue?: unknown;
     onClose: () => void;
     onSelect: (value: string) => void;
+    searchText: string;
+    setSearchText: (value: string) => void;
   },
   context
 ) => {
   const { act } = useBackend<PreferencesMenuData>(context);
 
-  const { catalog, supplementalFeature, supplementalValue } = props;
+  const {
+    catalog,
+    supplementalFeature,
+    supplementalValue,
+    searchText,
+    setSearchText,
+  } = props;
 
   if (!catalog.icons) {
     return <Box color="red">Provided catalog had no icons!</Box>;
   }
 
+  let search = createSearch(searchText, (name: string) => {
+    return name;
+  });
+
+  const use_small_supplemental =
+    supplementalFeature &&
+    (features[supplementalFeature].small_supplemental === true ||
+      features[supplementalFeature].small_supplemental === undefined);
   return (
     <Box
+      className="theme-generic"
       style={{
-        background: 'white',
-        padding: '5px',
-
         height: `${
           CLOTHING_SELECTION_CELL_SIZE * CLOTHING_SELECTION_MULTIPLIER
         }px`,
         width: `${CLOTHING_SELECTION_CELL_SIZE * CLOTHING_SELECTION_WIDTH}px`,
       }}>
-      <Stack vertical fill>
-        <Stack.Item>
-          <Stack fill>
-            {supplementalFeature && (
+      <Box
+        className="PopupWindow"
+        style={{ 'padding': '5px' }}
+        width="100%"
+        height="100%">
+        <Stack vertical fill>
+          <Stack.Item>
+            <Stack fill>
+              {supplementalFeature && use_small_supplemental && (
+                <Stack.Item>
+                  <FeatureValueInput
+                    act={act}
+                    feature={features[supplementalFeature]}
+                    featureId={supplementalFeature}
+                    shrink
+                    value={supplementalValue}
+                  />
+                </Stack.Item>
+              )}
+
+              <Stack.Item grow>
+                <Box
+                  style={{
+                    'border-bottom': '1px solid #888',
+                    'font-weight': 'bold',
+                    'font-size': '14px',
+                    'text-align': 'center',
+                  }}>
+                  Select {props.name}
+                </Box>
+              </Stack.Item>
+
               <Stack.Item>
+                <Button color="red" onClick={props.onClose}>
+                  X
+                </Button>
+              </Stack.Item>
+            </Stack>
+          </Stack.Item>
+
+          {Object.keys(catalog.icons).length > 5 && (
+            <Stack.Item>
+              <Box>
+                <Icon mr={1} name="search" />
+                <Input
+                  autoFocus
+                  width={`${
+                    CLOTHING_SELECTION_CELL_SIZE * CLOTHING_SELECTION_WIDTH - 55
+                  }px`}
+                  placeholder="Search options"
+                  value={searchText}
+                  onInput={(_, value) => setSearchText(value)}
+                />
+              </Box>
+            </Stack.Item>
+          )}
+
+          <Stack.Item
+            overflowX="hidden"
+            overflowY="auto"
+            grow
+            className="section-background">
+            <Flex wrap>
+              {Object.entries(catalog.icons)
+                .filter(([n, _]) => searchText?.length < 1 || search(n))
+                .map(([name, image], index) => {
+                  return (
+                    <Flex.Item
+                      key={index}
+                      basis={`${CLOTHING_SELECTION_CELL_SIZE}px`}
+                      style={{
+                        padding: '5px',
+                      }}>
+                      <Button
+                        onClick={() => {
+                          props.onSelect(name);
+                        }}
+                        selected={name === props.selected}
+                        style={{
+                          height: `${CLOTHING_SELECTION_CELL_SIZE}px`,
+                          width: `${CLOTHING_SELECTION_CELL_SIZE}px`,
+                        }}>
+                        <Box
+                          className={classes([
+                            'preferences32x32',
+                            image,
+                            'centered-image',
+                          ])}
+                          style={{
+                            transform:
+                              'translateX(-50%) translateY(-50%) scale(1.4)',
+                          }}
+                        />
+                      </Button>
+                      <Box textAlign="center">
+                        <FitText
+                          maxWidth={CLOTHING_SELECTION_CELL_SIZE}
+                          maxFontSize={12}>
+                          {name}
+                        </FitText>
+                      </Box>
+                    </Flex.Item>
+                  );
+                })}
+            </Flex>
+          </Stack.Item>
+          {supplementalFeature && !use_small_supplemental && (
+            <>
+              <Stack.Item mt={0.25}>
+                <Box
+                  pb={0.25}
+                  style={{
+                    'border-bottom': '1px solid rgba(255, 255, 255, 0.1)',
+                    'font-weight': 'bold',
+                    'font-size': '14px',
+                    'text-align': 'center',
+                  }}>
+                  Select {features[supplementalFeature].name}
+                </Box>
+              </Stack.Item>
+              <Stack.Item shrink mt={0.5}>
                 <FeatureValueInput
                   act={act}
                   feature={features[supplementalFeature]}
@@ -117,65 +248,10 @@ const ChoicedSelection = (
                   value={supplementalValue}
                 />
               </Stack.Item>
-            )}
-
-            <Stack.Item grow>
-              <Box
-                style={{
-                  'border-bottom': '1px solid #888',
-                  'font-weight': 'bold',
-                  'font-size': '14px',
-                  'text-align': 'center',
-                }}>
-                Select {props.name.toLowerCase()}
-              </Box>
-            </Stack.Item>
-
-            <Stack.Item>
-              <Button color="red" onClick={props.onClose}>
-                X
-              </Button>
-            </Stack.Item>
-          </Stack>
-        </Stack.Item>
-
-        <Stack.Item overflowX="hidden" overflowY="scroll">
-          <Autofocus>
-            <Flex wrap>
-              {Object.entries(catalog.icons).map(([name, image], index) => {
-                return (
-                  <Flex.Item
-                    key={index}
-                    basis={`${CLOTHING_SELECTION_CELL_SIZE}px`}
-                    style={{
-                      padding: '5px',
-                    }}>
-                    <Button
-                      onClick={() => {
-                        props.onSelect(name);
-                      }}
-                      selected={name === props.selected}
-                      tooltip={name}
-                      tooltipPosition="right"
-                      style={{
-                        height: `${CLOTHING_SELECTION_CELL_SIZE}px`,
-                        width: `${CLOTHING_SELECTION_CELL_SIZE}px`,
-                      }}>
-                      <Box
-                        className={classes([
-                          'preferences32x32',
-                          image,
-                          'centered-image',
-                        ])}
-                      />
-                    </Button>
-                  </Flex.Item>
-                );
-              })}
-            </Flex>
-          </Autofocus>
-        </Stack.Item>
-      </Stack>
+            </>
+          )}
+        </Stack>
+      </Box>
     </Box>
   );
 };
@@ -201,25 +277,23 @@ const GenderButton = (
       popperContent={
         genderMenuOpen && (
           <Stack backgroundColor="white" ml={0.5} p={0.3}>
-            {[Gender.Male, Gender.Female, Gender.Other, Gender.Other2].map(
-              (gender) => {
-                return (
-                  <Stack.Item key={gender}>
-                    <Button
-                      selected={gender === props.gender}
-                      onClick={() => {
-                        props.handleSetGender(gender);
-                        setGenderMenuOpen(false);
-                      }}
-                      fontSize="22px"
-                      icon={GENDERS[gender].icon}
-                      tooltip={GENDERS[gender].text}
-                      tooltipPosition="top"
-                    />
-                  </Stack.Item>
-                );
-              }
-            )}
+            {[Gender.Male, Gender.Female, Gender.Other].map((gender) => {
+              return (
+                <Stack.Item key={gender}>
+                  <Button
+                    selected={gender === props.gender}
+                    onClick={() => {
+                      props.handleSetGender(gender);
+                      setGenderMenuOpen(false);
+                    }}
+                    fontSize="22px"
+                    icon={GENDERS[gender].icon}
+                    tooltip={GENDERS[gender].text}
+                    tooltipPosition="top"
+                  />
+                </Stack.Item>
+              );
+            })}
           </Stack>
         )
       }>
@@ -266,6 +340,15 @@ const MainFeature = (
   } = props;
 
   const supplementalFeature = catalog.supplemental_feature;
+  let [searchText, setSearchText] = useLocalState(
+    context,
+    catalog.name + '_choiced_search',
+    ''
+  );
+  const handleCloseInternal = () => {
+    handleClose();
+    setSearchText('');
+  };
 
   return (
     <Popper
@@ -274,7 +357,7 @@ const MainFeature = (
       }}
       popperContent={
         isOpen && (
-          <TrackOutsideClicks onOutsideClick={props.handleClose}>
+          <TrackOutsideClicks onOutsideClick={handleCloseInternal}>
             <ChoicedSelection
               name={catalog.name}
               catalog={catalog}
@@ -286,8 +369,10 @@ const MainFeature = (
                   supplementalFeature
                 ]
               }
-              onClose={handleClose}
+              onClose={handleCloseInternal}
               onSelect={handleSelect}
+              searchText={searchText}
+              setSearchText={setSearchText}
             />
           </TrackOutsideClicks>
         )
@@ -295,7 +380,7 @@ const MainFeature = (
       <Button
         onClick={() => {
           if (isOpen) {
-            handleClose();
+            handleCloseInternal();
           } else {
             handleOpen();
           }
@@ -358,11 +443,10 @@ const sortPreferences = sortBy<[string, unknown]>(([featureId, _]) => {
   return feature?.name;
 });
 
-export const PreferenceList = (props: {
+const PreferenceList = (props: {
   act: typeof sendAct;
   preferences: Record<string, unknown>;
   randomizations: Record<string, RandomSetting>;
-  maxHeight: string;
 }) => {
   return (
     <Stack.Item
@@ -373,8 +457,7 @@ export const PreferenceList = (props: {
         padding: '4px',
       }}
       overflowX="hidden"
-      overflowY="auto"
-      maxHeight={props.maxHeight}>
+      overflowY="scroll">
       <LabeledList>
         {sortPreferences(Object.entries(props.preferences)).map(
           ([featureId, value]) => {
@@ -420,37 +503,6 @@ export const PreferenceList = (props: {
         )}
       </LabeledList>
     </Stack.Item>
-  );
-};
-
-export const getRandomization = (
-  preferences: Record<string, unknown>,
-  serverData: ServerData | undefined,
-  randomBodyEnabled: boolean,
-  context
-): Record<string, RandomSetting> => {
-  if (!serverData) {
-    return {};
-  }
-
-  const { data } = useBackend<PreferencesMenuData>(context);
-
-  return Object.fromEntries(
-    filterMap(Object.keys(preferences), (preferenceKey) => {
-      if (serverData.random.randomizable.indexOf(preferenceKey) === -1) {
-        return undefined;
-      }
-
-      if (!randomBodyEnabled) {
-        return undefined;
-      }
-
-      return [
-        preferenceKey,
-        data.character_preferences.randomization[preferenceKey] ||
-          RandomSetting.Disabled,
-      ];
-    })
   );
 };
 
@@ -500,11 +552,36 @@ export const MainPage = (
           data.character_preferences.non_contextual.random_body !==
             RandomSetting.Disabled || randomToggleEnabled;
 
+        const getRandomization = (
+          preferences: Record<string, unknown>
+        ): Record<string, RandomSetting> => {
+          if (!serverData) {
+            return {};
+          }
+
+          return Object.fromEntries(
+            filterMap(Object.keys(preferences), (preferenceKey) => {
+              if (
+                serverData.random.randomizable.indexOf(preferenceKey) === -1
+              ) {
+                return undefined;
+              }
+
+              if (!randomBodyEnabled) {
+                return undefined;
+              }
+
+              return [
+                preferenceKey,
+                data.character_preferences.randomization[preferenceKey] ||
+                  RandomSetting.Disabled,
+              ];
+            })
+          );
+        };
+
         const randomizationOfMainFeatures = getRandomization(
-          Object.fromEntries(mainFeatures),
-          serverData,
-          randomBodyEnabled,
-          context
+          Object.fromEntries(mainFeatures)
         );
 
         const nonContextualPreferences = {
@@ -562,7 +639,7 @@ export const MainPage = (
 
                   <Stack.Item grow>
                     <CharacterPreview
-                      height="80%" // SKYRAT EDIT - ORIGINAL: height="100%"
+                      height="80%" // 100% Bugged
                       id={data.character_preview_view}
                     />
                   </Stack.Item>
@@ -639,26 +716,14 @@ export const MainPage = (
                 <Stack vertical fill>
                   <PreferenceList
                     act={act}
-                    randomizations={getRandomization(
-                      contextualPreferences,
-                      serverData,
-                      randomBodyEnabled,
-                      context
-                    )}
+                    randomizations={getRandomization(contextualPreferences)}
                     preferences={contextualPreferences}
-                    maxHeight="auto"
                   />
 
                   <PreferenceList
                     act={act}
-                    randomizations={getRandomization(
-                      nonContextualPreferences,
-                      serverData,
-                      randomBodyEnabled,
-                      context
-                    )}
+                    randomizations={getRandomization(nonContextualPreferences)}
                     preferences={nonContextualPreferences}
-                    maxHeight="auto"
                   />
                 </Stack>
               </Stack.Item>

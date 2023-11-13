@@ -68,12 +68,9 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/ferry)
 "ey" = (
-/obj/effect/turf_decal/tile/green,
-/obj/effect/turf_decal/tile/green{
+/obj/structure/noticeboard/directional/east,
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
 	dir = 4
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 8
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
@@ -98,6 +95,11 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
+"gI" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/machinery/light/floor,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "ie" = (
@@ -159,38 +161,28 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "mr" = (
-/obj/structure/chair/office{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/green{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/centcom/central_command_areas/ferry)
-"my" = (
 /obj/machinery/light/directional/north,
 /obj/structure/table/reinforced,
 /obj/item/crowbar/red,
 /obj/item/wrench,
 /obj/item/clothing/mask/gas,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/machinery/status_display/evac/directional/north,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/ferry)
+"my" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "mG" = (
-/obj/structure/noticeboard/directional/east,
-/obj/effect/turf_decal/tile/green{
-	dir = 1
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
 	},
-/obj/effect/turf_decal/tile/green,
-/obj/effect/turf_decal/tile/green{
-	dir = 4
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
+"nr" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
@@ -219,12 +211,12 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "sA" = (
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
 /obj/machinery/door/airlock/centcom{
-	name = "Shuttle Control Office"
+	name = "CentCom Supply"
 	},
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/mapping_helpers/airlock/access/all/admin/captain,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/ferry)
 "sB" = (
 /obj/effect/turf_decal/stripes/line{
@@ -272,11 +264,13 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "zr" = (
-/obj/machinery/light/directional/south,
-/obj/structure/filingcabinet/chestdrawer,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/status_display/evac/directional/south,
-/turf/open/floor/iron/dark,
+/obj/machinery/door/airlock/centcom{
+	name = "CentCom Security"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/turf/open/floor/iron/dark/textured,
 /area/centcom/central_command_areas/ferry)
 "Ae" = (
 /obj/machinery/door/airlock/external{
@@ -294,11 +288,9 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "By" = (
-/obj/machinery/door/airlock/centcom{
-	name = "Orbital Drop Pod Loading";
-	req_access = list("cent_storage")
-	},
-/turf/open/floor/iron,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/sign/flag/inteq,
+/turf/open/floor/plating,
 /area/centcom/central_command_areas/ferry)
 "BT" = (
 /obj/docking_port/stationary{
@@ -314,6 +306,10 @@
 	},
 /turf/open/space,
 /area/space)
+"Ep" = (
+/obj/structure/sign/departments/drop,
+/turf/closed/indestructible/riveted,
+/area/centcom/central_command_areas/ferry)
 "EK" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/fans/tiny,
@@ -370,6 +366,14 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/ferry)
+"IJ" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Shuttle Control Office"
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "JB" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron,
@@ -377,6 +381,14 @@
 "Kw" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
+/area/centcom/central_command_areas/ferry)
+"Lc" = (
+/obj/effect/turf_decal/stripes/full,
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/obj/machinery/door/airlock/centcom{
+	name = "Shuttle Control Office"
+	},
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "MC" = (
 /turf/open/space/basic,
@@ -399,6 +411,20 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
+"NJ" = (
+/obj/machinery/door/airlock/centcom{
+	name = "CentCom Security"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/indestructible/dark,
+/area/centcom/central_command_areas/ferry)
+"Om" = (
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "On" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 8
@@ -406,13 +432,17 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "Ov" = (
-/obj/effect/turf_decal/tile/green{
+/obj/machinery/light/directional/south,
+/obj/structure/filingcabinet/chestdrawer,
+/obj/machinery/status_display/evac/directional/south,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/turf/open/floor/iron/dark,
+/area/centcom/central_command_areas/ferry)
+"Ps" = (
+/obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/green,
-/obj/effect/turf_decal/tile/green{
-	dir = 8
-	},
+/obj/machinery/light/floor,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "PP" = (
@@ -427,6 +457,10 @@
 	dir = 6
 	},
 /obj/machinery/light/directional/south,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
+"QB" = (
+/obj/effect/turf_decal/tile/green/anticorner/contrasted,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "SP" = (
@@ -466,6 +500,15 @@
 	},
 /turf/open/floor/plating,
 /area/centcom/central_command_areas/ferry)
+"Wm" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "Wv" = (
 /obj/item/clipboard,
 /obj/item/folder/red,
@@ -484,8 +527,28 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
+"ZO" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 
 (1,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 MC
 MC
 MC
@@ -506,6 +569,20 @@ MC
 MC
 MC
 MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 pT
 fB
 Ae
@@ -514,6 +591,20 @@ MC
 MC
 "}
 (3,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 MC
 MC
 MC
@@ -534,6 +625,20 @@ MC
 MC
 MC
 MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 pT
 uQ
 uQ
@@ -548,6 +653,20 @@ MC
 MC
 MC
 MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 pT
 EK
 EK
@@ -556,12 +675,26 @@ MC
 MC
 "}
 (6,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 pT
 pT
 iE
 iE
 pT
 pT
+MC
+MC
+MC
+MC
+MC
+iE
 MJ
 GK
 UC
@@ -570,12 +703,26 @@ pT
 MC
 "}
 (7,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 pT
 xr
 FL
 yR
 Wv
 pT
+MC
+MC
+MC
+MC
+MC
+iE
 Th
 JB
 JB
@@ -584,11 +731,25 @@ bO
 MC
 "}
 (8,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 iE
 cD
-mr
-Ov
+Wm
+Om
 dV
+iE
+MC
+MC
+MC
+MC
+MC
 iE
 fv
 lv
@@ -598,11 +759,25 @@ pT
 MC
 "}
 (9,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 pT
 jj
 HU
 Ii
 cV
+iE
+MC
+MC
+MC
+MC
+MC
 iE
 iq
 uQ
@@ -612,11 +787,25 @@ pT
 iE
 "}
 (10,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 pT
 TH
 Nn
 On
 ie
+iE
+pT
+pT
+Ep
+pT
+pT
 iE
 iq
 uQ
@@ -626,26 +815,54 @@ Yy
 iE
 "}
 (11,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 iE
-my
+mr
 rO
 bN
-zr
+Ov
 iE
+nr
+sB
+sB
+sB
+Yy
+Lc
 iq
 uQ
 uQ
 uQ
 ff
-iE
+NJ
 "}
 (12,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 pT
 Is
 rO
 bN
 Kw
-sA
+IJ
+Ps
+my
+my
+gI
+ff
+pT
 iq
 uQ
 uQ
@@ -654,24 +871,52 @@ ff
 By
 "}
 (13,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 iE
 ce
-mG
 ey
+QB
 vK
+iE
+mG
+AN
+AN
+AN
+ZO
 iE
 by
 AN
 iM
 AN
 PP
-iE
+zr
 "}
 (14,1,1) = {"
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
 iE
 iE
 iE
 SP
+iE
+iE
+iE
+iE
+iE
+sA
 iE
 iE
 iE

@@ -7,7 +7,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	category = PROGRAM_CATEGORY_CREW
 	program_icon_state = "id"
 	extended_desc = "Program for viewing and changing job slot availability."
-	download_access = list(ACCESS_COMMAND)
+	transfer_access = list(ACCESS_COMMAND)
 	requires_ntnet = TRUE
 	size = 4
 	tgui_id = "NtosJobManager"
@@ -35,8 +35,8 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	if(job.job_flags & JOB_CANNOT_OPEN_SLOTS)
 		return FALSE
 	// SKYRAT EDIT ADDITION START
-	if(job.veteran_only)
-		return FALSE
+	//if(job.veteran_only)
+		//return FALSE // Ark Station 13 Edit - Fuck Vet's system
 	// SKYRAT EDIT ADDITION END
 	return TRUE
 

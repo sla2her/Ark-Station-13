@@ -65,12 +65,12 @@
 	var/datum/component/butchering/butchering = src.GetComponent(/datum/component/butchering)
 	butchering.butchering_enabled = on
 
-	if(on)
-		hitsound = 'sound/weapons/chainsawhit.ogg'
-		chainsaw_loop.start()
-	else
-		hitsound = SFX_SWING_HIT
-		chainsaw_loop.stop()
+	// if(on)
+	// 	hitsound = 'sound/weapons/chainsawhit.ogg'
+	// 	chainsaw_loop.start()
+	// else
+	// 	hitsound = SFX_SWING_HIT
+	// 	chainsaw_loop.stop() // Ark Station 13 Edit
 
 	toolspeed = on ? 0.5 : initial(toolspeed) //Turning it on halves the speed
 	if(src == user.get_active_held_item()) //update inhands

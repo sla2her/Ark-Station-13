@@ -709,6 +709,8 @@
 	)
 	skins = list(
 		"security" = list(
+		MOD_ICON_OVERRIDE = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mod.dmi', // Ark Station 13 Edit
+		MOD_WORN_ICON_OVERRIDE = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mod.dmi', // Ark Station 13 Edit
 			HELMET_FLAGS = list(
 				UNSEALED_LAYER = null,
 				UNSEALED_CLOTHING = SNUG_FIT|THICKMATERIAL,
@@ -770,6 +772,8 @@
 	)
 	skins = list(
 		"safeguard" = list(
+		MOD_ICON_OVERRIDE = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/mod.dmi', // Ark Station 13 Edit
+		MOD_WORN_ICON_OVERRIDE = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/mod.dmi', // Ark Station 13 Edit
 			HELMET_FLAGS = list(
 				UNSEALED_LAYER = null,
 				UNSEALED_CLOTHING = SNUG_FIT|THICKMATERIAL,

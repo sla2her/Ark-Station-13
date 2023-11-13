@@ -39,6 +39,7 @@
 
 /obj/item/gun/energy/pulse/carbine
 	name = "pulse carbine"
+	icon = 'icons/obj/weapons/guns/energy.dmi' // ARK STATION FIX
 	desc = "A compact variant of the pulse rifle with less firepower but easier storage."
 	slot_flags = ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_BULKY
@@ -73,6 +74,7 @@
 /obj/item/gun/energy/pulse/pistol
 	name = "pulse pistol"
 	desc = "A pulse rifle in an easily concealed handgun package with low capacity."
+	icon = 'icons/obj/weapons/guns/energy.dmi' // ARK STATION FIX
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_BELT
 	icon_state = "pulse_pistol"

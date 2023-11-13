@@ -18,11 +18,7 @@ type Data = {
 
 export const CommandReport = () => {
   return (
-    <Window
-      title="Create Command Report"
-      width={325}
-      height={685}
-      theme="admin">
+    <Window title="Create Command Report" width={325} height={685} theme="ntos">
       <Window.Content>
         <Stack fill vertical>
           <Stack.Item>

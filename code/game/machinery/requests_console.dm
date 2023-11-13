@@ -200,7 +200,7 @@ GLOBAL_LIST_EMPTY(req_console_ckey_departments)
 				var/mob/living/L = usr
 				message = L.treat_message(message)["message"]
 
-			minor_announce(message, "[department] Announcement:", html_encode = FALSE, sound_override = ANNOUNCER_DEPARTMENTAL) // SKYRAT EDIT CHANGE - Announcer Sounds
+			minor_announce(message, "[department] Announcement:", html_encode = FALSE, sound_override = 'zov_modular_arkstation/modules/sounds-renewal/sound/announce/tonelow.ogg') // Ark Station 13 Edit
 			GLOB.news_network.submit_article(message, department, "Station Announcements", null)
 			usr.log_talk(message, LOG_SAY, tag="station announcement from [src]")
 			message_admins("[ADMIN_LOOKUPFLW(usr)] has made a station announcement from [src] at [AREACOORD(usr)].")
@@ -386,6 +386,7 @@ GLOBAL_LIST_EMPTY(req_console_ckey_departments)
 		message_verified_by = "[ID.registered_name] ([ID.assignment])"
 		announcement_authenticated = (ACCESS_RC_ANNOUNCE in ID.access)
 		SStgui.update_uis(src)
+		playsound(get_turf(user), 'zov_modular_arkstation/modules/sounds-renewal/sound/machines/auth.ogg', 75, 1, 1) // ArkStation 13 Edit
 		return
 	if (istype(attacking_item, /obj/item/stamp))
 		var/obj/item/stamp/attacking_stamp = attacking_item

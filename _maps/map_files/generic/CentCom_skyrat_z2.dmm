@@ -7982,6 +7982,7 @@
 /area/cruiser_dock)
 "kvD" = (
 /obj/structure/sign/poster/random/directional/west,
+/obj/machinery/gear_painter,
 /turf/open/floor/iron/dark,
 /area/centcom/interlink)
 "kvF" = (
@@ -12059,6 +12060,7 @@
 /area/centcom/holding/cafepark)
 "uCW" = (
 /obj/machinery/light/directional/west,
+/obj/machinery/gear_painter,
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "uDr" = (

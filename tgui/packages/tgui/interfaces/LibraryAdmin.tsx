@@ -13,11 +13,7 @@ export const LibraryAdmin = (props, context) => {
     null
   );
   return (
-    <Window
-      title="Admin Library Console"
-      theme="admin"
-      width={800}
-      height={600}>
+    <Window title="Admin Library Console" theme="ntos" width={800} height={600}>
       {modifyMethod ? <ModifyPage /> : <BookListing />}
     </Window>
   );

@@ -4,5 +4,8 @@
 
 	pleasure = clamp(pleasure + pleas, AROUSAL_MINIMUM, AROUSAL_LIMIT)
 
+	if(rand(0, 35) == 0)
+		emote("moan")
+
 	if(pleasure >= AROUSAL_AUTO_CLIMAX_THRESHOLD) // lets cum
 		climax(manual = FALSE)

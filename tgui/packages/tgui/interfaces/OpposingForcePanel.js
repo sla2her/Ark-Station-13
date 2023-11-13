@@ -11,8 +11,8 @@ export const OpposingForcePanel = (props, context) => {
     <Window
       title={'Opposing Force: ' + creator_ckey}
       width={585}
-      height={840}
-      theme={owner_antag ? 'syndicate' : 'admin'}>
+      height={840} // ARK STATION EDIT (THEME)
+      theme={'syndicate'}>
       <Window.Content scrollable>
         <Stack vertical grow mb={1}>
           <Stack.Item>

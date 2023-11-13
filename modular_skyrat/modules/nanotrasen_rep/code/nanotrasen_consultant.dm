@@ -16,8 +16,7 @@
 	department_for_prefs = /datum/job_department/captain
 
 	departments_list = list(
-		/datum/job_department/command,
-		/datum/job_department/central_command
+		/datum/job_department/central_command,
 	)
 
 	outfit = /datum/outfit/job/nanotrasen_consultant
@@ -37,13 +36,14 @@
 		/obj/item/reagent_containers/cup/glass/bottle/champagne = 10
 	)
 
-	veteran_only = TRUE
+	//veteran_only = TRUE // Ark Station 13 Edit - Fuck Vet's system
 	job_flags = STATION_JOB_FLAGS | JOB_BOLD_SELECT_TEXT | JOB_CANNOT_OPEN_SLOTS
+
+	job_tone = "objection"
 
 /datum/outfit/job/nanotrasen_consultant
 	name = "Nanotrasen Consultant"
 	jobtype = /datum/job/nanotrasen_consultant
-
 	belt = /obj/item/modular_computer/pda/nanotrasen_consultant
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset/heads/nanotrasen_consultant

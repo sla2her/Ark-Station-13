@@ -322,7 +322,7 @@
 			// This canonizes that MMI'd cyborgs have memories of their previous life
 			brainmob.add_mob_memory(/datum/memory/was_cyborged, protagonist = brainmob.mind, deuteragonist = user)
 			brainmob.mind.transfer_to(O)
-			playsound(O.loc, 'sound/voice/liveagain.ogg', 75, TRUE)
+			playsound(O.loc, 'zov_modular_arkstation/modules/sounds-renewal/sound/voice/liveagain.ogg', 75, TRUE) // Ark Station 13 Edit
 
 			if(O.mind && O.mind.special_role)
 				to_chat(O, span_userdanger("You have been robotized!"))

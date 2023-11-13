@@ -41,8 +41,8 @@
  * Welp, the code is pretty much the same, except for one tiny detail, I suppose it's ok to make a subtype of this element.
  * That tiny detail is that we don't check for skills, but if the player has played for thousands of hours.
  */
-/datum/element/skill_reward/veteran
-	element_flags = NONE
+///datum/element/skill_reward/veteran
+	//element_flags = NONE
 
-/datum/element/skill_reward/veteran/check_equippable(mob/user)
-	return user.client?.is_veteran()
+///datum/element/skill_reward/veteran/check_equippable(mob/user)
+	//return user.client?.is_veteran()

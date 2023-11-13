@@ -6,6 +6,7 @@
 	earliest_start = 30 MINUTES
 	category = EVENT_CATEGORY_ENTITIES
 	description = "Syndicate troops pour out of portals."
+	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/syndie_storm.ogg' // Ark Station 13 Edit
 
 /datum/round_event/portal_storm/syndicate_shocktroop
 	boss_types = list(/mob/living/basic/trooper/syndicate/melee/space/stormtrooper = 2)
@@ -13,6 +14,7 @@
 		/mob/living/basic/trooper/syndicate/melee/space = 8,
 		/mob/living/basic/trooper/syndicate/ranged/space = 2,
 	)
+	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/syndie_storm.ogg' // Ark Station 13 Edit
 
 /datum/round_event_control/portal_storm_narsie
 	name = "Portal Storm: Constructs"
@@ -23,6 +25,7 @@
 	description = "Nar'sie constructs pour out of portals."
 	min_wizard_trigger_potency = 5
 	max_wizard_trigger_potency = 7
+	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/_admin_horror_music.ogg' // Ark Station 13 Edit
 
 /datum/round_event/portal_storm/portal_storm_narsie
 	boss_types = list(/mob/living/basic/construct/artificer/hostile = 6)
@@ -30,6 +33,8 @@
 		/mob/living/basic/construct/juggernaut/hostile = 8,
 		/mob/living/basic/construct/wraith/hostile = 6,
 	)
+
+	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/_admin_horror_music.ogg' // Ark Station 13 Edit
 
 /datum/round_event/portal_storm
 	start_when = 7
@@ -45,6 +50,8 @@
 	var/number_of_hostiles
 	/// List of mutable appearances in the form (plane offset + 1 -> appearance)
 	var/list/mutable_appearance/storm_appearances
+
+	var/triggersound // Ark Station 13 Edit
 
 /datum/round_event/portal_storm/setup()
 	storm_appearances = list()
@@ -74,7 +81,7 @@
 	set waitfor = 0
 	sound_to_playing_players('sound/magic/lightning_chargeup.ogg')
 	sleep(8 SECONDS)
-	priority_announce("Massive bluespace anomaly detected en route to [station_name()]. Brace for impact.")
+	priority_announce("Massive bluespace anomaly detected en route to [station_name()]. Brace for impact.", "Central Command", sound = triggersound) // Ark Station 13 Edit
 	sleep(2 SECONDS)
 	sound_to_playing_players('sound/magic/lightningbolt.ogg')
 

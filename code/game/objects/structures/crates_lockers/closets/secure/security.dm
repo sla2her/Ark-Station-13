@@ -52,47 +52,46 @@
 	icon_state = "hos"
 	req_access = list(ACCESS_HOS)
 
-/obj/structure/closet/secure_closet/hos/PopulateContents()
-	..()
+// /obj/structure/closet/secure_closet/hos/PopulateContents()
+// 	..()
 
-	new /obj/item/computer_disk/command/hos(src)
-	new /obj/item/radio/headset/heads/hos(src)
-	new /obj/item/storage/bag/garment/hos(src)
-	new /obj/item/storage/lockbox/medal/sec(src)
-	new /obj/item/megaphone/sec(src)
-	new /obj/item/holosign_creator/security(src)
-	new /obj/item/storage/lockbox/loyalty(src)
-	new /obj/item/storage/box/flashbangs(src)
-	new /obj/item/shield/riot/tele(src)
-	new /obj/item/storage/belt/security/full(src)
-	new /obj/item/circuitboard/machine/techfab/department/security(src)
-	new /obj/item/storage/photo_album/hos(src)
-	new /obj/item/card/id/departmental_budget/sec(src) //SKYRAT EDIT ADDITION
+// 	new /obj/item/computer_disk/command/hos(src)
+// 	new /obj/item/radio/headset/heads/hos(src)
+// 	new /obj/item/storage/bag/garment/hos(src)
+// 	new /obj/item/storage/lockbox/medal/sec(src)
+// 	new /obj/item/megaphone/sec(src)
+// 	new /obj/item/holosign_creator/security(src)
+// 	new /obj/item/storage/lockbox/loyalty(src)
+// 	new /obj/item/storage/box/flashbangs(src)
+// 	new /obj/item/shield/riot/tele(src)
+// 	new /obj/item/storage/belt/security/full(src)
+// 	new /obj/item/circuitboard/machine/techfab/department/security(src)
+// 	new /obj/item/storage/photo_album/hos(src)
 
-/obj/structure/closet/secure_closet/hos/populate_contents_immediate()
-	. = ..()
+// /obj/structure/closet/secure_closet/hos/populate_contents_immediate()
+// 	. = ..()
 
-	// Traitor steal objectives
-	new /obj/item/gun/energy/e_gun/hos(src)
-	new /obj/item/pinpointer/nuke(src)
-	new /obj/item/gun/ballistic/shotgun/automatic/combat/compact(src)
+// 	// Traitor steal objectives
+// 	new /obj/item/gun/energy/e_gun/hos(src)
+// 	new /obj/item/pinpointer/nuke(src)
+// 	new /obj/item/gun/ballistic/shotgun/automatic/combat/compact(src)
 
 /obj/structure/closet/secure_closet/warden
 	name = "warden's locker"
 	icon_state = "warden"
 	req_access = list(ACCESS_ARMORY)
 
-/obj/structure/closet/secure_closet/warden/PopulateContents()
-	..()
-	new /obj/item/dog_bone(src)
-	new /obj/item/radio/headset/headset_sec(src)
-	new /obj/item/holosign_creator/security(src)
-	new /obj/item/storage/bag/garment/warden(src)
-	new /obj/item/storage/box/zipties(src)
-	new /obj/item/storage/box/flashbangs(src)
-	new /obj/item/storage/belt/security/full(src)
-	new /obj/item/flashlight/seclite(src)
-	new /obj/item/door_remote/head_of_security(src)
+// /obj/structure/closet/secure_closet/warden/PopulateContents()
+// 	..()
+// 	new /obj/item/dog_bone(src)
+// 	new /obj/item/radio/headset/headset_sec(src)
+// 	new /obj/item/holosign_creator/security(src)
+// 	new /obj/item/storage/bag/garment/warden(src)
+// 	new /obj/item/storage/box/zipties(src)
+// 	new /obj/item/storage/box/flashbangs(src)
+// 	new /obj/item/storage/belt/security/full(src)
+// 	new /obj/item/flashlight/seclite(src)
+// 	new /obj/item/door_remote/head_of_security(src)
 
 
 /obj/structure/closet/secure_closet/security
@@ -103,7 +102,7 @@
 /obj/structure/closet/secure_closet/security/PopulateContents()
 	..()
 	new /obj/item/clothing/suit/armor/vest/alt/sec(src)
-	new /obj/item/clothing/head/security_cap(src) //SKYRAT EDIT ADDITION
+	// new /obj/item/clothing/head/security_cap(src) //SKYRAT EDIT ADDITION
 	new /obj/item/clothing/head/helmet/sec(src)
 	new /obj/item/radio/headset/headset_sec(src)
 	new /obj/item/radio/headset/headset_sec/alt(src)

@@ -5,7 +5,6 @@
 	base_icon_state = "ripley"
 	silicon_icon_state = "ripley-empty"
 	movedelay = 1.5 //Move speed, lower is faster.
-	overclock_coeff = 1.25
 	max_temperature = 20000
 	max_integrity = 200
 	lights_power = 7
