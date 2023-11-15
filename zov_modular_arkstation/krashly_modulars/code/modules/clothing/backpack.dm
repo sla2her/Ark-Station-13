@@ -34,6 +34,7 @@
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/clothing/belt.dmi'
 	worn_icon = 'zov_modular_arkstation/krashly_modulars/icons/mob/clothing/belt.dmi'
 	icon_state = "inteq_webbing"
+	worn_icon_state = "inteq_webbing"
 	content_overlays = FALSE
 
 //Duffels
