@@ -1668,7 +1668,14 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "gO" = (
-/turf/closed/indestructible/riveted,
+/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/lavendergrass/style_random,
+/obj/structure/flora/bush/ferny/style_random,
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron{
+	icon_state = "asteroid5";
+	name = "plating"
+	},
 /area/centcom/central_command_areas/briefing)
 "gR" = (
 /obj/item/wrench,
@@ -2051,8 +2058,10 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/prison)
 "iA" = (
-/obj/structure/sign/flag/inteq,
-/turf/closed/indestructible/riveted,
+/obj/machinery/door/airlock/external/ruin,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/mapping_helpers/airlock/access/all/admin/thunderdome,
+/turf/open/indestructible/dark,
 /area/centcom/central_command_areas/briefing)
 "iB" = (
 /turf/closed/indestructible/fakedoor{
@@ -6361,7 +6370,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/closed/indestructible/riveted,
+/turf/closed/indestructible/syndicate,
 /area/centcom/central_command_areas/briefing)
 "Am" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
@@ -9792,6 +9801,7 @@
 /obj/structure/flora/bush/sparsegrass/style_random,
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/ferny/style_random,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron{
 	dir = 6;
 	icon_state = "asteroid8";
@@ -47962,7 +47972,7 @@ bO
 bO
 uU
 ma
-uU
+iA
 aa
 aa
 aa
@@ -48457,12 +48467,12 @@ Wr
 bO
 No
 Al
-gO
+Tg
 cn
 cn
 cn
-gO
-gO
+Tg
+Tg
 bW
 Gx
 FL
@@ -49480,7 +49490,7 @@ EN
 bO
 EN
 Tg
-iA
+ZN
 bK
 cn
 Dr
@@ -51275,7 +51285,7 @@ RH
 Pd
 dW
 Tg
-eU
+gO
 cn
 gg
 cn
