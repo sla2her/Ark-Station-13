@@ -96,16 +96,15 @@
 	icon_state = "Security Medic"
 	icon = 'modular_skyrat/master_files/icons/mob/landmarks.dmi'
 
-/obj/item/encryptionkey/headset_medsec
+/obj/item/encryptionkey/headset_sec/medsec
 	name = "medical-security encryption key"
-	icon_state = "cypherkey_security"
 	channels = list(RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_SECURITY = 1)
 
 /obj/item/radio/headset/headset_medsec
 	name = "medical-security radio headset"
 	desc = "Used to hear how many security officers need to be stiched back together."
 	icon_state = "sec_headset"
-	keyslot = new /obj/item/encryptionkey/headset_medsec
+	keyslot = new /obj/item/encryptionkey/headset_sec/medsec
 
 /datum/id_trim/job/security_medic
 	assignment = "Security Medic"

@@ -254,12 +254,24 @@
 			var/name1 = tgui_input_text(user, "Set a name for this photo, or leave blank.", "Name", max_length = 32)
 			var/desc1 = tgui_input_text(user, "Set a description to add to photo, or leave blank.", "Description", max_length = 128)
 			var/caption = tgui_input_text(user, "Set a caption for this photo, or leave blank.", "Caption", max_length = 256)
+
+			// ARK STATION EDIT START
+			var/oocnote = tgui_input_text(user, "Set an OOC note, or leave blank.", "OOC note", max_length = 256)
+			var/oocdesc = "OOC Note:" // Лютый костыль, идите нахуй.
+			// ARK STATION EDIT END
+
 			if(name1)
 				picture.picture_name = name1
 			if(desc1)
 				picture.picture_desc = "[desc1] - [picture.picture_desc]"
 			if(caption)
 				picture.caption = caption
+
+			// ARK STATION EDIT START
+			if(oocnote)
+				picture.picture_desc += "\ [oocdesc] - [oocnote]"
+			// ARK STATION EDIT END
+
 		else if(default_picture_name)
 			picture.picture_name = default_picture_name
 
