@@ -149,18 +149,8 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/prison)
 "aH" = (
-/obj/machinery/button/door/indestructible{
-	id = "XCCFerryI";
-	name = "Hanger Bay Shutters";
-	req_access = list("cent_general");
-	pixel_x = 24
-	},
-/obj/effect/turf_decal/tile/brown/opposingcorners{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/turf/open/indestructible/dark,
-/area/centcom/central_command_areas/briefing)
+/turf/closed/indestructible/syndicate,
+/area/centcom/tdome/observation)
 "aK" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/package_wrap,
@@ -299,6 +289,10 @@
 	},
 /obj/item/kitchen/spoon,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/machinery/door/window/brigdoor/right{
+	dir = 4;
+	name = "Kitchen"
+	},
 /turf/open/floor/iron/kitchen,
 /area/centcom/central_command_areas/briefing)
 "bi" = (
@@ -816,14 +810,8 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/arena)
 "dk" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/ferny/style_random,
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron{
-	icon_state = "asteroid5";
-	name = "plating"
-	},
+/turf/open/floor/holofloor/beach/water,
 /area/centcom/central_command_areas/briefing)
 "dl" = (
 /obj/structure/rack,
@@ -2641,6 +2629,12 @@
 /obj/item/stamp/law,
 /turf/open/floor/iron/grimy,
 /area/centcom/central_command_areas/courtroom)
+"kM" = (
+/obj/machinery/light/directional/east,
+/obj/structure/table/wood/shuttle_bar,
+/obj/item/storage/cans/sixbeer,
+/turf/open/misc/beach/sand,
+/area/centcom/central_command_areas/briefing)
 "kO" = (
 /obj/item/kirbyplants/organic/plant21,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -3844,7 +3838,10 @@
 /turf/open/space/basic,
 /area/space)
 "pM" = (
-/turf/open/floor/circuit/red,
+/turf/open/floor/circuit/red{
+	light_color = "#FFA500";
+	color = "#FFA500"
+	},
 /area/centcom/central_command_areas/briefing)
 "pN" = (
 /obj/effect/turf_decal/tile/red/anticorner/contrasted,
@@ -4632,12 +4629,6 @@
 	},
 /obj/machinery/light/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/button/door/indestructible{
-	id = "XCCFerryI";
-	name = "Hanger Bay Shutters";
-	req_access = list("cent_general");
-	pixel_x = 24
-	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "ts" = (
@@ -5800,6 +5791,9 @@
 	},
 /turf/open/floor/iron/kitchen,
 /area/centcom/central_command_areas/briefing)
+"yg" = (
+/turf/open/misc/beach/coast,
+/area/centcom/central_command_areas/briefing)
 "yh" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/donut_box,
@@ -6815,6 +6809,10 @@
 "BR" = (
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/evacuation/ship)
+"BS" = (
+/obj/structure/flora/bush/sparsegrass/style_random,
+/turf/open/misc/beach/sand,
+/area/centcom/central_command_areas/briefing)
 "BT" = (
 /obj/structure/table/wood,
 /obj/item/clipboard,
@@ -6909,12 +6907,11 @@
 /area/centcom/central_command_areas/briefing)
 "Cn" = (
 /obj/structure/table/reinforced,
-/obj/item/toy/figure/dsquad{
-	pixel_x = -3;
-	pixel_y = 11
-	},
 /obj/item/flashlight/seclite,
 /obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/item/toy/figure/inteq{
+	pixel_y = 10
+	},
 /turf/open/indestructible/dark,
 /area/centcom/central_command_areas/briefing)
 "Co" = (
@@ -7020,6 +7017,11 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
+"CN" = (
+/turf/open/misc/beach/coast{
+	dir = 10
+	},
+/area/centcom/central_command_areas/briefing)
 "CO" = (
 /obj/structure/table,
 /obj/item/paper/pamphlet/centcom/visitor_info,
@@ -7032,6 +7034,11 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
+"CP" = (
+/turf/open/misc/beach/coast/corner{
+	dir = 1
+	},
+/area/centcom/central_command_areas/briefing)
 "CT" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing{
@@ -7482,8 +7489,12 @@
 	},
 /turf/open/floor/iron/kitchen,
 /area/centcom/central_command_areas/briefing)
+"ER" = (
+/turf/open/floor/holofloor/beach/water,
+/area/centcom/central_command_areas/briefing)
 "EU" = (
 /obj/structure/mecha_wreckage/ares,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/dark,
 /area/centcom/central_command_areas/briefing)
 "EV" = (
@@ -7508,7 +7519,7 @@
 	dir = 1;
 	pixel_y = 8
 	},
-/turf/closed/indestructible/riveted,
+/turf/closed/indestructible/syndicate,
 /area/centcom/central_command_areas/briefing)
 "EZ" = (
 /obj/effect/turf_decal/tile/brown/half/contrasted{
@@ -7516,6 +7527,13 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supplypod/loading/three)
+"Fb" = (
+/obj/structure/bed/pod{
+	dir = 1
+	},
+/obj/structure/fluff/beach_umbrella/syndi,
+/turf/open/misc/beach/sand,
+/area/centcom/central_command_areas/briefing)
 "Fe" = (
 /obj/structure/sink/directional/west,
 /obj/structure/mirror/directional/east,
@@ -7833,6 +7851,9 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
+"GO" = (
+/turf/closed/indestructible/syndicate,
+/area/centcom/central_command_areas/armory)
 "GT" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
@@ -8155,7 +8176,7 @@
 /area/centcom/central_command_areas/prison)
 "Ij" = (
 /obj/machinery/status_display/evac,
-/turf/closed/indestructible/riveted,
+/turf/closed/indestructible/syndicate,
 /area/centcom/central_command_areas/briefing)
 "Il" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -8345,7 +8366,7 @@
 "JG" = (
 /obj/machinery/nuclearbomb/beer,
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/dark,
 /area/centcom/central_command_areas/briefing)
 "JJ" = (
@@ -8447,6 +8468,16 @@
 /obj/effect/mapping_helpers/airlock/access/all/admin/captain,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/admin)
+"Km" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/machinery/button/door/indestructible{
+	id = "XCCFerryI";
+	name = "Hanger Bay Shutters";
+	req_access = list("cent_general");
+	pixel_x = 24
+	},
+/turf/open/indestructible/dark,
+/area/centcom/central_command_areas/briefing)
 "Kn" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -8871,6 +8902,9 @@
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/centcom/tdome/arena)
+"Mi" = (
+/turf/closed/indestructible/syndicate,
+/area/centcom/tdome/administration)
 "Mk" = (
 /obj/structure/chair/office,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -9006,6 +9040,9 @@
 /obj/machinery/power/shuttle_engine/large,
 /turf/open/floor/plating,
 /area/centcom/central_command_areas/evacuation/ship)
+"MO" = (
+/turf/closed/indestructible/syndicate,
+/area/centcom/central_command_areas/ferry)
 "MP" = (
 /obj/effect/light_emitter/podbay,
 /turf/open/floor/iron,
@@ -9040,7 +9077,7 @@
 /area/centcom/central_command_areas/evacuation/ship)
 "MY" = (
 /obj/structure/sign/nanotrasen,
-/turf/closed/indestructible/riveted,
+/turf/closed/indestructible/syndicate,
 /area/centcom/central_command_areas/briefing)
 "MZ" = (
 /obj/structure/sign/poster/contraband/inteq/random{
@@ -10607,10 +10644,8 @@
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "Tg" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/turf/open/space/basic,
-/area/centcom/central_command_areas/admin)
+/turf/closed/indestructible/syndicate,
+/area/centcom/central_command_areas/briefing)
 "Tj" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/cup/glass/bottle/whiskey{
@@ -10787,7 +10822,10 @@
 "TR" = (
 /obj/machinery/shuttle_manipulator,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/turf/open/floor/circuit/red,
+/turf/open/floor/circuit/red{
+	light_color = "#FFA500";
+	color = "#FFA500"
+	},
 /area/centcom/central_command_areas/briefing)
 "TS" = (
 /obj/structure/table/wood,
@@ -11625,6 +11663,10 @@
 "Xm" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/bag/tray,
+/obj/machinery/door/window/brigdoor{
+	name = "Kitchen";
+	dir = 4
+	},
 /turf/open/floor/iron/kitchen,
 /area/centcom/central_command_areas/briefing)
 "Xn" = (
@@ -12128,6 +12170,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
+"ZC" = (
+/obj/item/clothing/shoes/sandal/beach,
+/turf/open/misc/beach/sand,
+/area/centcom/central_command_areas/briefing)
 "ZE" = (
 /obj/effect/landmark/error,
 /turf/open/misc/ashplanet/wateryrock{
@@ -12179,14 +12225,8 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "ZN" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/machinery/button/door/indestructible{
-	id = "XCCFerryI";
-	name = "Hanger Bay Shutters";
-	pixel_y = 24;
-	req_access = list("cent_general")
-	},
-/turf/open/indestructible/dark,
+/obj/structure/sign/flag/inteq,
+/turf/closed/indestructible/syndicate,
 /area/centcom/central_command_areas/briefing)
 "ZO" = (
 /obj/structure/flora/bush/lavendergrass/style_random,
@@ -44304,13 +44344,13 @@ aa
 aa
 aa
 aa
-gO
-gO
-gO
-gO
-gO
-gO
-gO
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
 aa
 aa
 aa
@@ -44561,13 +44601,13 @@ aa
 aa
 aa
 aa
-gO
+Tg
 EO
 kQ
 JN
 dP
 RQ
-gO
+Tg
 aa
 aa
 aa
@@ -44818,16 +44858,16 @@ aa
 aa
 aa
 aa
-gO
+Tg
 Ma
 eO
 eO
 eO
 eO
-gO
-gO
-gO
-gO
+Tg
+Tg
+Tg
+Tg
 aa
 aa
 aa
@@ -45075,16 +45115,16 @@ aa
 aa
 aa
 aa
-gO
+Tg
 yf
 fU
 ok
 JP
 eO
-gO
+Tg
 Oo
 XZ
-gO
+Tg
 aa
 aa
 aa
@@ -45332,7 +45372,7 @@ aa
 aa
 aa
 aa
-gO
+Tg
 Hu
 zX
 ye
@@ -45341,7 +45381,7 @@ eO
 Bi
 jj
 Yq
-gO
+Tg
 aa
 aa
 aa
@@ -45589,16 +45629,16 @@ aa
 aa
 aa
 aa
-gO
+Tg
 ay
 zX
 eO
 eO
 eO
-gO
+Tg
 mb
 mb
-gO
+Tg
 aa
 aa
 aa
@@ -45846,19 +45886,19 @@ aa
 aa
 aa
 aa
-gO
-gO
+Tg
+Tg
 bh
 Xm
-gO
+Tg
 gp
-gO
-gO
-gO
-gO
-gO
-gO
-gO
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
 aa
 aa
 aa
@@ -46098,24 +46138,24 @@ aa
 aa
 aa
 aa
-gO
+Tg
 cn
 cn
 cn
 cn
-gO
+Tg
 FC
 zX
 eO
 fB
 MZ
-gO
+Tg
 EU
-gO
+Tg
 ny
 qG
 ny
-gO
+Tg
 aa
 aa
 aa
@@ -46355,26 +46395,26 @@ aa
 aa
 aa
 aa
-gO
+Tg
 Wg
 EN
 EN
 ef
-gO
+Tg
 TP
 zX
 eO
 eO
 TP
-gO
-gO
-gO
+Tg
+Tg
+Tg
 cn
 cn
 cn
-gO
-gO
-gO
+Tg
+Tg
+Tg
 aa
 aa
 aa
@@ -46612,18 +46652,18 @@ aa
 aa
 aa
 aa
-gO
+Tg
 aE
 EN
 EN
 aE
-gO
+Tg
 pa
 Wi
 AJ
 Wz
 Ax
-gO
+Tg
 SV
 Zc
 XG
@@ -46631,7 +46671,7 @@ lG
 GY
 Qj
 Ib
-gO
+Tg
 aa
 aa
 aa
@@ -46861,26 +46901,26 @@ aa
 aa
 aa
 aa
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
 aE
 Wr
 gc
 aE
-gO
+Tg
 IM
 Wi
 eO
 Wz
 wS
-gO
+Tg
 QK
 oG
 dS
@@ -46888,11 +46928,11 @@ dS
 dS
 Kn
 Ph
-gO
-gO
-gO
-gO
-gO
+Tg
+Tg
+Tg
+Tg
+Tg
 aa
 aa
 aa
@@ -47115,10 +47155,10 @@ oe
 xd
 oe
 yn
-mD
+MO
 aa
 aa
-gO
+Tg
 eU
 pU
 eU
@@ -47126,18 +47166,18 @@ cn
 eU
 pU
 eU
-gO
+Tg
 aE
 Wr
 EN
 oE
-gO
+Tg
 Ns
 zX
 eO
 eO
 Ns
-gO
+Tg
 Yh
 og
 HX
@@ -47145,11 +47185,11 @@ hj
 Ja
 cv
 Yh
-gO
+Tg
 ny
 qG
 ny
-gO
+Tg
 aa
 aa
 aa
@@ -47372,10 +47412,10 @@ oe
 Xy
 oe
 YG
-mD
-gO
-gO
-gO
+MO
+Tg
+Tg
+Tg
 cn
 cn
 cn
@@ -47383,18 +47423,18 @@ cn
 cn
 cn
 cn
-gO
-iA
+Tg
+ZN
 Yd
 fK
-iA
-gO
-iA
+ZN
+Tg
+ZN
 dO
 cn
 Fn
-iA
-gO
+ZN
+Tg
 TY
 hn
 SF
@@ -47402,11 +47442,11 @@ Re
 sU
 nu
 TY
-gO
+Tg
 cn
 cn
 cn
-gO
+Tg
 aa
 aa
 aa
@@ -47663,9 +47703,9 @@ gz
 mx
 bO
 hl
-gO
-gO
-gO
+Tg
+Tg
+Tg
 aa
 aa
 aa
@@ -47891,7 +47931,7 @@ pF
 xw
 an
 bO
-ZN
+bO
 bO
 bO
 bO
@@ -48146,8 +48186,8 @@ tn
 ZU
 UP
 fv
-aH
-Wr
+Nj
+Km
 Wr
 hh
 Wr
@@ -48177,9 +48217,9 @@ Bl
 Nj
 YK
 HQ
-gO
-gO
-gO
+Tg
+Tg
+Tg
 aa
 aa
 aa
@@ -48400,18 +48440,18 @@ wu
 xh
 Ag
 mD
-gO
-gO
-gO
-gO
-gO
-gO
-gO
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
 Ij
 yk
 Kw
 EN
-gO
+Tg
 ZL
 Wr
 bO
@@ -48430,11 +48470,11 @@ pM
 SA
 Yf
 WV
-gO
+Tg
 HS
 bO
 OL
-gO
+Tg
 aa
 aa
 aa
@@ -48664,21 +48704,21 @@ Bu
 tb
 aV
 ho
-gO
+Tg
 EN
 bO
 EN
-gO
+Tg
 mg
 Wr
 bO
 EN
 cn
-eU
-eU
-eU
-eU
-eU
+Fb
+ZC
+yg
+ER
+ER
 cn
 bO
 Gx
@@ -48691,8 +48731,8 @@ EY
 Il
 cn
 Jd
-gO
-gO
+Tg
+Tg
 aa
 aa
 aa
@@ -48921,20 +48961,20 @@ eF
 eF
 eF
 db
-gO
+Tg
 EN
 bO
 EN
-gO
+Tg
 Ia
 Wr
 bO
 EN
 cn
-dk
-eU
-eU
-eU
+kM
+BS
+CP
+CN
 dk
 cn
 bO
@@ -48944,14 +48984,14 @@ tA
 tA
 OL
 bO
-gO
+Tg
 Ss
 wD
 wD
 wD
-gO
-gO
-gO
+Tg
+Tg
+Tg
 aa
 aa
 aa
@@ -49182,18 +49222,18 @@ MY
 EN
 bO
 EN
-gO
+Tg
 Sa
 Nj
 bO
 mx
-gO
-gO
-gO
-gO
-gO
-gO
-gO
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
 pk
 bO
 bO
@@ -49201,7 +49241,7 @@ bO
 bO
 bO
 pk
-gO
+Tg
 xB
 wD
 nh
@@ -49435,30 +49475,30 @@ Ke
 eV
 eF
 xU
-gO
+Tg
 EN
 bO
 EN
-gO
+Tg
 iA
 bK
 cn
 Dr
-iA
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
-gO
+ZN
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
+Tg
 HN
 se
 ed
@@ -49692,29 +49732,29 @@ WR
 he
 WR
 ty
-gO
+Tg
 EN
 bO
 EN
-gO
+Tg
 JA
 ag
 bO
 OL
 cz
-iA
+ZN
 bn
 SU
 SU
 SU
 YC
-gO
+Tg
 hS
 mm
 el
-gO
+Tg
 si
-gO
+Tg
 Am
 wD
 wD
@@ -49936,7 +49976,7 @@ Hz
 Vz
 QV
 QV
-Tg
+Hz
 mD
 wx
 fw
@@ -49949,11 +49989,11 @@ eE
 rB
 RH
 lU
-gO
+Tg
 EN
 bO
 EN
-gO
+Tg
 hX
 Ve
 lx
@@ -49969,9 +50009,9 @@ Ix
 Ug
 Qr
 aj
-gO
+Tg
 JG
-gO
+Tg
 uD
 wD
 wD
@@ -50206,11 +50246,11 @@ Zs
 RF
 OX
 aS
-gO
+Tg
 EN
 bO
 bc
-gO
+Tg
 VJ
 Uy
 GF
@@ -50222,21 +50262,21 @@ vv
 vv
 vv
 bQ
-QC
-QC
-QC
-QC
-uf
-uf
-uf
-uf
-uf
-uf
-uf
-uf
-uf
-uf
-gO
+aH
+aH
+aH
+aH
+Mi
+Mi
+Mi
+Wn
+Mi
+Mi
+Mi
+Wn
+Wn
+Mi
+Tg
 aa
 aa
 aa
@@ -50463,23 +50503,23 @@ SR
 Yy
 AL
 oK
-gO
+Tg
 EN
 bO
 EN
-gO
+Tg
 Cm
 wZ
 NS
 NS
 Ht
-iA
+ZN
 Og
 yR
 yR
 yR
 Eo
-QC
+aH
 KN
 OE
 Sl
@@ -50720,23 +50760,23 @@ Zl
 zz
 OX
 Wa
-gO
+Tg
 OL
 an
 mx
-gO
-gO
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Tg
+Tg
+aH
+aH
+aH
+aH
+aH
+aH
+aH
+aH
+aH
+aH
+aH
 Sl
 Sl
 QC
@@ -50977,13 +51017,13 @@ fi
 ar
 Ny
 Eb
-gO
-gO
-gO
+Tg
+Tg
+Tg
 Zf
-gO
-gO
-QC
+Tg
+Tg
+aH
 wR
 gy
 oH
@@ -51234,13 +51274,13 @@ NC
 RH
 Pd
 dW
-gO
+Tg
 eU
 cn
 gg
 cn
 PP
-QC
+aH
 cI
 ie
 bi
@@ -51491,13 +51531,13 @@ VO
 ST
 rY
 Ya
-Ya
-gO
-gO
+GO
+Tg
+Tg
 Zf
-gO
-gO
-QC
+Tg
+Tg
+aH
 rZ
 MS
 dw
