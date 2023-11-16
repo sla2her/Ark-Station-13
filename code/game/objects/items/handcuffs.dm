@@ -50,7 +50,7 @@
 	armor_type = /datum/armor/restraints_handcuffs
 	custom_price = PAYCHECK_COMMAND * 0.35
 	///Sound that plays when starting to put handcuffs on someone
-	var/cuffsound = 'sound/weapons/handcuffs.ogg'
+	var/cuffsound = 'zov_modular_arkstation/modules/new-sounds/sound/handcuffs.ogg' // ARK STATION EDIT || Handcuff New Sound
 	///If set, handcuffs will be destroyed on application and leave behind whatever this is set to.
 	var/trashtype = null
 	/// How strong the cuffs are. Weak cuffs can be broken with wirecutters or boxcutters.

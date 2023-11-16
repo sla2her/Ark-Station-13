@@ -42,13 +42,13 @@
 	if(!(slot & ITEM_SLOT_GLOVES))
 		return
 	on_wrist = TRUE
-	playsound(loc, 'sound/weapons/handcuffs.ogg', 30, TRUE, SHORT_RANGE_SOUND_EXTRARANGE)
+	playsound(loc, 'zov_modular_arkstation/modules/new-sounds/sound/handcuffs.ogg', 30, TRUE, SHORT_RANGE_SOUND_EXTRARANGE) // ARK STATION EDIT || Handcuffs New Sound
 	connect_kheiral_network(user)
 
 /obj/item/kheiral_cuffs/dropped(mob/user, silent)
 	. = ..()
 	if(on_wrist)
-		playsound(loc, 'sound/weapons/handcuffs.ogg', 30, TRUE, SHORT_RANGE_SOUND_EXTRARANGE)
+		playsound(loc, 'zov_modular_arkstation/modules/new-sounds/sound/handcuffs.ogg', 30, TRUE, SHORT_RANGE_SOUND_EXTRARANGE) // ARK STATION EDIT || Handcuffs New Sound
 	on_wrist = FALSE
 	remove_kheiral_network(user)
 

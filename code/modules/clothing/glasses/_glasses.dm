@@ -293,7 +293,7 @@
 	if(isliving(movable))
 		var/mob/living/crusher = movable
 		if(crusher.move_intent != MOVE_INTENT_WALK && (!(crusher.movement_type & (FLYING|FLOATING)) || crusher.buckled))
-			playsound(src, 'sound/effects/footstep/glass_step.ogg', 30, TRUE)
+			playsound(src, 'zov_modular_arkstation/modules/new-sounds/sound/glass_step.ogg', 30, TRUE) // ARK STATION EDIT || New Glass Step Sound
 			visible_message(span_warning("[crusher] steps on [src], damaging it!"))
 			take_damage(100, sound_effect = FALSE)
 

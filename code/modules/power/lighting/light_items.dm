@@ -117,7 +117,7 @@
 		return
 	var/mob/living/moving_mob = moving_atom
 	if(!(moving_mob.movement_type & (FLYING|FLOATING)) || moving_mob.buckled)
-		playsound(src, 'sound/effects/footstep/glass_step.ogg', HAS_TRAIT(moving_mob, TRAIT_LIGHT_STEP) ? 30 : 50, TRUE)
+		playsound(src, 'zov_modular_arkstation/modules/new-sounds/sound/glass_step.ogg', HAS_TRAIT(moving_mob, TRAIT_LIGHT_STEP) ? 30 : 50, TRUE) // ARK STATION EDIT || New Glass Step Sound
 		if(status == LIGHT_BURNED || status == LIGHT_OK)
 			shatter(moving_mob)
 
