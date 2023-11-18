@@ -203,6 +203,7 @@
 	uses_advanced_reskins = TRUE
 	icon = 'zov_modular_arkstation/modules/clothing-update/icons/obj/clothing/suits.dmi'
 	worn_icon = 'zov_modular_arkstation/modules/clothing-update/icons/mob/clothing/suits.dmi'
+	icon_state = "riot"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
