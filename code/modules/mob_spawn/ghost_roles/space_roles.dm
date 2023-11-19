@@ -14,6 +14,9 @@
 	important_text = "Work as a team with your fellow survivors and do not abandon them."
 	outfit = /datum/outfit/oldsec
 	spawner_job_path = /datum/job/ancient_crew
+	loadout_enabled = TRUE
+	quirks_enabled = TRUE
+	random_appearance = FALSE
 
 /obj/effect/mob_spawn/ghost_role/human/oldsec/Destroy()
 	new/obj/structure/showcase/machinery/oldpod/used(drop_location())
@@ -41,6 +44,9 @@
 	important_text = "Work as a team with your fellow survivors and do not abandon them."
 	outfit = /datum/outfit/oldeng
 	spawner_job_path = /datum/job/ancient_crew
+	loadout_enabled = TRUE
+	quirks_enabled = TRUE
+	random_appearance = FALSE
 
 /obj/effect/mob_spawn/ghost_role/human/oldeng/Destroy()
 	new/obj/structure/showcase/machinery/oldpod/used(drop_location())
@@ -75,6 +81,9 @@
 	important_text = "Work as a team with your fellow survivors and do not abandon them."
 	outfit = /datum/outfit/oldsci
 	spawner_job_path = /datum/job/ancient_crew
+	loadout_enabled = TRUE
+	quirks_enabled = TRUE
+	random_appearance = FALSE
 
 /obj/effect/mob_spawn/ghost_role/human/oldsci/Destroy()
 	new/obj/structure/showcase/machinery/oldpod/used(drop_location())
@@ -93,6 +102,9 @@
 	you_are_text = "You are a syndicate agent, assigned to a small listening post station situated near your hated enemy's top secret research facility: Space Station 13."
 	flavour_text = "Monitor enemy activity as best you can, and try to keep a low profile. Use the communication equipment to provide support to any field agents, and sow disinformation to throw Nanotrasen off your trail. Do not let the base fall into enemy hands!"
 	important_text = "DO NOT abandon the base."
+	loadout_enabled = TRUE
+	quirks_enabled = TRUE
+	random_appearance = FALSE
 
 /obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate/comms/space/Initialize(mapload)
 	. = ..()
@@ -111,6 +123,9 @@
 	outfit = /datum/outfit/syndicate_empty/battlecruiser
 	spawner_job_path = /datum/job/battlecruiser_crew
 	uses = 4
+	loadout_enabled = TRUE
+	quirks_enabled = TRUE
+	random_appearance = FALSE
 
 	/// The antag team to apply the player to
 	var/datum/team/antag_team
@@ -148,6 +163,9 @@
 	prompt_name = "a battlecruiser operative"
 	outfit = /datum/outfit/syndicate_empty/battlecruiser/assault
 	uses = 8
+	loadout_enabled = TRUE
+	quirks_enabled = TRUE
+	random_appearance = FALSE
 
 /datum/outfit/syndicate_empty/battlecruiser/assault
 	name = "Syndicate Battlecruiser Assault Operative"
@@ -170,6 +188,9 @@
 	spawner_job_path = /datum/job/battlecruiser_captain
 	antag_datum_to_give = /datum/antagonist/battlecruiser/captain
 	uses = 1
+	loadout_enabled = TRUE
+	quirks_enabled = TRUE
+	random_appearance = FALSE
 
 /datum/outfit/syndicate_empty/battlecruiser/assault/captain
 	name = "Syndicate Battlecruiser Captain"
