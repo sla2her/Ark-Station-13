@@ -64,10 +64,6 @@
 /obj/structure/sign/poster/official/carwo_magazine/directional/south,
 /turf/open/floor/iron/dark,
 /area/space)
-"bi" = (
-/mob/living/basic/clown/mutant/slow,
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "bs" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -144,10 +140,6 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/space)
-"dO" = (
-/mob/living/simple_animal/hostile/looter/ranged/space,
-/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "el" = (
 /obj/structure/bed/dogbed{
@@ -475,10 +467,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron/dark,
 /area/space)
-"mY" = (
-/mob/living/simple_animal/hostile/looter/big,
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "mZ" = (
 /obj/structure/closet/secure_closet/blueshield,
 /obj/item/storage/backpack/blueshield,
@@ -557,10 +545,6 @@
 /obj/structure/sign/calendar/directional/east,
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood,
-/area/space)
-"oF" = (
-/mob/living/simple_animal/hostile/engorge,
-/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "pJ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -854,10 +838,6 @@
 /obj/effect/turf_decal/delivery/blue,
 /turf/open/floor/iron/white,
 /area/space)
-"wk" = (
-/mob/living/basic/clown/longface,
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "wl" = (
 /obj/machinery/door/window/left/directional/west{
 	dir = 4;
@@ -1000,10 +980,6 @@
 	},
 /turf/open/floor/carpet/executive,
 /area/space)
-"za" = (
-/mob/living/simple_animal/hostile/looter/crusher,
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "zw" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/gloves/latex,
@@ -1049,10 +1025,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/space)
-"AC" = (
-/mob/living/basic/clown/fleshclown,
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "AF" = (
 /obj/item/kirbyplants/random,
 /obj/machinery/newscaster/directional/east,
@@ -1077,12 +1049,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron,
 /area/space)
-"BM" = (
-/mob/living/simple_animal/hostile/true_changeling{
-	health = 100
-	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "BQ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -1103,10 +1069,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
-/area/space)
-"Cb" = (
-/mob/living/simple_animal/hostile/looter/ranged,
-/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "Ce" = (
 /turf/open/floor/iron/white,
@@ -1130,12 +1092,6 @@
 	},
 /obj/structure/window/spawner/directional/east,
 /turf/open/floor/iron/white,
-/area/space)
-"Ck" = (
-/mob/living/simple_animal/hostile/mimic/crate{
-	health = 120
-	},
-/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "Cp" = (
 /obj/machinery/computer/crew,
@@ -1196,10 +1152,6 @@
 /obj/machinery/duct,
 /turf/open/floor/iron/freezer,
 /area/space)
-"Dw" = (
-/mob/living/simple_animal/hostile/plantmutant,
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "DY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/east,
@@ -1210,10 +1162,6 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
-/area/space)
-"EH" = (
-/mob/living/simple_animal/hostile/trog,
-/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "EY" = (
 /obj/machinery/firealarm/directional/south,
@@ -1296,10 +1244,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/space)
-"Gh" = (
-/mob/living/basic/clown/mutant/glutton,
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "Go" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/directional/south,
@@ -1357,10 +1301,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,
-/area/space)
-"Ia" = (
-/mob/living/simple_animal/hostile/zombie/nocorpse,
-/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "Iw" = (
 /obj/effect/turf_decal/siding/wood,
@@ -1425,10 +1365,6 @@
 	req_access = list("command");
 	pixel_y = 0
 	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
-"KB" = (
-/mob/living/simple_animal/hostile/scorpion,
 /turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "KD" = (
@@ -1669,10 +1605,6 @@
 	},
 /turf/open/floor/wood,
 /area/space)
-"Qq" = (
-/mob/living/simple_animal/hostile/devourdem,
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
 "QB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -1695,10 +1627,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/wood,
-/area/space)
-"Rq" = (
-/mob/living/basic/clown/honkling,
-/turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "Ry" = (
 /obj/machinery/light/directional/east,
@@ -1766,10 +1694,6 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "blueshieldblast"
 	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/space)
-"Uo" = (
-/mob/living/simple_animal/hostile/looter,
 /turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "Uq" = (
@@ -4643,9 +4567,9 @@ Ho
 Ho
 Ho
 Ho
-BM
 Ho
-oF
+Ho
+Ho
 Ho
 Ho
 Ho
@@ -4745,9 +4669,9 @@ Ho
 Ho
 Ho
 Ho
-EH
 Ho
-Qq
+Ho
+Ho
 Ho
 Ho
 Ho
@@ -4847,7 +4771,7 @@ Ho
 Ho
 Ho
 Ho
-Dw
+Ho
 Ho
 Ho
 Ho
@@ -4949,9 +4873,9 @@ Ho
 Ho
 Ho
 Ho
-KB
 Ho
-bi
+Ho
+Ho
 Ho
 Ho
 Ho
@@ -5051,7 +4975,7 @@ Ho
 Ho
 Ho
 Ho
-Ia
+Ho
 Ho
 Ho
 Ho
@@ -5153,9 +5077,9 @@ Ho
 Ho
 Ho
 Ho
-Ck
 Ho
-Gh
+Ho
+Ho
 Ho
 Ho
 Ho
@@ -5255,7 +5179,7 @@ Ho
 Ho
 Ho
 Ho
-Uo
+Ho
 Ho
 Ho
 Ho
@@ -5357,9 +5281,9 @@ Ho
 Ho
 Ho
 Ho
-mY
 Ho
-wk
+Ho
+Ho
 Ho
 Ho
 Ho
@@ -5459,7 +5383,7 @@ Ho
 Ho
 Ho
 Ho
-za
+Ho
 Ho
 Ho
 Ho
@@ -5561,9 +5485,9 @@ Ho
 Ho
 Ho
 Ho
-Cb
 Ho
-Rq
+Ho
+Ho
 Ho
 Ho
 Ho
@@ -5663,7 +5587,7 @@ Ho
 Ho
 Ho
 Ho
-dO
+Ho
 Ho
 Ho
 Ho
@@ -5765,7 +5689,7 @@ Ho
 Ho
 Ho
 Ho
-AC
+Ho
 Ho
 Ho
 Ho
