@@ -2,10 +2,10 @@
 
 | Название                  | Ссылка                                         |
 |---------------------------|------------------------------------------------|
-| Вебсайт                   | [https://www.tgstation13.org](https://www.arkstaion.ru)   															  |
-| Код (Github link)         | [https://github.com/Skyrat-SS13/Skyrat-tg](https://github.com/Krashly/Ark-Station-13)     |
-| Вики                      | [https://wiki.skyrat13.space/index.php/Main_Page](https://wiki.arkstaion.ru/)  					  |
-| Ark Station 13 Discord    | [https://discord.com/invite/hGpZ4Z3](https://discord.com/invite/u3BdB2mDaC) 							|
+| Вебсайт                   | [https://www.arkstaion.ru](https://www.arkstaion.ru)   															      |
+| Код (Github link)         | [https://github.com/Krashly/Ark-Station-13](https://github.com/Krashly/Ark-Station-13)    |
+| Вики                      | [https://wiki.arkstaion.ru/](https://wiki.arkstaion.ru/)  					 										  |
+| Ark Station 13 Discord    | [https://discord.com/invite/u3BdB2mDaC](https://discord.com/invite/u3BdB2mDaC) 						|
 | Coderbus Discord          | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9)              									  |
 
 Это форк билда Skyrat13, который в свою очередь является форком билда /tg/station созданного в Byond.
