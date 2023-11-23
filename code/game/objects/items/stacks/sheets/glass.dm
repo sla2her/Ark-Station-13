@@ -388,7 +388,7 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 	SIGNAL_HANDLER
 	if(isliving(AM))
 		var/mob/living/L = AM
-		if(!(L.movement_type & (FLYING|FLOATING)) || L.buckled)
+		if(!(L.movement_type & MOVETYPES_NOT_TOUCHING_GROUND) || L.buckled)
 			playsound(src, 'zov_modular_arkstation/modules/new-sounds/sound/glass_step.ogg', HAS_TRAIT(L, TRAIT_LIGHT_STEP) ? 30 : 50, TRUE) // ARK STATION EDIT || New Glass Step Sound
 
 /obj/item/shard/plasma
