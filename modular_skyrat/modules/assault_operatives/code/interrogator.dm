@@ -198,6 +198,7 @@
 
 	notify_ghosts("GoldenEye key launched!",
 		source = new_key,
+		action = NOTIFY_ORBIT,
 		header = "Something's Interesting!",
 	)
 

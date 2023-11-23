@@ -4,8 +4,6 @@
 	var/icon/worn_icon_digi
 	/// The config type to use for greyscaled worn sprites for digitigrade characters. Both this and greyscale_colors must be assigned to work.
 	var/greyscale_config_worn_digi
-	/// The config type to use for greyscaled worn sprites for characters with a muzzle sprite accessory. Both this and greyscale_colors must be assigned to work.
-	var/greyscale_config_worn_muzzled
 	/// Icon file for mob worn overlays, if the user is a monkey.
 	var/icon/worn_icon_monkey
 	/// The config type to use for greyscale worn sprites for monkeys. Both this and greyscale_colors must be assigned to work.

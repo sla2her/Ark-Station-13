@@ -244,6 +244,7 @@
 
 	notify_ghosts("[user] has shortcircuited [target] to explode in 60 seconds!",
 		source = target,
+		action = NOTIFY_ORBIT,
 		notify_flags = NOTIFY_CATEGORY_NOFLASH,
 		header = "Borgi Emagged",
 	)

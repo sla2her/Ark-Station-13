@@ -121,6 +121,7 @@
 
 	notify_ghosts("[src] was startled by the supermatter!",
 		source = src,
+		action = NOTIFY_ORBIT,
 		notify_flags = NOTIFY_CATEGORY_NOFLASH,
 		header = "Safety Inspection!",
 	)
