@@ -14,8 +14,10 @@
 	s += "<a href=\"[CONFIG_GET(string/discord_link)]\">"
 	s += "Discord"
 	s += ")\]"
-	s += "<br>[CONFIG_GET(string/servertagline)]<br>"
+	s += "<br>[CONFIG_GET(string/servertagline)]</a><br>"
 
+	s += "<a href='https://www.arkstaion.ru/'>Website</a>"
+	s += "<br><a href='https://wiki.arkstaion.ru/'>Wiki</a><br>"
 
 	var/n = 0
 	for (var/mob/M in GLOB.player_list)
