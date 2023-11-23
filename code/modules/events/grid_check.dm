@@ -11,6 +11,9 @@
 	/// Necessary due to the fact that this event is player triggerable.
 	COOLDOWN_DECLARE(announcement_spam_protection)
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_COMMUNAL, TAG_SPOOKY)
+
 /datum/round_event/grid_check
 	announce_when = 1
 	start_when = 1
@@ -22,7 +25,7 @@
 			CRASH("event started without controller!")
 		if(!COOLDOWN_FINISHED(controller, announcement_spam_protection))
 			return
-	priority_announce("Abnormal activity detected in [station_name()]'s powernet. As a precautionary measure, the station's power will be shut off for an indeterminate duration.", "Critical Power Failure", ANNOUNCER_POWEROFF)
+	priority_announce("Обнаружена аномальная активность в сети электропитания [station_name()]. В качестве меры предосторожности питание станции будет отключено на неопределенный срок.", "Critical Power Failure", ANNOUNCER_POWEROFF)
 	if(!fake) // Only start the CD if we're real
 		COOLDOWN_START(controller, announcement_spam_protection, 30 SECONDS)
 

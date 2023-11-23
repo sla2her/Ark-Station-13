@@ -8,6 +8,9 @@
 	min_wizard_trigger_potency = 2
 	max_wizard_trigger_potency = 7
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_TARGETED)
+
 /datum/round_event/ion_storm
 	var/replaceLawsetChance = 25 //chance the AI's lawset is completely replaced with something else per config weights
 	var/removeRandomLawChance = 10 //chance the AI has one random supplied or inherent law removed
@@ -27,7 +30,7 @@
 
 /datum/round_event/ion_storm/announce(fake)
 	if(prob(announce_chance) || fake)
-		priority_announce("Ion storm detected near the station. Please check all AI-controlled equipment for errors.", "Anomaly Alert", ANNOUNCER_IONSTORM)
+		priority_announce("Ионный шторм обнаружен рядом со станцией. Пожалуйста, проверьте все оборудование, управляемое ИИ, на наличие ошибок.", "Anomaly Alert", ANNOUNCER_IONSTORM)
 
 
 /datum/round_event/ion_storm/start()

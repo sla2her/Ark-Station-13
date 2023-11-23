@@ -15,6 +15,9 @@
 		/datum/event_admin_setup/input_number/spacevine_production,
 	)
 
+	track = EVENT_TRACK_MAJOR
+	tags = list(TAG_COMMUNAL, TAG_COMBAT)
+
 /datum/round_event/spacevine
 	fakeable = FALSE
 	///Override location the vines will spawn in.

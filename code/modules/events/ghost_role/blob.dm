@@ -10,6 +10,9 @@
 	category = EVENT_CATEGORY_ENTITIES
 	description = "Spawns a new blob overmind."
 
+	track = EVENT_TRACK_MAJOR
+	tags = list(TAG_DESTRUCTIVE, TAG_COMBAT)
+
 /datum/round_event_control/blob/can_spawn_event(players, allow_magic = FALSE)
 	if(EMERGENCY_PAST_POINT_OF_NO_RETURN) // no blobs if the shuttle is past the point of no return
 		return FALSE
@@ -24,7 +27,7 @@
 /datum/round_event/ghost_role/blob/announce(fake)
 	if(!fake)
 		return //the mob itself handles this.
-	priority_announce("Confirmed outbreak of level 5 biohazard aboard [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", ANNOUNCER_OUTBREAK5)
+	priority_announce("Подтверждена вспышка биологической опасности 5-го уровня на борту [station_name()]. Весь персонал должен сдержать распространение.", "Biohazard Alert", ANNOUNCER_OUTBREAK5)
 
 /datum/round_event/ghost_role/blob/spawn_role()
 	if(!GLOB.blobstart.len)

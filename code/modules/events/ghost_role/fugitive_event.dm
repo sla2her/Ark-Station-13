@@ -10,6 +10,9 @@
 	description = "Fugitives will hide on the station, followed by hunters."
 	map_flags = EVENT_SPACE_ONLY
 
+	track = EVENT_TRACK_MAJOR
+	tags = list(TAG_COMBAT)
+
 /datum/round_event/ghost_role/fugitives
 	minimum_required = 1
 	role_name = "fugitive"
@@ -148,6 +151,6 @@
 					header = "Spawn Here!",
 				)
 
-	priority_announce("Unidentified ship detected near the station.")
+	priority_announce("Неопознанный корабль обнаружен рядом со станцией.")
 
 #undef TEAM_BACKSTORY_SIZE

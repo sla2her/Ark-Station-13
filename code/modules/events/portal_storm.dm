@@ -8,6 +8,9 @@
 	description = "Syndicate troops pour out of portals."
 	triggersound = 'zov_modular_arkstation/modules/sounds-renewal/sound/syndie_storm.ogg' // Ark Station 13 Edit
 
+	track = EVENT_TRACK_MAJOR
+	tags = list(TAG_COMBAT)
+
 /datum/round_event/portal_storm/syndicate_shocktroop
 	boss_types = list(/mob/living/basic/trooper/syndicate/melee/space/stormtrooper = 2)
 	hostile_types = list(

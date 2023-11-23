@@ -258,6 +258,8 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	w_class = WEIGHT_CLASS_SMALL
 	has_fov = FALSE
 
+	flags_inv = HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT // ARK STATION EDIT
+
 /obj/item/clothing/mask/gas/clown_hat
 	name = "clown wig and mask"
 	desc = "A true prankster's facial attire. A clown is incomplete without his wig and mask."

@@ -9,6 +9,9 @@
 	description = "This anomaly shocks and explodes. This is the base type."
 	admin_setup = list(/datum/event_admin_setup/set_location/anomaly)
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_COMMUNAL, TAG_DESTRUCTIVE)
+
 /datum/round_event/anomaly
 	start_when = ANOMALY_START_HARMFUL_TIME
 	announce_when = ANOMALY_ANNOUNCE_HARMFUL_TIME

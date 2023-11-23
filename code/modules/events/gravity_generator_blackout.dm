@@ -7,6 +7,9 @@
 	min_wizard_trigger_potency = 0
 	max_wizard_trigger_potency = 4
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_COMMUNAL, TAG_SPACE)
+
 /datum/round_event_control/gravity_generator_blackout/can_spawn_event(players_amt, allow_magic = FALSE)
 	. = ..()
 	if(!.)
@@ -26,7 +29,7 @@
 	announce_chance = 33
 
 /datum/round_event/gravity_generator_blackout/announce(fake)
-	priority_announce("Gravnospheric anomalies detected near [station_name()]. Manual reset of generators is required.", "Anomaly Alert", ANNOUNCER_GRANOMALIES)
+	priority_announce("Гравитационные аномалии обнаружены вблизи [station_name()]. Требуется ручной перезапуск генератора гравитации.", "Anomaly Alert", ANNOUNCER_GRANOMALIES)
 
 /datum/round_event/gravity_generator_blackout/start()
 	for(var/obj/machinery/gravity_generator/main/the_generator as anything in SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/gravity_generator/main))

@@ -10,6 +10,9 @@
 	category = EVENT_CATEGORY_BUREAUCRATIC
 	description = "Temporarily increases the prices of vending machines."
 
+	track = EVENT_TRACK_MUNDANE
+	tags = list(TAG_COMMUNAL)
+
 /datum/round_event/market_crash
 	/// This counts the number of ticks that the market crash event has been processing, so that we don't call vendor price updates every tick, but we still iterate for other mechanics that use inflation.
 	var/tick_counter = 1
@@ -33,7 +36,7 @@
 		"uhh, bad luck, we guess"
 	)
 	var/reason = pick(poss_reasons)
-	priority_announce("Due to [reason], prices for on-station vendors will be increased for a short period.", "Nanotrasen Accounting Division")
+	priority_announce("В связи с [reason], цены в вендоматах на вашей станции поднимутся на короткий промежуток.", "Nanotrasen Accounting Division")
 
 /datum/round_event/market_crash/start()
 	. = ..()
@@ -46,7 +49,7 @@
 	REMOVE_TRAIT(SSeconomy, TRAIT_MARKET_CRASHING, MARKET_CRASH_EVENT_TRAIT)
 	SSeconomy.price_update()
 	SSeconomy.update_vending_prices()
-	priority_announce("Prices for on-station vendors have now stabilized.", "Nanotrasen Accounting Division")
+	priority_announce("Цены в вендоматах на вашей станции стабилизировались.", "Nanotrasen Accounting Division")
 
 /datum/round_event/market_crash/tick()
 	. = ..()

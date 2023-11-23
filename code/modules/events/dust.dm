@@ -9,6 +9,9 @@
 	description = "A single space dust is hurled at the station."
 	map_flags = EVENT_SPACE_ONLY
 
+	track = EVENT_TRACK_MUNDANE
+	tags = list(TAG_DESTRUCTIVE, TAG_SPACE)
+
 /datum/round_event/space_dust
 	start_when = 1
 	end_when = 2

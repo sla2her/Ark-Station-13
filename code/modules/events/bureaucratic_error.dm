@@ -6,11 +6,13 @@
 	category = EVENT_CATEGORY_BUREAUCRATIC
 	description = "Randomly opens and closes job slots, along with changing the overflow role."
 
+	track = EVENT_TRACK_MAJOR // Yes, it's annoying.
+	tags = list(TAG_COMMUNAL)
 /datum/round_event/bureaucratic_error
 	announce_when = 1
 
 /datum/round_event/bureaucratic_error/announce(fake)
-	priority_announce("A recent bureaucratic error in the Organic Resources Department may result in personnel shortages in some departments and redundant staffing in others.", "Paperwork Mishap Alert")
+	priority_announce("Недавняя бюрократическая ошибка в Департаменте органических ресурсов может привести к нехватке персонала в одних отделах и избыточному штату в других.", "Paperwork Mishap Alert")
 
 /datum/round_event/bureaucratic_error/start()
 	var/list/jobs = SSjob.joinable_occupations.Copy()

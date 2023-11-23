@@ -7,6 +7,9 @@
 	category = EVENT_CATEGORY_BUREAUCRATIC
 	description = "A sketchy but legit insurance offer."
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_COMMUNAL)
+
 /datum/round_event_control/shuttle_insurance/can_spawn_event(players, allow_magic = FALSE)
 	. = ..()
 	if(!.)
@@ -28,7 +31,7 @@
 	var/insurance_evaluation = 0
 
 /datum/round_event/shuttle_insurance/announce(fake)
-	priority_announce("Incoming subspace communication. Secure channel opened at all communication consoles.", "Incoming Message", SSstation.announcer.get_rand_report_sound())
+	priority_announce("Зафиксирован сбой межпространственных коммуникаций. Каналы безопасности сняты на всех защищенных консолях.", "Incoming Message", SSstation.announcer.get_rand_report_sound())
 
 /datum/round_event/shuttle_insurance/setup()
 	ship_name = pick(strings(PIRATE_NAMES_FILE, "rogue_names"))

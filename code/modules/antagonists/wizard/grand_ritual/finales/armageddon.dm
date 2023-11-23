@@ -53,7 +53,7 @@
 			meteors.meteordelay = 0
 			var/datum/game_mode/dynamic/mode = SSticker.mode
 			mode.execute_roundstart_rule(meteors) // Meteors will continue until morale is crushed.
-			priority_announce("Meteors have been detected on collision course with the station.", "Meteor Alert", ANNOUNCER_METEORS)
+			priority_announce("Обнаружены метеоры, идущие на столкновение со станцией.", "Meteor Alert", ANNOUNCER_METEORS)
 
 #undef DOOM_SINGULARITY
 #undef DOOM_TESLA

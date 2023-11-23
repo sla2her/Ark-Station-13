@@ -10,6 +10,9 @@
 	admin_setup = list(/datum/event_admin_setup/listed_options/shuttle_loan)
 	var/list/run_situations = list()
 
+	track = EVENT_TRACK_MUNDANE
+	tags = list(TAG_COMMUNAL)
+
 /datum/round_event_control/shuttle_loan/can_spawn_event(players_amt, allow_magic = FALSE)
 	. = ..()
 	for(var/datum/round_event/running_event in SSevents.running)

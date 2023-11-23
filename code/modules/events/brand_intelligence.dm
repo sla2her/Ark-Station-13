@@ -10,6 +10,9 @@
 	max_wizard_trigger_potency = 6
 	admin_setup = list(/datum/event_admin_setup/listed_options/brand_intelligence)
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_DESTRUCTIVE, TAG_COMMUNAL)
+
 /datum/round_event/brand_intelligence
 	announce_when = 21
 	end_when = 1000 //Ends when all vending machines are subverted anyway.
@@ -48,7 +51,7 @@
 	origin_machine = pick_n_take(vending_machines)
 
 /datum/round_event/brand_intelligence/announce(fake)
-	priority_announce("Rampant brand intelligence has been detected aboard [station_name()]. Please inspect any [origin_machine] brand vendors for aggressive marketing tactics, and reboot them if necessary.", "Machine Learning Alert", ANNOUNCER_BRANDINTELLIGENCE) //SKYRAT EDIT CHANGE
+	priority_announce("На борту Станции [station_name()] обнаружен агрессивный маркетинг. Пожалуйста, проверьте все вендоматы бренда [origin_machine] на предмет агрессивной маркетинговой тактики и при необходимости перезагрузите их.", "Machine Learning Alert", ANNOUNCER_BRANDINTELLIGENCE) //SKYRAT EDIT CHANGE
 
 /datum/round_event/brand_intelligence/start()
 	origin_machine.shut_up = FALSE

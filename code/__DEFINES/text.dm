@@ -75,7 +75,7 @@
 /// File location for boomer meme catchphrases
 #define BOOMER_FILE "boomer.json"
 /// File location for locations on the station
-#define LOCATIONS_FILE "locations.json"
+// #define LOCATIONS_FILE "locations.json" // ARK STATION REMOVAL || RUSSIAN TRAITOR
 /// File location for wanted posters messages
 #define WANTED_FILE "wanted_message.json"
 /// File location for really dumb suggestions memes
@@ -86,7 +86,7 @@
 #define BONE_SCAR_FILE "wounds/bone_scar_desc.json"
 // SKYRAT EDIT ADDITION BEGIN - SYNTH WOUNDS
 /// File location for metalic wound descriptions
-#define METAL_SCAR_FILE "wounds/metal_scar_desc.json" 
+#define METAL_SCAR_FILE "wounds/metal_scar_desc.json"
 // SKYRAT EDIT ADDITION END
 /// File location for scar wound descriptions
 #define SCAR_LOC_FILE "wounds/scar_loc.json"

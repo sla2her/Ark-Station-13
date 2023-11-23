@@ -11,6 +11,9 @@
 	max_wizard_trigger_potency = 7
 	admin_setup = list(/datum/event_admin_setup/set_location/immovable_rod, /datum/event_admin_setup/question/immovable_rod)
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_DESTRUCTIVE)
+
 /datum/round_event/immovable_rod
 	announce_when = 5
 	/// Admins can pick a spot the rod will aim for.
@@ -19,7 +22,7 @@
 	var/force_looping = FALSE
 
 /datum/round_event/immovable_rod/announce(fake)
-	priority_announce("What the fuck was that?!", "General Alert")
+	priority_announce("Что это был за пиздец?!", "General Alert")
 
 /datum/round_event/immovable_rod/start()
 	var/startside = pick(GLOB.cardinals)

@@ -9,13 +9,16 @@
 	min_wizard_trigger_potency = 0
 	max_wizard_trigger_potency = 4
 
+	track = EVENT_TRACK_MUNDANE
+	tags = list(TAG_SPOOKY)
+
 /datum/round_event/electrical_storm
 	var/lightsoutAmount = 1
 	var/lightsoutRange = 25
 	announce_when = 1
 
 /datum/round_event/electrical_storm/announce(fake)
-	priority_announce("An electrical storm has been detected in your area, please repair potential electronic overloads.", "Electrical Storm Alert", ANNOUNCER_ELECTRICALSTORM) //SKYRAT EDIT CHANGE
+	priority_announce("В вашем районе зафиксирован электрический шторм, пожалуйста, устраните возможные электронные неполадки.", "Electrical Storm Alert", ANNOUNCER_ELECTRICALSTORM) //SKYRAT EDIT CHANGE
 
 
 /datum/round_event/electrical_storm/start()

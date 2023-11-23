@@ -9,7 +9,7 @@
 /datum/hallucination/station_message/blob_alert
 
 /datum/hallucination/station_message/blob_alert/start()
-	priority_announce("Confirmed outbreak of level 5 biohazard aboard [station_name()]. All personnel must contain the outbreak.", \
+	priority_announce("Подтверждена вспышка биологической опасности 5-го уровня на борту [station_name()]. Весь персонал должен сдержать распространение.", \
 		"Biohazard Alert", ANNOUNCER_OUTBREAK5, players = list(hallucinator))
 	return ..()
 
@@ -90,7 +90,7 @@
 	random_hallucination_weight = 2
 
 /datum/hallucination/station_message/meteors/start()
-	priority_announce("Meteors have been detected on collision course with the station.", "Meteor Alert", ANNOUNCER_METEORS, players = list(hallucinator))
+	priority_announce("Обнаружены метеоры, идущие на столкновение со станцией.", "Meteor Alert", ANNOUNCER_METEORS, players = list(hallucinator))
 	return ..()
 
 /datum/hallucination/station_message/supermatter_delam

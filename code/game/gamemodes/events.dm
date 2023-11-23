@@ -7,7 +7,7 @@
  * but the crew themselves can return power via the engine, solars, or other means of creating power.
  */
 /proc/power_failure()
-	priority_announce("Abnormal activity detected in [station_name()]'s powernet. As a precautionary measure, the station's power will be shut off for an indeterminate duration.", "Critical Power Failure", ANNOUNCER_POWEROFF)
+	priority_announce("Обнаружена аномальная активность в сети электропитания [station_name()]. В качестве меры предосторожности питание станции будет отключено на неопределенный срок.", "Critical Power Failure", ANNOUNCER_POWEROFF)
 	var/list/all_smes = SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/power/smes)
 	for(var/obj/machinery/power/smes/smes as anything in all_smes)
 		if(istype(get_area(smes), /area/station/ai_monitored/turret_protected) || !is_station_level(smes.z))

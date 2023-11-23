@@ -6,6 +6,8 @@
 	category = EVENT_CATEGORY_HEALTH
 	description = "A random crewmember becomes obsessed with another."
 
+	track = EVENT_TRACK_MUNDANE
+	tags = list(TAG_TARGETED, TAG_SPOOKY)
 /datum/round_event/obsessed
 	fakeable = FALSE
 

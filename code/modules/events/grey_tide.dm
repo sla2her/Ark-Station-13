@@ -8,6 +8,9 @@
 	min_wizard_trigger_potency = 0
 	max_wizard_trigger_potency = 7
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_DESTRUCTIVE, TAG_SPOOKY)
+
 /datum/round_event/grey_tide
 	announce_when = 50
 	end_when = 20
@@ -33,7 +36,7 @@
 		grey_tide_areas += pick_n_take(potential_areas)
 
 /datum/round_event/grey_tide/announce(fake)
-	priority_announce("Gr3y.T1d3 virus detected in [station_name()] secure locking encryption subroutines. Severity level of [severity]. Recommend station AI involvement.", "Security Alert")
+	priority_announce("Вирус Gr3y.T1d3 обнаружен в подпрограммах шифрования защищенной блокировки [station_name()].Уровень угрозы - [severity]. Рекомендовано вмешательство ИИ для устранения.", "Security Alert")
 
 /datum/round_event/grey_tide/start()
 	if(!length(grey_tide_areas))

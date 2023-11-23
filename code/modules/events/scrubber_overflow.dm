@@ -8,6 +8,9 @@
 	description = "The scrubbers release a tide of mostly harmless froth."
 	admin_setup = list(/datum/event_admin_setup/listed_options/scrubber_overflow)
 
+	track = EVENT_TRACK_MUNDANE
+	tags = list(TAG_COMMUNAL)
+
 /datum/round_event/scrubber_overflow
 	announce_when = 1
 	start_when = 5
@@ -67,7 +70,7 @@
 	deadchat_broadcast(" has just been[random ? " randomly" : ""] triggered[cause ? " by [cause]" : ""]!", "<b>Scrubber Overflow: [initial(forced_reagent_type.name)]</b>", message_type=DEADCHAT_ANNOUNCEMENT)
 
 /datum/round_event/scrubber_overflow/announce(fake)
-	priority_announce("The scrubbers network is experiencing a backpressure surge. Some ejection of contents may occur.", "[command_name()] Engineering Division")
+	priority_announce("Вентиляционная сеть испытывает скачок давления. Возможен некоторый выброс содержимого.", "[command_name()] Engineering Division")
 
 /datum/round_event/scrubber_overflow/setup()
 	for(var/obj/machinery/atmospherics/components/unary/vent_scrubber/temp_vent as anything in SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/atmospherics/components/unary/vent_scrubber))

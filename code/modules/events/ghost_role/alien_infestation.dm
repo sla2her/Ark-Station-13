@@ -9,6 +9,9 @@
 	category = EVENT_CATEGORY_ENTITIES
 	description = "A xenomorph larva spawns on a random vent."
 
+	track = EVENT_TRACK_MAJOR
+	tags = list(TAG_COMBAT)
+
 /datum/round_event_control/alien_infestation/can_spawn_event(players_amt, allow_magic = FALSE)
 	. = ..()
 	if(!.)
@@ -41,7 +44,7 @@
 			living_aliens = TRUE
 
 	if(living_aliens || fake)
-		priority_announce("Unidentified lifesigns detected coming aboard [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", ANNOUNCER_ALIENS)
+		priority_announce("На борту [station_name()] обнаружены неопознанные биосигнатуры. Оградите все внешние доступы, включая воздуховоды и вентиляцию.", "Lifesign Alert", ANNOUNCER_ALIENS)
 
 
 /datum/round_event/ghost_role/alien_infestation/spawn_role()

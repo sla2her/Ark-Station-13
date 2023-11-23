@@ -9,6 +9,9 @@
 	min_wizard_trigger_potency = 3
 	max_wizard_trigger_potency = 7
 
+	track = EVENT_TRACK_MODERATE
+	tags = list(TAG_COMMUNAL)
+
 /datum/round_event/radiation_leak
 	start_when = 1 // 2 seconds in
 	announce_when = 10 // 20 seconds in
@@ -58,9 +61,9 @@
 	else if(the_source_of_our_problems)
 		location_descriptor = get_area(the_source_of_our_problems)
 
-	priority_announce("A radiation leak has been detected in [location_descriptor || "an unknown area"]. \
-		All crew are to evacuate the affected area. Our [pick("mechanics", "engineers", "scientists", "interns", "sensors", "readings")] \
-		report that a machine within is causing it - repair it quickly to stop the leak.", "[command_name()] Engineering Division")
+	priority_announce("Утечка радиации обнаружена в [location_descriptor || "an unknown area"]. \
+		Все члены экипажа должны быть эвакуированы. Наши [pick("mechanics", "engineers", "scientists", "interns", "sensors", "readings")] \
+		исправьте всё в кратчайшие сроки и устраните утечку")
 
 /datum/round_event/radiation_leak/start()
 	var/obj/machinery/the_source_of_our_problems = picked_machine_ref?.resolve()

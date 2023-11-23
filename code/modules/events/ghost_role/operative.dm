@@ -6,6 +6,9 @@
 	category = EVENT_CATEGORY_INVASION
 	description = "A single nuclear operative assaults the station."
 
+	track = EVENT_TRACK_ROLESET
+	tags = list(TAG_DESTRUCTIVE, TAG_COMBAT)
+
 /datum/round_event/ghost_role/operative
 	minimum_required = 1
 	role_name = "lone operative"
