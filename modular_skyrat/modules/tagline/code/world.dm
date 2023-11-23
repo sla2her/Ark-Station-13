@@ -16,8 +16,8 @@
 	s += ")\]"
 	s += "<br>[CONFIG_GET(string/servertagline)]</a><br>"
 
-	s += "<br><br><a href='https://www.arkstaion.ru/'>Наш сайт</a><br>"
-	s += "<br><a href='https://wiki.arkstaion.ru/'>Наше wiki</a><br><br>"
+	s += "<a href='https://www.arkstaion.ru/'>Website</a>"
+	s += "<br><a href='https://wiki.arkstaion.ru/'>Wiki</a><br>"
 
 	var/n = 0
 	for (var/mob/M in GLOB.player_list)
