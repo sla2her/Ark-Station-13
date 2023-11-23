@@ -980,6 +980,4 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 /// Trait given to foam darts that have an insert in them
 #define TRAIT_DART_HAS_INSERT "dart_has_insert"
-
-#define TRAIT_MOB_BREEDER "mobbreeder"
 // END TRAIT DEFINES
