@@ -171,7 +171,7 @@
 	S.status = SOUND_UPDATE
 	SEND_SOUND(src, S)
 
-/client/proc/playtitlemusic(vol = 40)
+/client/proc/playtitlemusic(vol = 20) // ARK STATION 13 EDIT
 	set waitfor = FALSE
 	UNTIL(SSticker.login_music) //wait for SSticker init to set the login music
 
