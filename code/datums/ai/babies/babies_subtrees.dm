@@ -2,14 +2,22 @@
  * Reproduce with a similar mob.
  */
 /datum/ai_planning_subtree/make_babies
+<<<<<<< HEAD
+	var/chance = 5
+=======
 	operational_datums = list(/datum/component/breed)
 	///chance to make babies
 	var/chance = 5
 	///make babies behavior we will use
 	var/datum/ai_behavior/reproduce_behavior = /datum/ai_behavior/make_babies
+>>>>>>> dec9b7b40b5fe8912f1dc5ebbd6c554ebede408d
 
 /datum/ai_planning_subtree/make_babies/SelectBehaviors(datum/ai_controller/controller, seconds_per_tick)
 	. = ..()
+
+<<<<<<< HEAD
+	if(controller.pawn.gender != FEMALE || !SPT_PROB(chance, seconds_per_tick))
+=======
 	if(!SPT_PROB(chance, seconds_per_tick))
 		return
 
@@ -18,6 +26,7 @@
 		return SUBTREE_RETURN_FINISH_PLANNING
 
 	if(controller.pawn.gender == FEMALE || !controller.blackboard[BB_BREED_READY])
+>>>>>>> dec9b7b40b5fe8912f1dc5ebbd6c554ebede408d
 		return
 
 	var/partner_types = controller.blackboard[BB_BABIES_PARTNER_TYPES]
