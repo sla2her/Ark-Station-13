@@ -106,7 +106,7 @@
 			return
 		SSticker.mode.admin_panel()
 
-		SSgamemode.admin_panel(usr) // ARK STATION - STORYTELLER
+		// SSgamemode.admin_panel(usr) // ARK STATION - STORYTELLER
 
 	else if(href_list["call_shuttle"])
 		if(!check_rights(R_ADMIN))

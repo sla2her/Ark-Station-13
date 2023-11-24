@@ -26,7 +26,7 @@
 /datum/action/item_action/cerberbark
 	name = "BARK!"
 
-/obj/item/clothing/head/donator/bm/cerberus_helmet/verb/cerberbark()
+/obj/item/clothing/head/helmet/toggleable/riot/cerberus/verb/cerberbark()
 	set category = "Object"
 	set name = "BARK!"
 	set src in usr
@@ -42,7 +42,7 @@
 		usr.audible_message("[usr] barks, <font color='red' size='4'><b>[frase]</b></font>")
 		playsound(src.loc, 'zov_modular_arkstation/krashly_modulars/sound/bark.ogg', 100, 1)
 
-/obj/item/clothing/head/donator/bm/cerberus_helmet/ui_action_click(mob/user, action)
+/obj/item/clothing/head/helmet/toggleable/riot/cerberus/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/cerberbark))
 		cerberbark()
 

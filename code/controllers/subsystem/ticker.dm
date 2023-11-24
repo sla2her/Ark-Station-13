@@ -237,14 +237,14 @@ SUBSYSTEM_DEF(ticker)
 
 	mode = new /datum/game_mode/dynamic
 
-	SSgamemode.init_storyteller() // ARK STATION EDIT ADDITION
+	// SSgamemode.init_storyteller() // ARK STATION EDIT ADDITION
 	CHECK_TICK
 	//Configure mode and assign player to special mode stuff
 	var/can_continue = 0
-	//ARK STATION EDIT BEGIN
-	can_continue =	SSgamemode.pre_setup()
-	CHECK_TICK
-	//ARK STATION EDIT END
+	// //ARK STATION EDIT BEGIN
+	// can_continue =	SSgamemode.pre_setup()
+	// CHECK_TICK
+	// //ARK STATION EDIT END
 
 	can_continue = src.mode.pre_setup() //Choose antagonists
 	CHECK_TICK
