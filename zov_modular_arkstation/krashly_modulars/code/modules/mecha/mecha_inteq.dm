@@ -5,6 +5,8 @@
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/mecha/ares.dmi'
 	icon_state = "ares"
 	base_icon_state = "ares"
+	ui_theme = "inteq"
+	accesses = list(ACCESS_CENT_GENERAL)
 	wreckage = /obj/structure/mecha_wreckage/ares
 
 /obj/vehicle/sealed/mecha/marauder/mauler/ares/generate_actions()
@@ -54,6 +56,8 @@
 	base_icon_state = "hermes"
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/mecha/hermes.dmi'
 	icon_state = "hermes"
+	ui_theme = "inteq"
+	accesses = list(ACCESS_CENT_GENERAL)
 	wreckage = /obj/structure/mecha_wreckage/hermes
 
 /obj/vehicle/sealed/mecha/gygax/dark/hermes/generate_actions()

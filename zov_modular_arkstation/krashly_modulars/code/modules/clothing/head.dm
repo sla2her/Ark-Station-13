@@ -73,7 +73,7 @@
 	worn_icon = 'zov_modular_arkstation/krashly_modulars/icons/mob/clothing/head.dmi'
 	icon_state = "inteq_swat"
 
-/obj/item/clothing/head/helmet/inteq
+/obj/item/clothing/head/helmet/sec/inteq
 	name = "InteQ helmet"
 	desc = "Black helmet with visor. (You can attach a flashlight to it)."
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/clothing/head.dmi'

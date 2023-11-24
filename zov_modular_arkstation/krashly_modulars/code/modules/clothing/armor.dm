@@ -59,6 +59,7 @@
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	strip_delay = 80
+	unique_reskin = list()
 
 /obj/item/clothing/suit/armor/riot/cerberus/censor
 	name = "censor's coat"

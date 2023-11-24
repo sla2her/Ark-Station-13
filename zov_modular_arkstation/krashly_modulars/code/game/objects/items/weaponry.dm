@@ -5,6 +5,7 @@
 	desc = "Чего ты пялишься? Руби врагов!"
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/weapons/weapons.dmi'
 	icon_state = "siegesword"
+	inhand_icon_state = "siegesword"
 	lefthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/lefthand.dmi'
 	righthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/righthand.dmi'
 	force = 30
@@ -14,6 +15,7 @@
 	desc = "Серебрянный меч с гравировкой на лезвии и рукояти. Подсохшая кровь на лезвии будоражит ваш рассудок."
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/weapons/weapons.dmi'
 	icon_state = "silversword"
+	inhand_icon_state = "silversword"
 	lefthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/lefthand.dmi'
 	righthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/righthand.dmi'
 	force = 35
@@ -23,6 +25,7 @@
 	desc = "Серебрянная сабля с гравировкой на лезвии и рукояти. Подсохшая кровь на лезвии будоражит ваш рассудок."
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/weapons/weapons.dmi'
 	icon_state = "sabre"
+	inhand_icon_state = "sabre"
 	lefthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/lefthand.dmi'
 	righthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/righthand.dmi'
 	force = 40
@@ -41,6 +44,7 @@
 	desc = "A huge stick with a blade at the end. Say it's called an ax? In any case, it cuts people well."
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/weapons/weapons.dmi'
 	icon_state = "bardiche"
+	inhand_icon_state = "bardiche"
 	lefthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/lefthand.dmi'
 	righthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/righthand.dmi'
 	force = 35
@@ -50,6 +54,7 @@
 	desc = "wooden shield with a small iron insert in the middle. Has a handle to make it easier to hold."
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/weapons/weapons.dmi'
 	icon_state = "wbuckler"
+	inhand_icon_state = "wbuckler"
 	lefthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/lefthand.dmi'
 	righthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/righthand.dmi'
 
@@ -58,6 +63,7 @@
 	desc = "steel shield with a with the cross of the Gray Post Christian Church in the middle."
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/weapons/weapons.dmi'
 	icon_state = "paladin"
+	inhand_icon_state = "paladin"
 	lefthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/lefthand.dmi'
 	righthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/righthand.dmi'
 
@@ -68,6 +74,7 @@
 	lefthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/lefthand.dmi'
 	righthand_file = 'zov_modular_arkstation/krashly_modulars/icons/mob/inhands/weapons/righthand.dmi'
 	icon_state = "sparq"
+	inhand_icon_state = "sparq0"
 	ammo_type = list(/obj/item/ammo_casing/energy/electrode/bolestrel)
 
 /obj/item/gun/energy/taser/bolestrel/censor

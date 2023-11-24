@@ -3,7 +3,7 @@
 	back = /obj/item/storage/backpack/security/inteq
 	backpack_contents = list(/obj/item/solfed_reporter/swat_caller = 1)
 
-	id_trim = /datum/id_trim/chameleon/operative/inteq
+	id = /obj/item/card/id/advanced/centcom/ert/inteq
 
 /datum/outfit/request_911/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	..()
@@ -26,12 +26,12 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	mask = /obj/item/clothing/mask/balaclava/breath/inteq
 	ears = /obj/item/radio/headset/inteq/bowman
-	head = /obj/item/clothing/head/soft/inteq
+	head = /obj/item/clothing/head/helmet/sec/inteq
 	suit_store = /obj/item/gun/ballistic/automatic/pistol
 	gloves = /obj/item/clothing/gloves/color/black
 	r_pocket = /obj/item/lighter
 	l_pocket = /obj/item/ammo_box/magazine/m9mm
-	id = /obj/item/card/id/advanced/black
+	id = /obj/item/card/id/advanced/centcom/ert/inteq
 	belt = /obj/item/storage/belt/military/inteq
 	backpack_contents = list(/obj/item/storage/box/survival = 1,
 		/obj/item/storage/box/handcuffs = 1,
@@ -39,8 +39,6 @@
 		/obj/item/solfed_reporter/swat_caller = 1,
 		/obj/item/ammo_box/magazine/m9mm = 1,
 		/obj/item/beamout_tool = 1)
-
-	id_trim = /datum/id_trim/chameleon/operative/inteq
 
 // PMC engineer
 /datum/outfit/request_911/atmos
@@ -53,7 +51,7 @@
 	mask = /obj/item/clothing/mask/gas/atmos/glass
 	belt = /obj/item/storage/belt/utility/full/powertools/ircd
 	suit_store = /obj/item/tank/internals/oxygen/yellow
-	id = /obj/item/card/id/advanced/black
+	id = /obj/item/card/id/advanced/centcom/ert/inteq
 	backpack_contents = list(/obj/item/storage/box/rcd_ammo = 1,
 		/obj/item/storage/box/smart_metal_foam = 1,
 		/obj/item/multitool = 1,
@@ -63,7 +61,6 @@
 		/obj/item/solfed_reporter/swat_caller = 1,
 		/obj/item/storage/box/syndie_kit/space/inteq = 1,
 		)
-	id_trim = /datum/id_trim/chameleon/operative/inteq
 
 // PMC medic
 /datum/outfit/request_911/emt
@@ -73,7 +70,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	ears = /obj/item/radio/headset/inteq
 	head = /obj/item/clothing/head/soft/inteq_med
-	id = /obj/item/card/id/advanced/black
+	id = /obj/item/card/id/advanced/centcom/ert/inteq
 	suit = /obj/item/clothing/suit/armor/inteq
 	gloves = /obj/item/clothing/gloves/latex/nitrile
 	belt = /obj/item/storage/belt/medical/paramedic
@@ -83,8 +80,6 @@
 		/obj/item/storage/medkit/surgery = 1,
 		/obj/item/solfed_reporter/swat_caller = 1,
 		/obj/item/beamout_tool = 1)
-
-	id_trim = /datum/id_trim/chameleon/operative/inteq
 
 // PMC Heavy merc
 /datum/outfit/request_911/condom_destroyer
@@ -102,14 +97,12 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	r_pocket = /obj/item/lighter
 	l_pocket = /obj/item/restraints/handcuffs
-	id = /obj/item/card/id/advanced/black
+	id = /obj/item/card/id/advanced/centcom/ert/inteq
 	l_hand = /obj/item/gun/ballistic/shotgun/riot
 	backpack_contents = list(/obj/item/storage/box/survival = 1,
 		/obj/item/storage/box/lethalshot = 2,
 		/obj/item/solfed_reporter/treason_reporter = 1,
 		/obj/item/beamout_tool = 1)
-
-	id_trim = /datum/id_trim/chameleon/operative/inteq
 
 /datum/outfit/request_911/condom_destroyer/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -131,14 +124,12 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	ears = /obj/item/radio/headset/inteq/bowman/command
 	l_pocket = /obj/item/restraints/handcuffs
-	id = /obj/item/card/id/advanced/black
+	id = /obj/item/card/id/advanced/centcom/ert/inteq
 	r_hand = /obj/item/gun/ballistic/automatic/akm
 	backpack_contents = list(/obj/item/storage/box/handcuffs = 1,
 		/obj/item/melee/baton/security/loaded = 1,
 		/obj/item/ammo_box/magazine/akm = 4
 	)
-
-	id_trim = /datum/id_trim/chameleon/operative/inteq/leader
 
 /datum/outfit/request_911/treason_destroyer/pre_equip(mob/living/carbon/human/H)
 	..()

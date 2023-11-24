@@ -8,11 +8,13 @@
 	ears = /obj/item/radio/headset/headset_cent
 	back = /obj/item/storage/backpack/satchel/inteq
 	l_pocket = /obj/item/clothing/gloves/color/black
-	id_trim = /datum/id_trim/chameleon/operative/inteq
+	head = /obj/item/clothing/head/helmet/sec/inteq
+	suit = /obj/item/clothing/suit/armor/inteq
+	id = /obj/item/card/id/advanced/centcom/ert/inteq
 
 /datum/outfit/inteq_raider/vanguard
 	name = "InteQ Vanguard"
-	id_trim = /datum/id_trim/chameleon/operative/inteq/leader
+	id = /obj/item/card/id/advanced/centcom/ert/inteq/leader
 	suit = /obj/item/clothing/suit/armor/inteq/vanguard
 	head = /obj/item/clothing/head/HoS/inteq_vanguard
 	l_pocket = /obj/item/clothing/gloves/krav_maga/combatglovesplus

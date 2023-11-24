@@ -139,7 +139,10 @@
 #define JOB_SOLFED_LIASON "SolFed Liason"
 // SKYRAT EDIT ADDITION END
 
-
+// ARK STATION EDIT START
+#define JOB_INTEQ_VANGUARD "InteQ Mercenary Vanguard"
+#define JOB_INTEQ_MERCENARY "InteQ Mercenary"
+// ARK STATION EDIT END
 
 
 #define JOB_GROUP_ENGINEERS list( \

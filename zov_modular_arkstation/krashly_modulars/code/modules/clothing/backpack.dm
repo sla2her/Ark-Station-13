@@ -1,7 +1,7 @@
 /obj/item/storage/backpack/satchel/lfwb
 	name = "fabric satchel"
 	desc = "Bag with a flimsy closure and slit sides."
-	icon_state = "satchel"
+	worn_icon_state = "satchel"
 	worn_icon = 'zov_modular_arkstation/krashly_modulars/icons/mob/clothing/backpack.dmi'
 
 /obj/item/storage/belt/medical/aesculapus
