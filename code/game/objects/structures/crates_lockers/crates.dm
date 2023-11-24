@@ -209,9 +209,9 @@
 	icon_state = "medicalcrate"
 	base_icon_state = "medicalcrate"
 
-/obj/structure/closet/crate/medical/department
-	icon_state = "medical"
-	base_icon_state = "medical"
+/obj/structure/closet/crate/medical/department  // СКАЙРАТЫ ЕБЛАНЫ - СЛОМАЛИ ЯЩИК. И ДАЖЕ НЕ В МОДУЛЯРАХ. НУ ТУПА СЛОМАЛИ.
+// 	icon_state = "medical"
+// 	base_icon_state = "medical"
 
 /obj/structure/closet/crate/freezer
 	desc = "A freezer."
