@@ -43,7 +43,7 @@
 
 /obj/structure/sign/poster/contraband/inteq/inteq_sign
 	name = "InteQ poster"
-	desc = "Частная Военная Компания, занимающаяся обороной частных предприятий и выполнением заказов. В данный момент они хотят уничтожить Пакт между НТ и Синдикатом..."
+	desc = "Частная Военная Компания, занимающаяся обороной частных предприятий и выполнением заказов."
 	icon = 'zov_modular_arkstation/krashly_modulars/icons/obj/poster.dmi'
 	icon_state = "poster_inteq_baza"
 
