@@ -75,10 +75,10 @@ GLOBAL_LIST_INIT(prohibited, list("лол", "кек", "крит", "дамаг"))
 		SSblackbox.record_feedback("tally", "ic_blocked_words", 1, lowertext(config.ic_filter_regex.match))
 		return FALSE
 
-	if(findtext(message, GLOB.prohibited))
-		to_chat(src, "<B>Привет, ты что, охуел?</B>")
-		SEND_SOUND(src, 'sound/effects/adminhelp.ogg')
-		return
+	// if(findtext(message, GLOB.prohibited))
+	// 	to_chat(src, "<B>Привет, ты что, охуел?</B>")
+	// 	SEND_SOUND(src, 'sound/effects/adminhelp.ogg')
+	// 	return
 
 	if(soft_filter_result && !filterproof)
 		if(tgui_alert(usr,"Your message contains \"[soft_filter_result[CHAT_FILTER_INDEX_WORD]]\". \"[soft_filter_result[CHAT_FILTER_INDEX_REASON]]\", Are you sure you want to say it?", "Soft Blocked Word", list("Yes", "No")) != "Yes")
